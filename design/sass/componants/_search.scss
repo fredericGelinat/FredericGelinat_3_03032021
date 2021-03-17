@@ -1,0 +1,29 @@
+/*--------search---------*/
+.rechercher {
+    font-family: "Roboto", sans-serif;
+    @include justify-content-center(column);
+    margin-top: -2%;
+  }
+  #textes {
+    @include text-align-center (column);
+    background-color: $color-background;
+    & #centre {
+      @include padding(10%);
+    }
+  }
+  
+  #search {
+    @include justify-content-center(row);
+    background-color: $color-search;
+    @include padding(4%);
+    /*plusieurs mixin dans un selecteur???*/
+    @include box-shadow($box-shadow-grey-up);
+    & input {
+      border: none;
+      background-color: $color-search;
+      @include text-align-center(column);
+    }
+    & #site-search .icone {
+      display: flex;
+    }
+  }

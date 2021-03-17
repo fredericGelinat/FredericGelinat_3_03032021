@@ -1,0 +1,16 @@
+button {
+    background: linear-gradient($color-secondary, $color-primary);
+  
+    @include border-radius(37px);
+    color: white;
+  
+    border: none;
+    @include box-shadow($box-shadow-grey-around);
+  
+    @include padding(8%);
+  
+    & span {
+      color: white;
+      font-weight: bold;
+    }
+  }
