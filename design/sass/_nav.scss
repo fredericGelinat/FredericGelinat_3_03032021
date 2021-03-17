@@ -16,7 +16,7 @@
       text-align: center;
       list-style-type: none;
       counter-increment: liste;
-      box-shadow: $box-shadow;
+      box-shadow: $box-shadow-grey-around;
     }
     & li:before {
       content: counter(liste);
