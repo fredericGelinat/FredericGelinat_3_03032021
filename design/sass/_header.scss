@@ -1,0 +1,13 @@
+/*---------header--------*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 1px 3px 5px 1px #222121;
+  
+    & p {
+      font-family: "Shrikhand", sans-serif;
+      font-size: xx-large;
+      margin-top: 1.5em;
+    }
+  }
