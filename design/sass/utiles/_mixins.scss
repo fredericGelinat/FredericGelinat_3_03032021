@@ -1,0 +1,25 @@
+//----------@mixin-----------------
+//-------------display---------------
+@mixin text-align-center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    text-align: center;
+  }
+  @mixin justify-content-center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+  }
+  //-----------padding-----------------
+  @mixin padding  ($padding){
+    padding: $padding;
+  }
+    
+  //----------border-radius---------
+  @mixin border-radius ($degres) {
+    border-radius: $degres;
+  }
+  //----------box-shadow-------------
+  @mixin box-shadow ($params) {
+    box-shadow: $params;
+  }
