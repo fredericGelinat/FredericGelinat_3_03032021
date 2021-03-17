@@ -1,0 +1,18 @@
+//----------font-----------------------
+@mixin googleFonts($font) {
+    @import url("https://fonts.googleapis.com/css2?family=#{$font}");
+  }
+  @include googleFonts(Roboto); //--textes---
+  @include googleFonts(Shrikhand); //------logo et titres---
+
+  /*---------header--------*/
+header  h1 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: xx-large;
+    @include justify-content-center (row);
+  
+}
+/*--------general--------*/
+body {
+  margin: 0;
+}
