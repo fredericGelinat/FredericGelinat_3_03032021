@@ -1,30 +1,55 @@
 /*--------search---------*/
 .rechercher {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  @extend %column-center;
+  margin-top: -2%;
+}
+#textes {
+  @include text-align-center(column);
+  background-color: $color-background;
+  & #centre {
+    @include padding(10%);
+  }
+}
+
+#search {
+  @include justify-content-center(row);
+  background-color: $color-search;
+  @include padding(4%);
+  @include box-shadow($box-shadow-grey-up);
+  & input {
+    border: none;
+    background-color: $color-search;
+    @include text-align-center(column);
+  }
+  & #site-search .icone {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -2%;
-    
-    & h1 {
+  }
+}
+
+button {
+  background: linear-gradient($color-secondary, $color-primary);
+
+  @include border-radius(37px);
+  color: white;
+
+  border: none;
+  @include box-shadow($box-shadow-grey-around);
+
+  @include padding(8%);
+
+  & span {
+    color: white;
+    font-weight: bold;
+  }
+}
+/*& h2 {
       font-size: x-large;
       text-align: center;
     }
-    & .centre {
-      text-align: center;
-    }
-    & button {
-      background: linear-gradient($color-secondary, $color-primary);
-      width: 76%;
-      height: 4em;
-      border-radius: 35px;
-      color: white;
-      font-size: medium;
-      border: none;
-      margin-top: 6%;
-      box-shadow: $box-shadow;
-    }
-    aside {
+    & 
+    & 
+    section {
       background-color: #f2f2f2;
       height: 19em;
       width: auto;
@@ -33,26 +58,19 @@
       font-weight: bold;
       font-size: 1em;
     }
-  }
-  .container-recherche {
-    width: 100%;
-    background-color: $color-search;
-    text-align: center;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    box-shadow: 15px 25px 6px 28px #cfcfcf;
-  
-    & input {
-      border: none;
-      background-color: $color-search;
-      text-align: center;
-      font-weight: bold;
-    }
-    & .icone {
+  }*/
+form {
+  background-color: $color-search;
+
+  @extend %column-center;
+  /*box-shadow: 15px 25px 6px 28px #cfcfcf;*/
+}
+/* & .icone {
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: $color-search;
     }
-  }
+    &
+    
+  }*/
