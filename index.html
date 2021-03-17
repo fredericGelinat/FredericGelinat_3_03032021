@@ -10,37 +10,40 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
     <link rel="stylesheet" type="text/css" href="design/css/style.css" />
-    
+    <!--<meta description>-->
     <title>OhMyFood</title>
   </head>
   <body>
     <header>
-      <p>Ohmyfood</p>
+      <h1>Ohmyfood</h1>
     </header>
 
-    <aside class="rechercher">
-      <div class="container-recherche">
+    <section class="rechercher">
+      <!--<div class="container-recherche">-->
+      <form action="submit" type="button">
+        <aside id="search">
         <div class="icone"><i class="fas fa-map-marker-alt"></i></div>
         <input type="text" id="site-search" placeholder="Paris, Belleville" />
-      </div>
-      <aside>
-        <h1>
-          Réservez le menu qui <br />
-          vous convient
-        </h1>
-        <div class="centre">
-          <span
-            >Découvrez des restaurants d'exception, sélectionnés par nos
-            soins</span
-          >
+        </aside>
+        <div id="textes">
+          <h2>
+            Réservez le menu qui <br />
+            vous convient
+          </h2>
+          <div >
+            <span
+              >Découvrez des restaurants d'exception, sélectionnés par nos
+              soins</span
+            >
+          </div>
+          <div id="centre">
+            <button>
+              <span class="font">Explorez nos restaurants</span>
+            </button>
+          </div>
         </div>
-        <div class="centre">
-          <button>
-            <span class="font">Explorez nos restaurants</span>
-          </button>
-        </div>
-      </aside>
-    </aside>
+      </form>
+    </section>
     <nav id="navigation">
       <h2>Fonctionnement</h2>
       <ol>
