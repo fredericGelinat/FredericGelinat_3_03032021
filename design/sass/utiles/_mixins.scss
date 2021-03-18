@@ -15,6 +15,11 @@
   justify-content: $justify;
   align-items: center;
 }
+@mixin display-justifyC-alignI ($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
 //-----------padding-----------------
 @mixin padding-margin($padding, $margin) {
   padding: $padding;

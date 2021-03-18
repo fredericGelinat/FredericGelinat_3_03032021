@@ -117,13 +117,7 @@ main {
   main .menilmontant-img {
     width: 100%; }
 
-.restaurant-name {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Shrikhand", sans-serif; }
-
-/*---------restaurants---------*/
+/*---------restaurants INDEX---------*/
 section a {
   text-decoration: none;
   color: black; }
@@ -161,6 +155,55 @@ figure {
     margin: 0; }
   .description h3 {
     margin: 0; }
+
+/*--------------LA PALETTE DU GOUT------*/
+.restaurant-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Shrikhand", sans-serif; }
+  .restaurant-name i {
+    font-size: x-large;
+    font-weight: unset; }
+
+.titre-entrees h2 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: unset;
+  font-family: "Roboto", sans-serif; }
+
+.underline {
+  border: 1px solid #99e2d0;
+  width: 17%;
+  display: inline-block; }
+
+.starter {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .starter li {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 4% 0 2% 0;
+    box-shadow: 7px 7px 10px #d2cccc; }
+  .starter p {
+    padding: 0;
+    margin: 2% 4% 2% 4%; }
+  .starter .alignement {
+    padding: 0;
+    margin: 0 4% 2% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: unset; }
+  .starter #ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 /*--------NAV---------*/
 #navigation {
