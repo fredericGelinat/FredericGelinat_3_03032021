@@ -8,13 +8,16 @@ main {
     text-decoration: none;
     color: black;
   }
-  .restaurants h2 {
-    padding: $padding;
-    font-family: "Roboto", sans-serif;
+  .restaurants {
+  padding-top: 6%;
+  
+  h2 {
+    @include padding-margin (4%, 0);
+    font-family: "Roboto", sans-serif;}
   }
   figure {
     background-color: white;
-    margin: 12% 7% 7% 7%;
+    @include padding-margin (0, 4%);
     border-radius: 0 0 4% 4%;
   
     & img {
@@ -31,9 +34,9 @@ main {
     margin-right: 0.5em;
   }
   .description {
-    padding-left: 1em;
+    @include padding-margin (2%, 0);
     font-family: "Roboto", sans-serif;
-    margin-top: 4%;
+  
   
     & p {
       padding-bottom: 1em;

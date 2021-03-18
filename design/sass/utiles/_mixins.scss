@@ -24,3 +24,7 @@
   @mixin box-shadow ($params) {
     box-shadow: $params;
   }
+  //----------text-deco------
+  @mixin text-deco ($params) {
+    text-decoration: $params;
+  }

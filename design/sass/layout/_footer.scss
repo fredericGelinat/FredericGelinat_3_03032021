@@ -1,22 +1,26 @@
 /*----------footer---------*/
 footer {
-    background-color: #222121;
-    color: rgb(223, 219, 219);
-    height: 12em;
-    margin-top: -5%;
-    & p {
-      width: 25%;
-      display: flex;
-      justify-content: flex-start;
-      padding: $padding;
-      font-family: "Shrikhand", sans-serif;
-    }
-    & ul {
-      list-style-type: none;
-      padding: 0 0 5% 7%;
-    }
-    & li {
-      margin: 1%;
-      font-family: "Roboto", sans-serif;
-    }
+  background-color: #222121;
+  color: rgb(223, 219, 219);
+  
+  & p {
+    @include padding-margin (5%, 0);
+    font-family: "Shrikhand", sans-serif;
   }
+  & ul {
+    list-style-type: none;
+    @include padding-margin (5%, 0);
+    display: flex;
+    flex-direction: column;
+  }
+  & li {
+    margin: 1%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+}
+.text-deco-none-footer{
+  @include text-deco(none);
+  color: $color-search;
+  
+}

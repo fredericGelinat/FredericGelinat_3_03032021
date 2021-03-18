@@ -1,3 +1,5 @@
+/* $text-deco: (text-decoration: none, )
+$text-deco: none;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
 /*--------general--------*/
@@ -68,21 +70,24 @@ header h1 {
 /*----------footer---------*/
 footer {
   background-color: #222121;
-  color: #dfdbdb;
-  height: 12em;
-  margin-top: -5%; }
+  color: #dfdbdb; }
   footer p {
-    width: 25%;
-    display: flex;
-    justify-content: flex-start;
-    padding: 7% 0 0% 7%;
+    padding: 5%;
+    margin: 0;
     font-family: "Shrikhand", sans-serif; }
   footer ul {
     list-style-type: none;
-    padding: 0 0 5% 7%; }
+    padding: 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
   footer li {
     margin: 1%;
     font-family: "Roboto", sans-serif; }
+
+.text-deco-none-footer {
+  text-decoration: none;
+  color: #eaeaea; }
 
 /*---------corps du site--------*/
 main {
@@ -94,13 +99,17 @@ section a {
   text-decoration: none;
   color: black; }
 
-.restaurants h2 {
-  padding: 7% 0 0% 7%;
-  font-family: "Roboto", sans-serif; }
+.restaurants {
+  padding-top: 6%; }
+  .restaurants h2 {
+    padding: 4%;
+    margin: 0;
+    font-family: "Roboto", sans-serif; }
 
 figure {
   background-color: white;
-  margin: 12% 7% 7% 7%;
+  padding: 0;
+  margin: 4%;
   border-radius: 0 0 4% 4%; }
   figure img {
     width: 100%;
@@ -115,9 +124,9 @@ figure {
   margin-right: 0.5em; }
 
 .description {
-  padding-left: 1em;
-  font-family: "Roboto", sans-serif;
-  margin-top: 4%; }
+  padding: 2%;
+  margin: 0;
+  font-family: "Roboto", sans-serif; }
   .description p {
     padding-bottom: 1em;
     margin: 0; }
@@ -128,6 +137,7 @@ figure {
 #navigation {
   padding: 0;
   margin: 4%;
+  padding-bottom: 10%;
   font-family: "Roboto", sans-serif; }
   #navigation ol {
     padding: 0;
@@ -154,6 +164,16 @@ figure {
     left: -3%;
     top: 31%; }
   #navigation i {
-    padding: 3% 3% 3% 0%; }
+    padding: 3%;
+    margin: 0;
+    color: #7e7e7e; }
+
+.text-deco-none {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
