@@ -67,6 +67,27 @@ header h1 {
   flex-direction: row;
   justify-content: center; }
 
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.align {
+  padding: 0;
+  margin: 0 11% 0 -9%;
+  color: black;
+  font-size: larger;
+  font-weight: unset; }
+
+.restaurant {
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5f5;
+  border-radius: 2em 2em 0 0;
+  list-style-type: none;
+  padding: 1em;
+  margin: -2em 0 0 0; }
+
 /*----------footer---------*/
 footer {
   background-color: #222121;
@@ -93,6 +114,14 @@ footer {
 main {
   background-color: #f2f2f2;
   padding-bottom: 10%; }
+  main .menilmontant-img {
+    width: 100%; }
+
+.restaurant-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Shrikhand", sans-serif; }
 
 /*---------restaurants---------*/
 section a {

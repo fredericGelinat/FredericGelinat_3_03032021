@@ -1,30 +1,39 @@
 //----------@mixin-----------------
-//-------------display---------------
+//-------------display-flex---------------
 @mixin text-align-center($direction) {
-    display: flex;
-    flex-direction: $direction;
-    text-align: center;
-  }
-  @mixin justify-content-center($direction) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: center;
-  }
-  //-----------padding-----------------
-  @mixin padding-margin  ($padding, $margin){
-    padding: $padding;
-    margin: $margin;
-  }
-    
-  //----------border-radius---------
-  @mixin border-radius ($degres) {
-    border-radius: $degres;
-  }
-  //----------box-shadow-------------
-  @mixin box-shadow ($params) {
-    box-shadow: $params;
-  }
-  //----------text-deco------
-  @mixin text-deco ($params) {
-    text-decoration: $params;
-  }
+  display: flex;
+  flex-direction: $direction;
+  text-align: center;
+}
+@mixin justify-content-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}
+@mixin align-items-center($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+//-----------padding-----------------
+@mixin padding-margin($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+//----------size & weight---------
+@mixin size-weight ($unite, $params) {
+  font-size: $unite;
+  font-weight: $params;
+}
+//----------border-radius---------
+@mixin border-radius($degres) {
+  border-radius: $degres;
+}
+//----------box-shadow-------------
+@mixin box-shadow($params) {
+  box-shadow: $params;
+}
+//----------text-deco------
+@mixin text-deco($params) {
+  text-decoration: $params;
+}

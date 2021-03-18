@@ -2,6 +2,15 @@
 main {
     background-color: #f2f2f2;
     padding-bottom: 10%;
+
+    & .menilmontant-img{
+      width: 100%;
+      
+    }
+  }
+  .restaurant-name{
+    @include align-items-center (space-around); 
+    font-family: "Shrikhand", sans-serif;
   }
   /*---------restaurants---------*/
   section a {
