@@ -1,21 +1,64 @@
+//./dart-sass/sass sass/style.scss style.css --watch*
+//--------VARIABLES--------------------
+//------------color-------------
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-third: #99e2d0;
 
+$color-search: #eaeaea;
+$color-background: #f6f6f6;
+//----------padding-------------------
+$padding: 7% 0 0% 7%;
 
-@import "../sass/utiles/variables";
-@import "../sass/utiles/mixins";
+//-----------box-shadow---------------------
+$box-shadow-grey-around: 7px 7px 10px #d2cccc;
+$box-shadow-grey-up: 1px -1px 1px $color-background;
+//----------héritage----------------
+%column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+%row-center {
+  display: flex;
+  justify-content: center;
+}
 
-@import "../sass/bases/bases";
+//----------@mixin-----------------
+//-------------display---------------
+@mixin text-align-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  text-align: center;
+}
+@mixin justify-content-center($direction) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+//-----------padding-----------------
+@mixin padding  ($padding){
+  padding: $padding;
+}
+  
+//----------border-radius---------
+@mixin border-radius ($degres) {
+  border-radius: $degres;
+}
+//----------box-shadow-------------
+@mixin box-shadow ($params) {
+  box-shadow: $params;
+}
+//----------font-----------------------
+@mixin googleFonts($font) {
+  @import url("https://fonts.googleapis.com/css2?family=#{$font}");
+}
+@include googleFonts(Roboto); //--textes---
+@include googleFonts(Shrikhand); //------logo et titres---
 
-@import "../sass/componants/button";
-@import "../sass/componants/form";
-@import "../sass/componants/search";
-
-@import "../sass/pages/main";
-@import "../sass/pages/nav";
-
-@import "../sass/layout/footer";
-@import "../sass/layout/header";
-
-
-
-
-
+@import "body";
+@import "header";
+@import "search";
+@import "nav";
+@import "main";
+@import "footer";

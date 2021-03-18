@@ -10,22 +10,11 @@
     flex-direction: $direction;
     justify-content: center;
   }
-  //-----------padding & margin----------------
-  @mixin padding-margin  ($attributs, $unite){
-    padding: $attributs;
-    margin: $unite;
+  //-----------padding-----------------
+  @mixin padding  ($padding){
+    padding: $padding;
   }
-  /*@mixin margin ($top, $right, $bottom, $left) {
-    margin-top: $top;
-    margin-right:  $right; 
-    margin-bottom: $bottom;
-    margin-left:  $left;
-  }*/
-
-  @mixin size-weight ($size, $params) {
-    font-size: $size;
-    font-weight: $params;
-  }
+    
   //----------border-radius---------
   @mixin border-radius ($degres) {
     border-radius: $degres;

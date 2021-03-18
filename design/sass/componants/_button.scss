@@ -7,7 +7,7 @@ button {
     border: none;
     @include box-shadow($box-shadow-grey-around);
   
-    @include padding-margin(8%, 0);
+    @include padding(8%);
   
     & span {
       color: white;

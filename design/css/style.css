@@ -1,64 +1,26 @@
-/*@mixin margin ($top, $right, $bottom, $left) {
-  margin-top: $top;
-  margin-right:  $right; 
-  margin-bottom: $bottom;
-  margin-left:  $left;
-}*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
+.rechercher, form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+header h1 {
+  display: flex;
+  justify-content: center; }
+
 /*--------general--------*/
 body {
   margin: 0; }
 
 /*---------header--------*/
-header {
-  font-family: "Shrikhand", sans-serif; }
-  header h1 {
-    font-size: xx-large;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  header .elements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0; }
-  header .arrow {
-    margin: 0 35px 0 -25px;
-    color: black;
-    font-size: larger; }
-
-/*.elements {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}*/
-button {
-  background: linear-gradient(#ff79da, #9356dc);
-  border-radius: 37px;
-  color: white;
-  border: none;
-  box-shadow: 7px 7px 10px #d2cccc;
-  padding: 8%;
-  margin: 0; }
-  button span {
-    color: white;
-    font-weight: bold; }
-
-form {
-  background-color: #eaeaea;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+header h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: xx-large; }
 
 /*--------search---------*/
 .rechercher {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-top: -2%; }
 
 #textes {
@@ -67,8 +29,7 @@ form {
   text-align: center;
   background-color: #f6f6f6; }
   #textes #centre {
-    padding: 10%;
-    margin: 0; }
+    padding: 10%; }
 
 #search {
   display: flex;
@@ -76,8 +37,6 @@ form {
   justify-content: center;
   background-color: #eaeaea;
   padding: 4%;
-  margin: 0;
-  /*plusieurs mixin dans un selecteur???*/
   box-shadow: 1px -1px 1px #f6f6f6; }
   #search input {
     border: none;
@@ -88,117 +47,64 @@ form {
   #search #site-search .icone {
     display: flex; }
 
-/*---------corps du site--------*/
-main {
-  background-color: #f2f2f2; }
-  main img {
-    width: 100%; }
-
-/*---------restaurants---------*/
-section {
-  display: flex;
-  flex-wrap: wrap; }
-
-section a {
-  text-decoration: none;
-  color: black; }
-
-.restaurants h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: larger;
-  padding: 0;
-  margin: 4%; }
-
-figure {
-  background-color: white;
-  padding: 0;
-  margin: 4%;
-  border-radius: 0 0 4% 4%; }
-  figure img {
-    width: 100%;
-    height: 10em;
-    border-radius: 4% 4% 0 0; }
-  figure .sticker {
-    position: absolute;
-    background-color: #99e2d0;
-    left: 13em;
-    padding: 3%;
-    border-radius: 2px; }
-  figure .new {
-    color: #008766;
+button {
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 37px;
+  color: white;
+  border: none;
+  box-shadow: 7px 7px 10px #d2cccc;
+  padding: 8%; }
+  button span {
+    color: white;
     font-weight: bold; }
 
-.like {
-  position: absolute;
-  right: 10%;
-  margin-top: -2.4em;
-  font-size: x-large;
-  margin-right: 0.5em; }
+/*& h2 {
+      font-size: x-large;
+      text-align: center;
+    }
+    & 
+    & 
+    section {
+      background-color: #f2f2f2;
+      height: 19em;
+      width: auto;
+    }
+    & .font {
+      font-weight: bold;
+      font-size: 1em;
+    }
+  }*/
+form {
+  background-color: #eaeaea;
+  /*box-shadow: 15px 25px 6px 28px #cfcfcf;*/ }
 
-.description {
-  padding: 4%;
-  margin: 0;
-  font-family: "Roboto", sans-serif; }
-  .description p {
-    padding-bottom: 1em;
-    margin: 0; }
-  .description h3 {
-    margin: 0; }
-
-/*-------------page-1.html-----------*/
-.menu {
-  position: relative;
-  z-index: 1;
-  background-color: #f5f5f5;
-  border-radius: 2em 2em 0 0;
-  list-style-type: none;
-  padding: 1em;
-  margin-top: -2em; }
-  .menu .align-top-menu-name {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .menu i {
-    padding: 0;
-    margin: 20px;
-    font-size: x-large;
-    font-weight: none; }
-  .menu .font {
-    font-family: "Shrikhand", sans-serif;
-    font-size: x-large;
-    font-weight: bolder; }
-
-.menilmontant {
-  padding: 0;
-  margin: 0; }
-
-main article .entrees {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200; }
-  main article .entrees .underline {
-    border-bottom: 2px solid #99e2d0; }
-
+/* & .icone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $color-search;
+    }
+    &
+    
+  }*/
 /*--------NAV---------*/
 #navigation {
-  /*@include padding-margin (4%, 0);*/
-  padding-bottom: 10%;
+  padding: 7% 0 0% 7%;
   font-family: "Roboto", sans-serif; }
   #navigation ol {
     padding: 0;
     counter-reset: liste; }
   #navigation li {
     background-color: #fff;
-    padding: 7%;
-    margin: 4%;
+    padding: 4% 0 4% 7px;
     position: relative;
+    margin-bottom: 4%;
+    width: 89%;
     border-radius: 1.5em;
-    /*text-align: center;*/
+    text-align: center;
     list-style-type: none;
     counter-increment: liste;
-    box-shadow: 7px 7px 10px #d2cccc;
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold; }
+    box-shadow: 7px 7px 10px #d2cccc; }
   #navigation li:before {
     content: counter(liste);
     padding: 1% 3% 1%;
@@ -210,27 +116,64 @@ main article .entrees {
     position: absolute;
     left: -3%;
     top: 31%; }
-  #navigation h2 {
-    padding: 0;
-    margin: 4%;
-    font-size: larger; }
   #navigation i {
-    color: #7e7e7e; }
+    padding: 3% 3% 3% 0%; }
+
+/*---------corps du site--------*/
+main {
+  background-color: #f2f2f2;
+  padding-bottom: 10%; }
+
+/*---------restaurants---------*/
+section a {
+  text-decoration: none;
+  color: black; }
+
+.restaurants h2 {
+  padding: 7% 0 0% 7%;
+  font-family: "Roboto", sans-serif; }
+
+figure {
+  background-color: white;
+  margin: 12% 7% 7% 7%;
+  border-radius: 0 0 4% 4%; }
+  figure img {
+    width: 100%;
+    height: 10em;
+    border-radius: 4% 4% 0 0; }
+
+.like {
+  position: absolute;
+  right: 10%;
+  margin-top: -2.4em;
+  font-size: x-large;
+  margin-right: 0.5em; }
+
+.description {
+  padding-left: 1em;
+  font-family: "Roboto", sans-serif;
+  margin-top: 4%; }
+  .description p {
+    padding-bottom: 1em;
+    margin: 0; }
+  .description h3 {
+    margin: 0; }
 
 /*----------footer---------*/
 footer {
   background-color: #222121;
   color: #dfdbdb;
-  display: flex;
-  flex-direction: column; }
+  height: 12em;
+  margin-top: -5%; }
   footer p {
-    padding-left: 7%;
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 7% 0 0% 7%;
     font-family: "Shrikhand", sans-serif; }
   footer ul {
     list-style-type: none;
-    padding: 0 0 5% 7%;
-    display: flex;
-    flex-direction: column; }
+    padding: 0 0 5% 7%; }
   footer li {
     margin: 1%;
     font-family: "Roboto", sans-serif; }
