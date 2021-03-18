@@ -1,0 +1,39 @@
+//----------font-----------------------
+@mixin googleFonts($font) {
+  @import url("https://fonts.googleapis.com/css2?family=#{$font}");
+}
+@include googleFonts(Roboto); //--textes---
+@include googleFonts(Shrikhand); //------logo et titres---
+
+/*--------general--------*/
+body {
+  margin: 0;
+}
+/*---------header--------*/
+header {
+  font-family: "Shrikhand", sans-serif;
+  & h1 {
+    font-size: xx-large;
+    @include justify-content-center(row);
+    
+  }
+  .elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding-margin (0, 0);
+  }
+  .arrow {
+    margin: 0 35px 0 -25px;
+    color: $color-black;
+    font-size: larger;
+  }
+}
+/*.elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}*/
+
+
