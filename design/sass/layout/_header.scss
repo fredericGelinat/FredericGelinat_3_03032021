@@ -1,0 +1,7 @@
+  /*---------header--------*/
+  header  h1 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: xx-large;
+    @include justify-content-center (row);
+  
+}
