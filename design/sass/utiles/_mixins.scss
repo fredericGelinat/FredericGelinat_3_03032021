@@ -11,8 +11,9 @@
     justify-content: center;
   }
   //-----------padding-----------------
-  @mixin padding  ($padding){
+  @mixin padding-margin  ($padding, $margin){
     padding: $padding;
+    margin: $margin;
   }
     
   //----------border-radius---------

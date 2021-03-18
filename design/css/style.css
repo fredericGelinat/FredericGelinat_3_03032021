@@ -18,7 +18,8 @@ body {
   text-align: center;
   background-color: #f6f6f6; }
   #textes #centre {
-    padding: 10%; }
+    padding: 10%;
+    margin: 0; }
 
 #search {
   display: flex;
@@ -26,6 +27,7 @@ body {
   justify-content: center;
   background-color: #eaeaea;
   padding: 4%;
+  margin: 0;
   /*plusieurs mixin dans un selecteur???*/
   box-shadow: 1px -1px 1px #f6f6f6; }
   #search input {
@@ -49,7 +51,8 @@ button {
   color: white;
   border: none;
   box-shadow: 7px 7px 10px #d2cccc;
-  padding: 8%; }
+  padding: 8%;
+  margin: 0; }
   button span {
     color: white;
     font-weight: bold; }
@@ -123,17 +126,17 @@ figure {
 
 /*--------NAV---------*/
 #navigation {
-  padding: 7% 0 0% 7%;
+  padding: 0;
+  margin: 4%;
   font-family: "Roboto", sans-serif; }
   #navigation ol {
     padding: 0;
     counter-reset: liste; }
   #navigation li {
     background-color: #fff;
-    padding: 4% 0 4% 7px;
+    padding: 4%;
+    margin: 4%;
     position: relative;
-    margin-bottom: 4%;
-    width: 89%;
     border-radius: 1.5em;
     text-align: center;
     list-style-type: none;

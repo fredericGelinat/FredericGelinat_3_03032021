@@ -8,14 +8,14 @@
     @include text-align-center (column);
     background-color: $color-background;
     & #centre {
-      @include padding(10%);
+      @include padding-margin (10%, 0);
     }
   }
   
   #search {
     @include justify-content-center(row);
     background-color: $color-search;
-    @include padding(4%);
+    @include padding-margin (4%, 0);
     /*plusieurs mixin dans un selecteur???*/
     @include box-shadow($box-shadow-grey-up);
     & input {
