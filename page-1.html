@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="design/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -14,33 +14,48 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-      <img class="logo" src="images/logo/ohmyfood.png" alt="logoOhMyFood" />
+      <div class="elements">
+        <a href="index.html" class="arrow"><i class="fas fa-arrow-left"></i></a>
+
+        <h1>Ohmyfood</h1>
+      </div>
     </header>
     <main>
-      <img
-        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-        alt="restaurant Menilmontant Paris"
-      />
-      <section>
-        <h1>La palette du goût</h1>
-        <div>
-            <i class="far fa-heart"></i>
+      <figure class="menilmontant">
+        <img
+          src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="restaurant Menilmontant Paris"
+        />
+      </figure>
+      <section class="menu">
+        <div class="align-top-menu-name">
+          <span class="font">La palette du goût</span>
+
+          <i class="far fa-heart"></i>
         </div>
         <article>
-            <h2>Entrées</h2>
-            <dl>
-                <dt>Fricassé d'escargot</dt>
-                <dd><p>Au piment d'Espelette</p>25€</dd>
-            </dl>
-            <dl>
-                <dt>Foie gras de canard mi-cuit</dt>
-                <dd><p>Et ses copeaux de truffe noire</p>35€</dd>
-            </dl>
-            <dl>
-                <dt>Oeuf au plat</dt>
-                <dd><p>Assaisonné à la truffe sur lit de caviar</p>20€</dd>
-            </dl>
+          <h2 class="entrees"><span class="underline"> Entr</span>ées</h2>
+          <dl>
+            <dt>Fricassé d'escargot</dt>
+            <dd>
+              <p>Au piment d'Espelette</p>
+              25€
+            </dd>
+          </dl>
+          <dl>
+            <dt>Foie gras de canard mi-cuit</dt>
+            <dd>
+              <p>Et ses copeaux de truffe noire</p>
+              35€
+            </dd>
+          </dl>
+          <dl>
+            <dt>Oeuf au plat</dt>
+            <dd>
+              <p>Assaisonné à la truffe sur lit de caviar</p>
+              20€
+            </dd>
+          </dl>
         </article>
       </section>
     </main>
