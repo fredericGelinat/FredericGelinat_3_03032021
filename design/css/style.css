@@ -114,8 +114,10 @@ footer {
 main {
   background-color: #f2f2f2;
   padding-bottom: 10%; }
-  main .menilmontant-img {
-    width: 100%; }
+  main .restaurants-img {
+    width: 100%;
+    height: 13em;
+    object-fit: cover; }
 
 /*---------restaurants INDEX---------*/
 section a {
@@ -137,7 +139,8 @@ figure {
   figure img {
     width: 100%;
     height: 10em;
-    border-radius: 4% 4% 0 0; }
+    border-radius: 4% 4% 0 0;
+    object-fit: cover; }
 
 .like {
   position: absolute;
@@ -168,7 +171,7 @@ figure {
 
 .titre-entrees h2 {
   padding: 0;
-  margin: 0;
+  margin: 25px 0 0 0;
   text-transform: uppercase;
   font-size: larger;
   font-weight: unset;
@@ -189,8 +192,7 @@ figure {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 4% 0 2% 0;
-    box-shadow: 7px 7px 10px #d2cccc; }
+    margin: 4% 0 2% 0; }
   .starter p {
     padding: 0;
     margin: 2% 4% 2% 4%; }
