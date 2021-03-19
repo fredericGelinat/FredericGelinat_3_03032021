@@ -16,8 +16,7 @@
     @include justify-content-center(row);
     background-color: $color-search;
     @include padding-margin (4%, 0);
-    /*plusieurs mixin dans un selecteur???*/
-    @include box-shadow($box-shadow-grey-up);
+    @include box-shadow(-1px 0px 7px 0px #595656);
     & input {
       border: none;
       background-color: $color-search;

@@ -30,8 +30,7 @@ body {
   background-color: #eaeaea;
   padding: 4%;
   margin: 0;
-  /*plusieurs mixin dans un selecteur???*/
-  box-shadow: 1px -1px 1px #f6f6f6; }
+  box-shadow: -1px 0px 7px 0px #595656; }
   #search input {
     border: none;
     background-color: #eaeaea;
@@ -54,15 +53,20 @@ button {
   border: none;
   box-shadow: 7px 7px 10px #d2cccc;
   padding: 8% 19% 8% 19%;
-  margin: 10% 0 15% 0; }
+  margin: 4% 0 15% 0; }
   button span {
     color: white;
-    font-weight: bold; }
+    font-weight: bold;
+    white-space: nowrap; }
 
 #centre {
   display: flex;
   justify-content: center;
   align-items: unset; }
+
+.commander {
+  padding: 8% 19% 8% 19%;
+  margin: 10% 0 15% 0; }
 
 /*---------header--------*/
 header h1 {
@@ -127,7 +131,8 @@ main {
 /*---------restaurants INDEX---------*/
 section a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  font-family: "Roboto", sans-serif; }
 
 .restaurants {
   padding-top: 6%; }
@@ -164,7 +169,7 @@ figure {
   .description h3 {
     margin: 0; }
 
-/*--------------LA PALETTE DU GOUT------*/
+/*-------------- pages------*/
 .restaurant-name {
   display: flex;
   justify-content: space-around;
@@ -173,6 +178,9 @@ figure {
   .restaurant-name i {
     font-size: x-large;
     font-weight: unset; }
+
+.weight {
+  font-weight: bold; }
 
 .titre-menu h2 {
   padding: 0;
@@ -187,30 +195,47 @@ figure {
   width: 17%;
   display: inline-block; }
 
-.starter {
+.dishes {
   list-style-type: none;
   padding: 0;
   margin: 0; }
-  .starter li {
+  .dishes li {
     background-color: white;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 4% 0 2% 0; }
-  .starter p {
+  .dishes p {
     padding: 0;
     margin: 2% 4% 2% 4%; }
-  .starter .alignement {
+  .dishes .alignement {
     padding: 0;
     margin: 0 4% 2% 4%;
     display: flex;
     justify-content: space-between;
     align-items: unset; }
-  .starter #ellipsis {
+  .dishes #ellipsis {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+
+.sticker {
+  /* display: flex;
+   justify-content: flex-end;*/
+  position: absolute;
+  background-color: #99e2d0;
+  right: 10%;
+  width: 25%;
+  border-radius: 7px;
+  padding: 0;
+  margin: 5% 0 0 0; }
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  color: #008766; }
 
 /*--------NAV---------*/
 #navigation {
