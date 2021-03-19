@@ -63,7 +63,7 @@ figure {
   }
 }
 
-.titre-entrees h2 {
+.titre-menu h2 {
   @include padding-margin(0, 25px 0 0 0);
   text-transform: uppercase;
   @include size-weight(larger, unset);
