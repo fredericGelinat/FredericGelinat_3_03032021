@@ -54,10 +54,15 @@ button {
   border: none;
   box-shadow: 7px 7px 10px #d2cccc;
   padding: 8%;
-  margin: 0; }
+  margin: 10% 0 15% 0; }
   button span {
     color: white;
     font-weight: bold; }
+
+#centre {
+  display: flex;
+  justify-content: center;
+  align-items: unset; }
 
 /*---------header--------*/
 header h1 {
