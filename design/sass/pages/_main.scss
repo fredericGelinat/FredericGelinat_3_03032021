@@ -1,4 +1,3 @@
-/*---------corps du site--------*/
 main {
   background-color: #f2f2f2;
   padding-bottom: 10%;
@@ -88,6 +87,7 @@ figure {
     display: flex;
     flex-direction: column;
     @include padding-margin(0, 4% 0 2% 0);
+    
   }
 
   & p {
@@ -103,6 +103,7 @@ figure {
     text-overflow: ellipsis;
   }
 }
+
 .sticker {
  /* display: flex;
   justify-content: flex-end;*/
