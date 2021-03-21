@@ -23,8 +23,10 @@
 
     &:hover {
       transform: scale(1.05);
-      background: linear-gradient($color-secondary, $color-primary);
-      color: darken($third-complementary-color, 10);
+     background: linear-gradient($color-secondary, $color-primary);
+    /* background-color: linear-gradient($color-random-color-secondary, $color-third);
+      color: darken($color-random-color-third, 35);*/
+      color: lighten($color-random-color-primary, 10);
       transition: background-color 250ms;
     }
   }
@@ -45,6 +47,9 @@
   & i {
     @include padding-margin(3%, 0);
     color: #acabab;
+    &:hover {
+      color: lighten($color-random-color-primary, 10);
+    }
   }
 }
 /*.centre{
@@ -70,7 +75,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: lighten($third-complementary-color, 20);
+
+    background: lighten($color-third-complementary-color, 20);
+
     opacity: 0;
     z-index: -1;
     transition: opacity 550ms;

@@ -214,7 +214,7 @@ circle.is-loading::after {
   100% {
     transform: rotate(360deg);
   }
-}*/
+}
 
 .demo {
   width: 200px;
@@ -256,4 +256,4 @@ circle.is-loading::after {
 @keyframes custom-loading {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
+}*/

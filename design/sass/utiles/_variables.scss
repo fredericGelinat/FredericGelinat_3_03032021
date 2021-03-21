@@ -1,13 +1,18 @@
 //--------VARIABLES--------------------
 //------------color-------------
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-third: #99e2d0;
-$third-complementary-color:#e299ab;
+$color-primary: rgb(147, 86, 220);
+$color-secondary: rgb(255, 121, 218);
+$color-third: rgb(153, 226, 208);
+$color-third-complementary-color:rgb(226, 153, 171);
 $color-search: #eaeaea;
 $color-background: #f6f6f6;
 $color-black: black;
 $color-white: white;
+
+$color-random-color-primary: rgb(random(147),random(86),random(220));
+$color-random-color-secondary: rgb(random(255), random(121), random(218));
+$color-random-color-third: rgb(random(153), random(226), random(208));
+$color-random-third-complementary-color:rgb(random(226), random(153), random(171));
 $cd-btn-start: rgba(147, 86, 220, 0);
 $cd-btn-end: rgba(147, 86, 220, 1);
 //----------padding-------------------
