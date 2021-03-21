@@ -18,15 +18,12 @@
     box-shadow: $box-shadow-grey-around;
     cursor: pointer;
     transform: scale(1);
-    transition-property: transform;
-    transition-duration: 0.9s;
-    transition: all 450ms;
+
     transition: transform 450ms, background-color 300ms;
-    transition-delay: 0, 150ms;
-    translate: transform 2s cubic-bezier(0.17, 0.67, 0.94, 0.28);
+
     &:hover {
       transform: scale(1.05);
-      background: linear-gradient($color-secondary, $color-primary);      
+      background: linear-gradient($color-secondary, $color-primary);
       color: darken($third-complementary-color, 10);
       transition: background-color 250ms;
     }
@@ -50,11 +47,18 @@
     color: #acabab;
   }
 }
+/*.centre{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}*/
 .btn {
   border-radius: 2rem;
   background-color: $color-white;
   position: relative;
   z-index: -1;
+
   &:hover {
     .btn_bg {
       opacity: 1;
@@ -66,13 +70,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: $color-third;
+    background: lighten($third-complementary-color, 20);
     opacity: 0;
     z-index: -1;
-    transition: opacity 250ms;
+    transition: opacity 550ms;
     border-radius: 2rem;
-
-    
   }
 }
 .text-deco-none {

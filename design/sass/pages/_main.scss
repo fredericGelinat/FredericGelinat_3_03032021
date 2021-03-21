@@ -79,21 +79,54 @@ figure {
 }
 .dishes {
   list-style-type: none;
-  @include padding-margin(0, 0);
+  @include padding-margin(0, 0);}
 
-  & li {
+ li {
     background-color: $color-white;
     @include border-radius(15px);
     display: flex;
     flex-direction: column;
     @include padding-margin(0, 4% 0 2% 0);
     
+    & .container {
+      display: flex;
+      .presentation {
+        width: 100%;
+      
+      }
+      .price {
+        display: flex;
+      }
+      & span {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+      
+    
+    }
+
+    .green-box {
+      opacity: 0;
+     
+    }
+     .green-box:hover {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      opacity: 1;
+      transform: scalex(3) scaleY(3);
+      background-color: blueviolet;
+      overflow: hidden;
+     
+    
+    }
   }
 
-  & p {
+  p {
     @include padding-margin(0, 2% 4% 2% 4%);
   }
-  & .alignement {
+ .alignement {
     @include padding-margin(0, 0 4% 2% 4%);
     @include display-justifyC-alignI(flex, space-between, unset);
   }
@@ -102,20 +135,19 @@ figure {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
+
 
 .sticker {
- /* display: flex;
+  /* display: flex;
   justify-content: flex-end;*/
   position: absolute;
   background-color: $color-third;
   right: 10%;
   width: 25%;
-  @include border-radius (7px);
-  @include padding-margin (0, 5% 0 0 0);
+  @include border-radius(7px);
+  @include padding-margin(0, 5% 0 0 0);
 }
 .new {
-  @include display-justifyC-alignI (flex, center, unset);
+  @include display-justifyC-alignI(flex, center, unset);
   color: #008766;
- 
 }
