@@ -124,20 +124,20 @@
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 1.2s linear infinite;
+  animation: flash 0.99s linear infinite;
 }
 @keyframes flash {
   0%{
-    color: $color-secondary;
+    color: $color-primary;
     text-shadow: 0 0 7px $color-secondary ;
   }
   90%{
-    color: $color-primary;
+    color: $color-secondary;
     text-shadow: none;
 
   }
   100%{
-    color:$color-secondary ;
+    color:$color-primary ;
     text-shadow: 0 0 7px $color-secondary;
   }
 }
@@ -186,7 +186,7 @@
   /* 20=2000%*/
   filter: contrast(2);
   z-index: 1;
-  animation: load-2 0s 2s forwards;
+  animation: load-2 3s 3s forwards;
   
 }
 .conteneur .dot
@@ -239,27 +239,46 @@ circle {
 @keyframes point {
   0%{
       opacity: 1;
+      color: $color-primary;
+      text-shadow: 0 0 7px $color-secondary
   }
   50%{
       transform: translateX(96px);
   }
+  90%{
+    color: $color-secondary;
+    text-shadow: none;
+
+  }
   100%{
       opacity: 0;
       display: none;
+      color:$color-primary ;
+      text-shadow: 0 0 7px $color-secondary;
   }
 }
 @keyframes points{
   0%{
       opacity: 1;
+      color: $color-primary;
+      text-shadow: 0 0 7px $color-secondary
   }
   50%{
       transform: translateX(-31px);
   }
+  90%{
+    color: $color-secondary;
+    text-shadow: none;
+
+  }
   100%{
       opacity: 0;
       display: none;
+      color:$color-primary ;
+    text-shadow: 0 0 7px $color-secondary;
   }
 }
+
 @keyframes load-1 {
   0%{
     opacity: 1;
