@@ -1,30 +1,168 @@
+
+/*.conteneur{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  width: 142px;
+  height: 48px;
+  background-color: rgb(255, 254, 254);
+  /* 20=2000%
+  filter: contrast(20);
+  z-index: 1;
+  animation: load 0s 2s forwards;
+  
+}
+.conteneur .dot
+{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  border-radius: 50%;
+  background-color: black;
+  animation: point 3s infinite;
+  z-index: -10;
+
+}
+
+.conteneur .dots span{
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background-color:rgb(17, 17, 16) ;
+  border-radius: 50%;
+}
+.conteneur .dots{
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: points 3s infinite;
+}
+@keyframes point {
+  0%{
+      opacity: 1;
+  }
+  50%{
+      transform: translateX(96px);
+  }
+  100%{
+      opacity: 0;
+      display: none;
+  }
+}
+@keyframes points{
+  0%{
+      opacity: 1;
+  }
+  50%{
+      transform: translate(-31px);
+  }
+  100%{
+      opacity: 0;
+      display: none;
+  }
+}
+@keyframes load {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }*/
+
+
+
+
+
+
+
 .section-1 {
-  background: radial-gradient(circle at bottom, #9356dc 0%, #ff79da 100%);
+  background: radial-gradient(circle at bottom, $color-primary 0%, $color-secondary 100%);
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  
   position: fixed;
   top: 0;
   left: 0;
 
-  color: #353535;
+  color: $color-third;
   width: 100%;
 
   z-index: 1;
-  animation: load 0s 2s forwards;
+  animation: load-1 0s 2s forwards;
+  & span{
+    font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.loading {
+/*.loading {
   width: 200px;
   height: 200px;
+}*/
+.conteneur{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  width: 142px;
+  height: 48px;
+  background-color: radial-gradient(circle at bottom, $color-primary 0%, $color-secondary 100%);
+  /* 20=2000%*/
+  filter: contrast(20);
+  z-index: 1;
+  animation: load-2 0s 2s forwards;
+  
 }
+.conteneur .dot
+{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  border-radius: 50%;
+  background-color: $color-third;
+  animation: point 3s infinite;
+  z-index: -10;
+
+}
+
+.conteneur .dots span{
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background-color:$color-third-complementary-color;
+  border-radius: 50%;
+  z-index: -10;
+}
+.conteneur .dots{
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: points 3s infinite;
+}
+
+/*
 circle {
   fill: none;
-  stroke: #99e2d0;
+  stroke: $color-third-complementary-color;
   stroke-width: 10px;
   stroke-dasharray: 100 100;
   stroke-dashoffset: 70;
@@ -35,8 +173,51 @@ circle {
   transition-delay: 5s;
   z-index: -10;
   width: 100vh;
+}*/
+@keyframes point {
+  0%{
+      opacity: 1;
+  }
+  50%{
+      transform: translateX(96px);
+  }
+  100%{
+      opacity: 0;
+      display: none;
+  }
 }
-
+@keyframes points{
+  0%{
+      opacity: 1;
+  }
+  50%{
+      transform: translate(-31px);
+  }
+  100%{
+      opacity: 0;
+      display: none;
+  }
+}
+@keyframes load-1 {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+    z-index: -100;
+  }
+}
+  @keyframes load-2 {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      display: none;
+      z-index: -100;
+    }
+  /*
 @-webkit-keyframes rotation {
   0% {
     stroke-dasharray: 100 100;
@@ -68,7 +249,22 @@ circle {
     display: none;
     z-index: -1;
   }
-}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*.loading{
   
     
@@ -337,3 +533,4 @@ circle.is-loading::after {
   100% { transform: rotate(360deg); }
 }
 */
+}
