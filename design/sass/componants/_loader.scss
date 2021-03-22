@@ -100,7 +100,7 @@
   width: 100%;
 
   z-index: 1;
-  animation: load-1 0s 10s cubic-bezier(1,.02,0,1.28) forwards;
+  animation: load-1 0s 5s cubic-bezier(1,.02,0,1.28) forwards;
   & span{
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -124,7 +124,7 @@
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 0.99s cubic-bezier(1,.02,0,1.28) infinite;
+  animation: flash 0.99s cubic-bezier(.52,.14,0,1.28) infinite;
 }
 @keyframes flash {
   0%{

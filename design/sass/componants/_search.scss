@@ -1,28 +1,31 @@
 /*--------search---------*/
 .rechercher {
-    font-family: "Roboto", sans-serif;
-    @include justify-content-center(column);
-    margin-top: -2%;
+  font-family: "Roboto", sans-serif;
+  @include justify-content-center(column);
+  margin-top: -2%;
+}
+#textes {
+  @include text-align-center(column);
+  background-color: $color-background;
+  & #centre {
+    @include padding-margin(10%, 0);
   }
-  #textes {
-    @include text-align-center (column);
-    background-color: $color-background;
-    & #centre {
-      @include padding-margin (10%, 0);
-    }
-  }
-  
-  #search {
-    @include justify-content-center(row);
+}
+
+#search {
+  @include justify-content-center(row);
+  background-color: $color-search;
+  @include padding-margin(4%, 0);
+  @include box-shadow(-1px 0px 7px 0px #595656);
+  & input {
+    border: none;
     background-color: $color-search;
-    @include padding-margin (4%, 0);
-    @include box-shadow(-1px 0px 7px 0px #595656);
-    & input {
-      border: none;
-      background-color: $color-search;
-      @include text-align-center(column);
-    }
-    & #site-search .icone {
-      display: flex;
-    }
+    @include text-align-center(column);
   }
+  & #site-search .icone {
+    display: flex;
+  }
+}
+
+
+

@@ -83,6 +83,9 @@
     transition: opacity 550ms;
     border-radius: 2rem;
   }
+  .fa-li{
+    left: 0;
+  }
 }
 .text-deco-none {
   @include text-deco(none);
@@ -92,3 +95,11 @@
   justify-content: space-around;
   align-items: center;
 }
+
+
+
+
+
+
+  
+ 
