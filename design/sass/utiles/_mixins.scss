@@ -43,7 +43,7 @@
   text-decoration: $params;
 }
 
-@mixin radial-gradient-transparent($X-Y, $color, $X-Y, $color) {
-  background: radial-gradient(ellipse at $X-Y, $color, transparent),
-    radial-gradient(ellipse at $X-Y, $color, transparent);
+@mixin radial-gradient-transparent($X-Y, $color, $color, $X-Y, $color, $color) {
+  color: radial-gradient(ellipse at $X-Y, $color, $color),
+    radial-gradient(ellipse at $X-Y, $color, $color);
 }

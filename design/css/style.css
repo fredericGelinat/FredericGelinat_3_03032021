@@ -214,7 +214,7 @@ button {
   color: #99e2d0;
   width: 100%;
   z-index: 1;
-  animation: load-1 0s 2s forwards; }
+  animation: load-1 0s 10s cubic-bezier(1, 0.02, 0, 1.28) forwards; }
   .section-1 span {
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -235,18 +235,22 @@ button {
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 0.99s linear infinite; }
+  animation: flash 0.99s cubic-bezier(1, 0.02, 0, 1.28) infinite; }
 
 @keyframes flash {
   0% {
     color: #9356dc;
+    /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
     text-shadow: 0 0 7px #ff79da; }
   90% {
     color: #ff79da;
+    /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
     text-shadow: none; }
   100% {
     color: #9356dc;
-    text-shadow: 0 0 7px #ff79da; } }
+    text-shadow: 0 0 7px #9356dc;
+    /*$color-secondary;*/
+    /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/ } }
 .lettre:nth-child(1) {
   animation-delay: 0.1s; }
 
@@ -893,7 +897,7 @@ p {
       background: linear-gradient(#ff79da, #9356dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #8c6ec5;
+      color: #5450dd;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -911,7 +915,7 @@ p {
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #8c6ec5; }
+      color: #5450dd; }
 
 /*.centre{
   position: absolute;

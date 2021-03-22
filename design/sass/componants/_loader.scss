@@ -100,7 +100,7 @@
   width: 100%;
 
   z-index: 1;
-  animation: load-1 0s 2s forwards;
+  animation: load-1 0s 10s cubic-bezier(1,.02,0,1.28) forwards;
   & span{
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -124,21 +124,25 @@
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 0.99s linear infinite;
+  animation: flash 0.99s cubic-bezier(1,.02,0,1.28) infinite;
 }
 @keyframes flash {
   0%{
     color: $color-primary;
+     /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
     text-shadow: 0 0 7px $color-secondary ;
   }
+ 
   90%{
-    color: $color-secondary;
+   color: $color-secondary;
+   /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
     text-shadow: none;
-
   }
   100%{
     color:$color-primary ;
-    text-shadow: 0 0 7px $color-secondary;
+    text-shadow: 0 0 7px  $color-primary; 
+    /*$color-secondary;*/
+    /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
   }
 }
 .lettre:nth-child(1){
