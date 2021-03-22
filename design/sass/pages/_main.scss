@@ -43,7 +43,6 @@ figure {
   margin-top: -2.4em;
   font-size: x-large;
   margin-right: 0.5em;
-  
 }
 .description {
   @include padding-margin(2%, 0);
@@ -81,63 +80,57 @@ figure {
 }
 .dishes {
   list-style-type: none;
-  @include padding-margin(0, 0);}
+  @include padding-margin(0, 0);
+}
 
- li {
-    background-color: $color-white;
-    @include border-radius(15px);
+li {
+  background-color: $color-white;
+  @include border-radius(15px);
+  display: flex;
+  flex-direction: column;
+  @include padding-margin(0, 4% 0 2% 0);
+
+  & .container {
     display: flex;
-    flex-direction: column;
-    @include padding-margin(0, 4% 0 2% 0);
-    
-    & .container {
-      display: flex;
-      .presentation {
-        width: 100%;
-      
-      }
-      .price {
-        display: flex;
-      }
-      & span {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-      }
-      
-    
+    .presentation {
+      width: 100%;
     }
-
-    .green-box {
-      opacity: 0;
-     
-    }
-     .green-box:hover {
+    .price {
       display: flex;
-      justify-content: center;
+    }
+    & span {
+      display: flex;
+      justify-content: flex-end;
       flex-direction: column;
-      opacity: 1;
-      transform: scalex(3) scaleY(3);
-      background-color: blueviolet;
-      overflow: hidden;
-     
-    
     }
   }
 
-  p {
-    @include padding-margin(0, 2% 4% 2% 4%);
+  .green-box {
+    opacity: 1;
   }
- .alignement {
-    @include padding-margin(0, 0 4% 2% 4%);
-    @include display-justifyC-alignI(flex, space-between, unset);
-  }
-  #ellipsis {
-    white-space: nowrap;
+  .green-box:hover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transform: scalex(3) scaleY(3);
+    background-color: blueviolet;
     overflow: hidden;
-    text-overflow: ellipsis;
   }
+}
 
+p {
+  @include padding-margin(0, 2% 4% 2% 4%);
+}
+.alignement {
+  @include padding-margin(0, 0 4% 2% 4%);
+  @include display-justifyC-alignI(flex, space-between, unset);
+}
+#ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .sticker {
   /* display: flex;
@@ -153,3 +146,6 @@ figure {
   @include display-justifyC-alignI(flex, center, unset);
   color: #008766;
 }
+/*--------------MAIN PAGE-1--------------------*/ /*--------------MAIN PAGE-1--------------------*/
+/*--------------MAIN PAGE-1--------------------*/ /*--------------MAIN PAGE-1--------------------*/
+

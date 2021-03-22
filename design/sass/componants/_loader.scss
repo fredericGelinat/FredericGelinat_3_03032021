@@ -124,7 +124,7 @@
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 0.99s cubic-bezier(.52,.14,0,1.28) infinite;
+  animation: flash .9s cubic-bezier(.52,.14,0,1.28) infinite;
 }
 @keyframes flash {
   0%{
@@ -146,39 +146,89 @@
   }
 }
 .lettre:nth-child(1){
-  animation-delay: 0.1s;
+  animation-delay: 0.30s;
 
 }
 .lettre:nth-child(2){
-  animation-delay: 0.2s;
+  animation-delay: 0.40s;
   
 }
 .lettre:nth-child(3){
-  animation-delay: 0.3s;
+  animation-delay: 0.50s;
   
 }
 .lettre:nth-child(4){
-  animation-delay: 0.4s;
+  animation-delay: .6s;
   
 }
 .lettre:nth-child(5){
-  animation-delay: 0.5s;
+  animation-delay: .7s;
   
 }
 .lettre:nth-child(6){
-  animation-delay: 0.6s;
+  animation-delay: .8s;
   
 }
 .lettre:nth-child(7){
-  animation-delay: 0.7s;
+  animation-delay: 0.9s;
   
 }
 .lettre:nth-child(8){
-  animation-delay: 0.8s;
+  animation-delay: 1s;
   
 }
+.lettre-1{
+  color: $color-primary;
+  
+}
+.lettre-2{
+  color: $color-secondary;
+  
+  
+}
+.lettre-3{
+  color: $color-third;
+  
+}
+.lettre-4{
+  color: $color-primary;
+  
+}
+.lettre-5{
+  color: $color-secondary;
+  
+}.lettre-6{
+  color: $color-third;
+  
+}.lettre-7{
+  color: $color-primary;
+  
+}.lettre-8{
+  color: $color-secondary;
+  
+}
+@keyframes lettres {
+  0%{
+    opacity: 1;
+    color: $color-primary;
+    text-shadow: 0 0 7px $color-primary;
+}
+50%{
+    transform: translateX(96px);
+}
+90%{
+  color: $color-secondary;
+  text-shadow: none;
 
-
+}
+100%{
+    opacity: 1;
+    
+    color:$color-primary ;
+    text-shadow: 0 0 7px $color-secondary;
+  
+}
+}
 .conteneur{
   position: absolute;
   top: 50%;

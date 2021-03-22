@@ -47,3 +47,9 @@
   color: radial-gradient(ellipse at $X-Y, $color, $color),
     radial-gradient(ellipse at $X-Y, $color, $color);
 }
+
+@mixin color ($color) {
+
+color: $color;
+  
+}

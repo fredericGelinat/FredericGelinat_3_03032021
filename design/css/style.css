@@ -235,7 +235,7 @@ button {
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 0.99s cubic-bezier(0.52, 0.14, 0, 1.28) infinite; }
+  animation: flash 0.9s cubic-bezier(0.52, 0.14, 0, 1.28) infinite; }
 
 @keyframes flash {
   0% {
@@ -252,29 +252,67 @@ button {
     /*$color-secondary;*/
     /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/ } }
 .lettre:nth-child(1) {
-  animation-delay: 0.1s; }
+  animation-delay: 0.30s; }
 
 .lettre:nth-child(2) {
-  animation-delay: 0.2s; }
+  animation-delay: 0.40s; }
 
 .lettre:nth-child(3) {
-  animation-delay: 0.3s; }
+  animation-delay: 0.50s; }
 
 .lettre:nth-child(4) {
-  animation-delay: 0.4s; }
+  animation-delay: .6s; }
 
 .lettre:nth-child(5) {
-  animation-delay: 0.5s; }
+  animation-delay: .7s; }
 
 .lettre:nth-child(6) {
-  animation-delay: 0.6s; }
+  animation-delay: .8s; }
 
 .lettre:nth-child(7) {
-  animation-delay: 0.7s; }
+  animation-delay: 0.9s; }
 
 .lettre:nth-child(8) {
-  animation-delay: 0.8s; }
+  animation-delay: 1s; }
 
+.lettre-1 {
+  color: #9356dc; }
+
+.lettre-2 {
+  color: #ff79da; }
+
+.lettre-3 {
+  color: #99e2d0; }
+
+.lettre-4 {
+  color: #9356dc; }
+
+.lettre-5 {
+  color: #ff79da; }
+
+.lettre-6 {
+  color: #99e2d0; }
+
+.lettre-7 {
+  color: #9356dc; }
+
+.lettre-8 {
+  color: #ff79da; }
+
+@keyframes lettres {
+  0% {
+    opacity: 1;
+    color: #9356dc;
+    text-shadow: 0 0 7px #9356dc; }
+  50% {
+    transform: translateX(96px); }
+  90% {
+    color: #ff79da;
+    text-shadow: none; }
+  100% {
+    opacity: 1;
+    color: #9356dc;
+    text-shadow: 0 0 7px #ff79da; } }
 .conteneur {
   position: absolute;
   top: 50%;
@@ -827,7 +865,7 @@ li {
       justify-content: flex-end;
       flex-direction: column; }
   li .green-box {
-    opacity: 0; }
+    opacity: 1; }
   li .green-box:hover {
     display: flex;
     justify-content: center;
@@ -870,6 +908,10 @@ p {
   align-items: unset;
   color: #008766; }
 
+/*--------------MAIN PAGE-1--------------------*/
+/*--------------MAIN PAGE-1--------------------*/
+/*--------------MAIN PAGE-1--------------------*/
+/*--------------MAIN PAGE-1--------------------*/
 /*--------NAV---------*/
 #navigation {
   padding: 0;
@@ -897,7 +939,7 @@ p {
       background: linear-gradient(#ff79da, #9356dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #6f78c5;
+      color: #bc2990;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -915,7 +957,7 @@ p {
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #6f78c5; }
+      color: #bc2990; }
 
 /*.centre{
   position: absolute;
