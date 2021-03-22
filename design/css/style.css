@@ -202,7 +202,7 @@ button {
     z-index: -1;
   }*/
 .section-1 {
-  background: radial-gradient(circle at bottom, #9356dc 0%, #ff79da 100%);
+  background: radial-gradient(circle at bottom, #9356dc 10%, #ff79da 90%);
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -222,10 +222,55 @@ button {
     justify-content: center;
     align-items: center; }
 
-/*.loading {
-  width: 200px;
-  height: 200px;
-}*/
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.lettre {
+  color: #9356dc;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite; }
+
+@keyframes flash {
+  0% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da; }
+  90% {
+    color: #9356dc;
+    text-shadow: none; }
+  100% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da; } }
+.lettre:nth-child(1) {
+  animation-delay: 0.1s; }
+
+.lettre:nth-child(2) {
+  animation-delay: 0.2s; }
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3s; }
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4s; }
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5s; }
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6s; }
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7s; }
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8s; }
+
 .conteneur {
   position: absolute;
   top: 50%;
@@ -832,7 +877,7 @@ p {
       background: linear-gradient(#ff79da, #9356dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #4a5acf;
+      color: #322da5;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -850,7 +895,7 @@ p {
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #4a5acf; }
+      color: #322da5; }
 
 /*.centre{
   position: absolute;
