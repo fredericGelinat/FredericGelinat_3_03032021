@@ -15,7 +15,7 @@
   justify-content: $justify;
   align-items: center;
 }
-@mixin display-justifyC-alignI ($display, $justify, $align) {
+@mixin display-justifyC-alignI($display, $justify, $align) {
   display: $display;
   justify-content: $justify;
   align-items: $align;
@@ -26,7 +26,7 @@
   margin: $margin;
 }
 //----------size & weight---------
-@mixin size-weight ($unite, $params) {
+@mixin size-weight($unite, $params) {
   font-size: $unite;
   font-weight: $params;
 }
@@ -41,4 +41,9 @@
 //----------text-deco------
 @mixin text-deco($params) {
   text-decoration: $params;
+}
+
+@mixin radial-gradient-transparent($X-Y, $color, $X-Y, $color) {
+  background: radial-gradient(ellipse at $X-Y, $color, transparent),
+    radial-gradient(ellipse at $X-Y, $color, transparent);
 }
