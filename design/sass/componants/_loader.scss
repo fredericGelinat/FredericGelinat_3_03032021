@@ -84,7 +84,7 @@
 
 
 .section-1 {
-  background: radial-gradient(circle at bottom, $color-primary 10%, $color-secondary 90%);
+  background: radial-gradient(circle at bottom, $color-primary 10%, $color-third 100%);
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -125,6 +125,7 @@
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash .9s cubic-bezier(.52,.14,0,1.28) infinite;
+  
 }
 @keyframes flash {
   0%{
@@ -144,6 +145,29 @@
     /*$color-secondary;*/
     /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
   }
+}
+
+@keyframes lettres {
+  0%{
+    opacity: 1;
+    color: $color-primary;
+    text-shadow: 0 0 7px $color-primary;
+}
+50%{
+    transform: translateX(96px);
+}
+90%{
+  color: $color-secondary;
+  text-shadow: none;
+
+}
+100%{
+    opacity: 1;
+    
+    color:$color-primary ;
+    text-shadow: 0 0 7px $color-secondary;
+  
+}
 }
 .lettre:nth-child(1){
   animation-delay: 0.30s;
@@ -178,56 +202,34 @@
   
 }
 .lettre-1{
-  color: $color-primary;
-  
+  color: $color-third;
+  text-shadow: 0 0 7px $color-third;
 }
 .lettre-2{
-  color: $color-secondary;
-  
+  color: $color-third;
+  text-shadow: 0 0 7px $color-third;
   
 }
 .lettre-3{
   color: $color-third;
-  
+  text-shadow: 0 0 7px $color-third;
 }
 .lettre-4{
-  color: $color-primary;
-  
+  color: $color-third;
+  text-shadow: 0 0 7px $color-third;
 }
 .lettre-5{
-  color: $color-secondary;
-  
+  color: $color-third;
+  text-shadow: 0 0 7px $color-third;
 }.lettre-6{
   color: $color-third;
-  
+  text-shadow: 0 0 7px $color-third;
 }.lettre-7{
-  color: $color-primary;
-  
+  color: $color-third;
+  text-shadow: 0 0 7px $color-third;
 }.lettre-8{
-  color: $color-secondary;
-  
-}
-@keyframes lettres {
-  0%{
-    opacity: 1;
-    color: $color-primary;
-    text-shadow: 0 0 7px $color-primary;
-}
-50%{
-    transform: translateX(96px);
-}
-90%{
-  color: $color-secondary;
-  text-shadow: none;
-
-}
-100%{
-    opacity: 1;
-    
-    color:$color-primary ;
-    text-shadow: 0 0 7px $color-secondary;
-  
-}
+  color: $color-third;
+  text-shadow: 0 0 7px $color-third;
 }
 .conteneur{
   position: absolute;
