@@ -48,7 +48,57 @@ figure {
   margin-top: -2.4em;
   font-size: x-large;
   margin-right: 0.5em;
+  
 }
+.empty-heart{
+  color: $color-primary;
+  animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) .10s infinite  ;
+}
+.full-heart{
+ 
+  color: $color-primary-hsla;
+  margin-top: -1.2em;
+  z-index: -1;
+  position: relative;
+  animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) .10s infinite  ;
+}
+
+@keyframes full {
+  0%{
+    color: $color-primary;
+  }
+ 
+  25%{
+color:  #8427F5;
+  }
+  
+  50%{
+    color:$color-secondary;
+  }
+  
+  75%{
+color: $color-third;
+  }
+  100%{
+    color: $color-third-complementary-color;
+  }
+}
+
+
+.like:hover .full-heart{
+
+z-index: 100;
+position: absolute;
+
+
+}
+.like:hover .empty-heart{
+  color:$color-random-color-primary;
+  z-index: 101;
+  position: relative;
+}
+
+
 .description {
   @include padding-margin(2%, 0);
   font-family: "Roboto", sans-serif;
@@ -129,6 +179,7 @@ figure {
   
   animation: circle .9s cubic-bezier(.52,.14,0,1.28) ;
   animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 @keyframes circle {
   0%{
@@ -155,7 +206,7 @@ figure {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 8%;
+    margin: 10% 5% 4% 0%;
     flex-direction: column;
     font-weight: bold;
 }

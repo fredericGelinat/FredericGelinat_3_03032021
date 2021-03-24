@@ -99,7 +99,7 @@ body {
     display: flex; }
 
 button {
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#ff79da, #9256dc);
   border-radius: 37px;
   color: white;
   border: none;
@@ -146,7 +146,7 @@ form {
   justify-content: center; }
 
 button {
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#ff79da, #9256dc);
   border-radius: 37px;
   color: white;
   border: none;
@@ -246,7 +246,7 @@ button {
     z-index: -1;
   }*/
 .section-1 {
-  background: radial-gradient(circle at center, #99e2d0 10%, #9356dc 100%);
+  background: radial-gradient(circle at center, #99e2d0 10%, #9256dc 100%);
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -258,7 +258,7 @@ button {
   color: #99e2d0;
   width: 100%;
   z-index: 1;
-  animation: load-1 0s 100s cubic-bezier(1, 0.02, 0, 1.28) forwards; }
+  animation: load-1 0s 1s cubic-bezier(1, 0.02, 0, 1.28) forwards; }
   .section-1 span {
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -288,10 +288,10 @@ button {
   90% {
     color: #ff79da;
     /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: #7d0f4b; }
+    text-shadow: #5092ac; }
   100% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #9356dc;
+    color: #9256dc;
+    text-shadow: 0 0 7px #9256dc;
     /*$color-secondary;*/
     /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/ } }
 .lettre:nth-child(1) {
@@ -319,8 +319,8 @@ button {
   animation-delay: 0.99s; }
 
 .lettre-1 {
-  color: #9356dc;
-  text-shadow: 0 0 7px #353775;
+  color: #9256dc;
+  text-shadow: 0 0 7px #098f2d;
   animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
 
 .lettre-2 {
@@ -330,11 +330,11 @@ button {
 
 .lettre-3 {
   color: #99e2d0;
-  text-shadow: 0 0 7px #9356dc;
+  text-shadow: 0 0 7px #9256dc;
   animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
 
 .lettre-4 {
-  color: #9356dc;
+  color: #9256dc;
   text-shadow: 0 0 7px #99e2d0;
   animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
 
@@ -349,7 +349,7 @@ button {
   animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
 
 .lettre-7 {
-  color: #9356dc;
+  color: #9256dc;
   text-shadow: 0 0 7px #99e2d0;
   animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
 
@@ -361,7 +361,7 @@ button {
 @keyframes lettres {
   0% {
     opacity: 1;
-    text-shadow: 0 0 7px #9356dc; }
+    text-shadow: 0 0 7px #9256dc; }
   25% {
     opacity: 1;
     text-shadow: 0 0 7px #99e2d0; }
@@ -394,7 +394,7 @@ button {
   left: 15px;
   filter: blur(3px);
   border-radius: 50%;
-  background-color: #7b3a3a;
+  background-color: #5a0d08;
   animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
   z-index: -10; }
 
@@ -405,7 +405,7 @@ button {
   height: 16px;
   margin-left: 16px;
   filter: blur(3px);
-  background-color: #7b3a3a;
+  background-color: #5a0d08;
   border-radius: 50%;
   z-index: -10; }
 
@@ -432,22 +432,22 @@ circle {
 @keyframes point {
   0% {
     opacity: 1;
-    color: #9356dc;
-    text-shadow: 0 0 7px #9356dc; }
+    color: #9256dc;
+    text-shadow: 0 0 7px #9256dc; }
   50% {
     transform: translateX(96px); }
   90% {
-    color: #9356dc;
+    color: #9256dc;
     text-shadow: none; }
   100% {
     opacity: 1;
     display: none;
-    color: #9356dc;
-    text-shadow: 0 0 7px #9356dc; } }
+    color: #9256dc;
+    text-shadow: 0 0 7px #9256dc; } }
 @keyframes points {
   0% {
     opacity: 1;
-    color: #9356dc;
+    color: #9256dc;
     text-shadow: 0 0 7px #ff79da; }
   50% {
     transform: translateX(-31px); }
@@ -457,7 +457,7 @@ circle {
   100% {
     opacity: 1;
     display: none;
-    color: #9356dc;
+    color: #9256dc;
     text-shadow: 0 0 7px #ff79da; } }
 @keyframes load-1 {
   0% {
@@ -777,12 +777,22 @@ circle.is-loading::after {
 }
 */
 /*---------header--------*/
+header {
+  display: flex;
+  justify-content: center; }
+
 header h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: xx-large;
+  font-size: xx-large; }
+
+.align {
   display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  text-decoration: none;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-right: 5%;
+  color: black; }
 
 /*----------footer---------*/
 footer {
@@ -845,6 +855,37 @@ figure {
   margin-top: -2.4em;
   font-size: x-large;
   margin-right: 0.5em; }
+
+.empty-heart {
+  color: #9256dc;
+  animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s infinite; }
+
+.full-heart {
+  color: rgba(146, 86, 220, 0.5);
+  margin-top: -1.2em;
+  z-index: -1;
+  position: relative;
+  animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s infinite; }
+
+@keyframes full {
+  0% {
+    color: #9256dc; }
+  25% {
+    color: #8427F5; }
+  50% {
+    color: #ff79da; }
+  75% {
+    color: #99e2d0; }
+  100% {
+    color: #e299ab; } }
+.like:hover .full-heart {
+  z-index: 100;
+  position: absolute; }
+
+.like:hover .empty-heart {
+  color: #5a0d08;
+  z-index: 101;
+  position: relative; }
 
 .description {
   padding: 2%;
@@ -919,7 +960,8 @@ figure {
 
 .fas.fa-check-circle {
   animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards; }
 
 @keyframes circle {
   0% {
@@ -941,7 +983,7 @@ figure {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 8%;
+  margin: 10% 5% 4% 0%;
   flex-direction: column;
   font-weight: bold; }
 
@@ -1180,15 +1222,15 @@ p{
     transition: transform 450ms, background-color 300ms; }
     #navigation li:hover {
       transform: scale(1.05);
-      background: linear-gradient(#ff79da, #9356dc);
+      background: linear-gradient(#ff79da, #9256dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #9e4a4a;
+      color: #89140c;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
     padding: 1% 3% 1%;
-    background-color: #bc95e9;
+    background-color: #bb95e9;
     border-radius: 50%;
     font-weight: bold;
     font-size: 0.8em;
@@ -1201,7 +1243,7 @@ p{
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #9e4a4a; }
+      color: #89140c; }
 
 .btn {
   border-radius: 2rem;
