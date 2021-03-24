@@ -258,7 +258,7 @@ button {
   color: #99e2d0;
   width: 100%;
   z-index: 1;
-  animation: load-1 0s 5s cubic-bezier(1, 0.02, 0, 1.28) forwards; }
+  animation: load-1 0s 10s cubic-bezier(1, 0.02, 0, 1.28) forwards; }
   .section-1 span {
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -372,7 +372,7 @@ button {
   transform: translate(-50px, -50px);
   width: 142px;
   height: 48px;
-  background-color: radial-gradient(circle at bottom, #9356dc 0%, #ff79da 100%);
+  background-color: radial-gradient(circle at bottom, #9356dc 10%, #ff79da 100%);
   /* 20=2000%*/
   filter: contrast(2);
   z-index: 1;
@@ -384,10 +384,10 @@ button {
   height: 16px;
   top: 12px;
   left: 15px;
-  filter: blur(3px);
+  filter: blur(5px);
   border-radius: 50%;
-  background-color: #99e2d0;
-  animation: point 3s infinite;
+  background-color: #7c295c;
+  animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
   z-index: -10; }
 
 .conteneur .dots span {
@@ -396,15 +396,15 @@ button {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  filter: blur(3px);
-  background-color: #99e2d0;
+  filter: blur(5px);
+  background-color: #7c295c;
   border-radius: 50%;
   z-index: -10; }
 
 .conteneur .dots {
   margin-top: 12px;
   margin-left: 31px;
-  animation: points 3s infinite; }
+  animation: points 4s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite; }
 
 /*
 circle {
@@ -425,17 +425,17 @@ circle {
   0% {
     opacity: 1;
     color: #9356dc;
-    text-shadow: 0 0 7px #ff79da; }
+    text-shadow: 0 0 7px #9356dc; }
   50% {
     transform: translateX(96px); }
   90% {
-    color: #ff79da;
+    color: #9356dc;
     text-shadow: none; }
   100% {
-    opacity: 0;
+    opacity: 1;
     display: none;
     color: #9356dc;
-    text-shadow: 0 0 7px #ff79da; } }
+    text-shadow: 0 0 7px #9356dc; } }
 @keyframes points {
   0% {
     opacity: 1;
@@ -447,7 +447,7 @@ circle {
     color: #ff79da;
     text-shadow: none; }
   100% {
-    opacity: 0;
+    opacity: 1;
     display: none;
     color: #9356dc;
     text-shadow: 0 0 7px #ff79da; } }
@@ -796,8 +796,7 @@ footer {
     font-family: "Roboto", sans-serif; }
 
 main {
-  background-color: #f2f2f2;
-  padding-bottom: 10%; }
+  background-color: #f2f2f2; }
   main .restaurants-img {
     width: 100%;
     height: 13em;
@@ -809,9 +808,14 @@ section a {
   color: black;
   font-family: "Roboto", sans-serif; }
 
-.restaurants {
-  padding-top: 6%; }
-  .restaurants h2 {
+.restaurant {
+  padding-top: 6%;
+  border-radius: 25px 25px 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+  margin-top: -11%; }
+  .restaurant h2 {
     padding: 4%;
     margin: 0;
     font-family: "Roboto", sans-serif; }
@@ -895,7 +899,7 @@ figure {
   .hover-checked-1 .container:hover .coche-verte {
     color: white;
     height: 100%;
-    width: 100%; }
+    width: 5em; }
   .hover-checked-1 .icone {
     display: flex;
     flex-direction: column;
@@ -905,10 +909,25 @@ figure {
     font-size: xx-large;
     content: ""; }
 
+.fas.fa-check-circle {
+  animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+  animation-iteration-count: infinite; }
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg); }
+  /*50%{
+     transform: rotate(180deg);
+   }
+  
+   75%{
+     transform: rotate(270deg);
+   }*/
+  100% {
+    transform: rotate(360deg); } }
 .contain-box {
   display: flex;
-  justify-content: flex-end;
-  width: 100%; }
+  justify-content: flex-end; }
 
 .prix {
   display: flex;
@@ -924,7 +943,9 @@ figure {
 
 .presentation {
   font-family: "roboto";
-  margin: 1%; }
+  margin: 1%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .ellipsis {
   overflow: hidden;
@@ -1154,7 +1175,7 @@ p{
       background: linear-gradient(#ff79da, #9356dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #5c5067;
+      color: #a23678;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -1172,7 +1193,7 @@ p{
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #5c5067; }
+      color: #a23678; }
 
 .btn {
   border-radius: 2rem;

@@ -100,7 +100,7 @@
   width: 100%;
 
   z-index: 1;
-  animation: load-1 0s 5s cubic-bezier(1,.02,0,1.28) forwards;
+  animation: load-1 0s 10s cubic-bezier(1,.02,0,1.28) forwards;
   & span{
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -238,7 +238,7 @@
   transform: translate(-50px, -50px);
   width: 142px;
   height: 48px;
-  background-color: radial-gradient(circle at bottom, $color-primary 0%, $color-secondary 100%);
+  background-color: radial-gradient(circle at bottom, $color-primary 10%, $color-secondary 100%);
   /* 20=2000%*/
   filter: contrast(2);
   z-index: 1;
@@ -252,10 +252,10 @@
   height: 16px;
   top: 12px;
   left: 15px;
-  filter: blur(3px);
+  filter: blur(5px);
   border-radius: 50%;
-  background-color: $color-third;
-  animation: point 3s infinite;
+  background-color: $color-random-color-primary;
+  animation: point 5s cubic-bezier(.67,.12,.5,1.3) infinite;
   z-index: -10;
 
 }
@@ -266,15 +266,15 @@
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  filter: blur(3px);
-  background-color:$color-third;
+  filter: blur(5px);
+  background-color:$color-random-color-primary;
   border-radius: 50%;
   z-index: -10;
 }
 .conteneur .dots{
   margin-top: 12px;
   margin-left: 31px;
-  animation: points 3s infinite;
+  animation: points 4s cubic-bezier(.67,.12,.5,1.3) infinite;
 }
 
 /*
@@ -296,21 +296,21 @@ circle {
   0%{
       opacity: 1;
       color: $color-primary;
-      text-shadow: 0 0 7px $color-secondary
+      text-shadow: 0 0 7px $color-primary
   }
   50%{
       transform: translateX(96px);
   }
   90%{
-    color: $color-secondary;
+    color: $color-primary;
     text-shadow: none;
 
   }
   100%{
-      opacity: 0;
+      opacity: 1;
       display: none;
       color:$color-primary ;
-      text-shadow: 0 0 7px $color-secondary;
+      text-shadow: 0 0 7px $color-primary;
   }
 }
 @keyframes points{
@@ -328,7 +328,7 @@ circle {
 
   }
   100%{
-      opacity: 0;
+      opacity: 1;
       display: none;
       color:$color-primary ;
     text-shadow: 0 0 7px $color-secondary;

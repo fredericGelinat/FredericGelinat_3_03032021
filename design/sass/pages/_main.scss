@@ -1,6 +1,6 @@
 main {
   background-color: #f2f2f2;
-  padding-bottom: 10%;
+ 
 
   & .restaurants-img {
     width: 100%;
@@ -16,8 +16,13 @@ section a {
   font-family: "Roboto", sans-serif;
 }
 
-.restaurants {
+.restaurant {
   padding-top: 6%;
+  border-radius: 25px 25px 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+  margin-top: -11%;
 
   h2 {
     @include padding-margin(4%, 0);
@@ -105,7 +110,7 @@ figure {
   .container:hover .coche-verte {
     color: $color-white;
     height: 100%;
-    width: 100%;
+    width: 5em;
    
   }
   .icone {
@@ -120,11 +125,31 @@ figure {
   
   }
   }
+  .fas.fa-check-circle{
   
+  animation: circle .9s cubic-bezier(.52,.14,0,1.28) ;
+  animation-iteration-count: infinite;
+}
+@keyframes circle {
+  0%{
+    transform: rotate(0deg);
+
+  }
+ /*50%{
+    transform: rotate(180deg);
+  }
+ 
+  75%{
+    transform: rotate(270deg);
+  }*/
+   100%{
+     transform: rotate(360deg);
+   }
+}
   .contain-box{
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    
   }
   .prix {
     display: flex;
@@ -139,10 +164,11 @@ figure {
   display: flex;
 }
 
-.presentation{
+.presentation {
   font-family: "roboto";
   margin: 1%;
-  
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ellipsis{
  
