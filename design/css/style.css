@@ -57,6 +57,11 @@ $i: 1s;
 }*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
+.rechercher, form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 /*--------general--------*/
 body {
   margin: 0;
@@ -65,9 +70,6 @@ body {
 /*--------search---------*/
 .rechercher {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-top: -2%; }
 
 #textes {
@@ -86,7 +88,7 @@ body {
   background-color: #eaeaea;
   padding: 4%;
   margin: 0;
-  box-shadow: -1px 0px 7px 0px #595656; }
+  box-shadow: 1px -1px 1px #f6f6f6; }
   #search input {
     border: none;
     background-color: #eaeaea;
@@ -96,6 +98,47 @@ body {
   #search #site-search .icone {
     display: flex; }
 
+button {
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 37px;
+  color: white;
+  border: none;
+  box-shadow: 7px 7px 10px #d2cccc;
+  padding: 8%;
+  margin: 0; }
+  button span {
+    color: white;
+    font-weight: bold; }
+
+/*& h2 {
+      font-size: x-large;
+      text-align: center;
+    }
+    & 
+    & 
+    section {
+      background-color: #f2f2f2;
+      height: 19em;
+      width: auto;
+    }
+    & .font {
+      font-weight: bold;
+      font-size: 1em;
+    }
+  }*/
+form {
+  background-color: #eaeaea;
+  /*box-shadow: 15px 25px 6px 28px #cfcfcf;*/ }
+
+/* & .icone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $color-search;
+    }
+    &
+    
+  }*/
 form {
   background-color: #eaeaea;
   display: flex;
@@ -121,9 +164,10 @@ button {
   align-items: unset; }
 
 .commander {
-  padding: 8% 19% 8% 19%;
+  padding: 9% 19% 8% 19%;
   margin: 10% 0 15% 0; }
 
+/*---------------------------------------------------COCHE VERTE---------------------------------------------------------------*/
 /*.conteneur{
   position: absolute;
   top: 50%;
@@ -732,48 +776,24 @@ header h1 {
   flex-direction: row;
   justify-content: center; }
 
-.display {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.align {
-  padding: 0;
-  margin: 0 11% 0 -9%;
-  color: black;
-  font-size: larger;
-  font-weight: unset; }
-
-.restaurant {
-  position: relative;
-  z-index: 1;
-  background-color: #f5f5f5;
-  border-radius: 2em 2em 0 0;
-  list-style-type: none;
-  padding: 1em;
-  margin: -2em 0 0 0; }
-
 /*----------footer---------*/
 footer {
   background-color: #222121;
-  color: #dfdbdb; }
+  color: #dfdbdb;
+  height: 12em;
+  margin-top: -5%; }
   footer p {
-    padding: 5%;
-    margin: 0;
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 7% 0 0% 7%;
     font-family: "Shrikhand", sans-serif; }
   footer ul {
     list-style-type: none;
-    padding: 5%;
-    margin: 0;
-    display: flex;
-    flex-direction: column; }
+    padding: 0 0 5% 7%; }
   footer li {
     margin: 1%;
     font-family: "Roboto", sans-serif; }
-
-.text-deco-none-footer {
-  text-decoration: none;
-  color: #eaeaea; }
 
 main {
   background-color: #f2f2f2;
@@ -855,31 +875,64 @@ figure {
   padding: 0;
   margin: 0; }
 
-li {
+.hover-checked-1 {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   padding: 0;
-  margin: 4% 0 2% 0;
-  /*.green-box {
-    opacity: 1;
-  }
-  .green-box:hover {
-    
-    background-color: blueviolet;
+  margin: 4% 0 2% 0; }
+  .hover-checked-1
+  .coche-verte {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #99e2d0;
+    width: 0;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+    transition: width 400ms ease-in; }
+  .hover-checked-1 .container:hover .coche-verte {
+    color: white;
+    height: 100%;
+    width: 100%; }
+  .hover-checked-1 .icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding-left: 62.5px;*/
+    font-size: xx-large;
+    content: ""; }
 
-  }*/ }
-  li .container {
-    display: flex; }
-    li .container .presentation {
-      width: 100%; }
-    li .container .price {
-      display: flex; }
-    li .container span {
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: column; }
+.contain-box {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; }
+
+.prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 8%;
+  flex-direction: column;
+  font-weight: bold; }
+
+.container {
+  width: 100%;
+  display: flex; }
+
+.presentation {
+  font-family: "roboto";
+  margin: 1%; }
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.entree {
+  font-weight: bold; }
 
 p {
   padding: 0;
@@ -1101,7 +1154,7 @@ p{
       background: linear-gradient(#ff79da, #9356dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #8e119f;
+      color: #5c5067;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -1119,7 +1172,7 @@ p{
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #8e119f; }
+      color: #5c5067; }
 
 .btn {
   border-radius: 2rem;
@@ -1149,5 +1202,7 @@ p{
   display: flex;
   justify-content: space-around;
   align-items: center; }
+
+/*----------------------------------------------------------------------------case coche verte page1.html*/
 
 /*# sourceMappingURL=style.css.map */

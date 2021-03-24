@@ -1,0 +1,55 @@
+//----------@mixin-----------------
+//-------------display-flex---------------
+@mixin text-align-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  text-align: center;
+}
+@mixin justify-content-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}
+@mixin align-items-center($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+@mixin display-justifyC-alignI($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+//-----------padding-----------------
+@mixin padding-margin($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+//----------size & weight---------
+@mixin size-weight($unite, $params) {
+  font-size: $unite;
+  font-weight: $params;
+}
+//----------border-radius---------
+@mixin border-radius($degres) {
+  border-radius: $degres;
+}
+//----------box-shadow-------------
+@mixin box-shadow($params) {
+  box-shadow: $params;
+}
+//----------text-deco------
+@mixin text-deco($params) {
+  text-decoration: $params;
+}
+
+@mixin radial-gradient-transparent($X-Y, $color, $color, $X-Y, $color, $color) {
+  color: radial-gradient(ellipse at $X-Y, $color, $color),
+    radial-gradient(ellipse at $X-Y, $color, $color);
+}
+
+@mixin color ($color) {
+
+color: $color;
+  
+}

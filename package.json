@@ -1,14 +1,2 @@
-{
-    "name": "ohmyfood",
-    "version": "1.0.0",
-    "description": "Wonderful catering-website for busy and posh people",
-    "main": "app.js",
-    "scripts": {
-        "start": "node app.js",
-         "sass": "sass --watch ./D:/FrédéricGelinat_3_03032021/design/sass:D:/FrédéricGelinat_3_03032021/design/css --style compressed"
-        },
-  
-    "author": "fredericGelinat",
-    "license": "ISC"
-    
-  }
+"scripts": {
+      "sass": "sass --watch ../D:/FrédéricGelinat_3_03032021/design/sass:D:/FrédéricGelinat_3_03032021/design/css --style compressed"}

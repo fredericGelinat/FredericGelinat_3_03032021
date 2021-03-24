@@ -83,50 +83,98 @@ figure {
   @include padding-margin(0, 0);
 }
 
-li {
+.hover-checked-1 {
   background-color: $color-white;
   @include border-radius(15px);
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   @include padding-margin(0, 4% 0 2% 0);
 
-  & .container {
+  & 
+  .coche-verte {
+    color: $color-white;
     display: flex;
-    .presentation {
-      width: 100%;
-    }
-    .price {
-      display: flex;
-    }
-    & span {
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: column;
-    }
+    justify-content: center;
+    background-color: $color-third;
+    width: 0;
+    @include border-radius(0 15px 15px 0);
+    overflow: hidden;
+    transition: width 400ms ease-in;
   }
-
-  /*.green-box {
-    opacity: 1;
+  
+  .container:hover .coche-verte {
+    color: $color-white;
+    height: 100%;
+    width: 100%;
+   
   }
-  .green-box:hover {
+  .icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding-left: 62.5px;*/
+    font-size: xx-large;
+    content: "";
     
-    background-color: blueviolet;
-
-  }*/
+  
+  }
+  }
+  
+  .contain-box{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .prix {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 8%;
+    flex-direction: column;
+    font-weight: bold;
+}
+.container {
+  width: 100%;
+  display: flex;
 }
 
-p {
-  @include padding-margin(0, 2% 4% 2% 4%);
+.presentation{
+  font-family: "roboto";
+  margin: 1%;
+  
 }
-.alignement {
-  @include padding-margin(0, 0 4% 2% 4%);
-  @include display-justifyC-alignI(flex, space-between, unset);
-}
-#ellipsis {
-  white-space: nowrap;
+.ellipsis{
+ 
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+
+
+.entree{
+  font-weight: bold;
+}
+
+  
+  p {
+    @include padding-margin(0, 2% 4% 2% 4%);
+  }
+  .alignement {
+    @include padding-margin(0, 0 4% 2% 4%);
+    @include display-justifyC-alignI(flex, space-between, unset);
+  }
+  #ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+
+
+
 
 .sticker {
   /* display: flex;
