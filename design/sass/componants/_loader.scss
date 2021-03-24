@@ -100,7 +100,7 @@
   width: 100%;
 
   z-index: 1;
-  animation: load-1 0s 10s cubic-bezier(1,.02,0,1.28) forwards;
+  animation: load-1 0s 100s cubic-bezier(1,.02,0,1.28) forwards;
   & span{
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -120,16 +120,16 @@
   align-items: center;
 }
 .lettre{
-  color: $color-primary;
+  
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash .9s cubic-bezier(.52,.14,0,1.28) infinite;
+  animation: flash 1.9s cubic-bezier(.52,.14,1,1.28) infinite;
   
 }
 @keyframes flash {
   0%{
-    color: $color-primary;
+    color: $color-third;
      /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
     text-shadow: 0 0 7px $color-secondary ;
   }
@@ -137,43 +137,22 @@
   90%{
    color: $color-secondary;
    /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: none;
+    text-shadow: $color-random-color-third;
   }
   100%{
-    color:$color-primary ;
+    color:$color-primary;
     text-shadow: 0 0 7px  $color-primary; 
+    
     /*$color-secondary;*/
     /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
   }
 }
 
-/*@keyframes lettres {
-  0%{
-    opacity: 1;
-    color: $color-primary;
-    text-shadow: 0 0 7px $color-primary;
-}
-50%{
-    transform: translateX(96px);
-}
-90%{
-  color: $color-secondary;
-  text-shadow: none;
 
-}
-100%{
-    opacity: 1;
-    
-    color:$color-primary ;
-    text-shadow: 0 0 7px $color-secondary;
-  
-}
-}*/
 
 .lettre:nth-child(1){
   animation-delay: 0.30s;
-  
-
+ 
 }
 .lettre:nth-child(2){
   animation-delay: 0.40s;
@@ -200,38 +179,74 @@
   
 }
 .lettre:nth-child(8){
-  animation-delay: 1s;
+  animation-delay: 0.99s;
   
 }
+
+
 .lettre-1{
-  color: $color-third;
-  text-shadow: 0 0 7px $color-third;
+  color: $color-primary;
+  text-shadow: 0 0 7px $color-random-third-complementary-color;
+  animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }
 .lettre-2{
-  color: $color-third;
-  text-shadow: 0 0 7px $color-third;
-  
+  color: $color-secondary;
+  text-shadow: 0 0 7px $color-secondary;
+  animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }
 .lettre-3{
   color: $color-third;
-  text-shadow: 0 0 7px $color-third;
+  text-shadow: 0 0 7px $color-primary;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }
 .lettre-4{
-  color: $color-third;
+  color: $color-primary;
   text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }
 .lettre-5{
-  color: $color-third;
+  color: $color-secondary;
   text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }.lettre-6{
   color: $color-third;
   text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }.lettre-7{
-  color: $color-third;
+  color: $color-primary;
   text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }.lettre-8{
-  color: $color-third;
+  color: $color-secondary;
   text-shadow: 0 0 7px $color-third;
+  animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}
+@keyframes lettres {
+  0%{
+    opacity: 1;
+
+    text-shadow: 0 0 7px $color-primary;
+}
+25%{
+  opacity: 1;
+  text-shadow: 0 0 7px $color-third;
+}
+50%{
+  opacity: 0;
+  
+
+}
+75%{
+  opacity: 1;
+  text-shadow: 0 0 7px $color-secondary
+}
+100%{
+    opacity: 1;
+    
+
+    text-shadow: 0 0 7px $color-third-complementary-color;
+  
+}
 }
 .conteneur{
   position: absolute;
