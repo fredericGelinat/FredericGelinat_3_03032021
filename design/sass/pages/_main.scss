@@ -79,10 +79,11 @@ figure {
 @keyframes full {
   0%{
     color: $color-primary;
+    
   }
  
   25%{
-color:  #8427F5;
+color: $color-third;
   }
   
   50%{
@@ -93,7 +94,7 @@ color:  #8427F5;
 color: $color-third;
   }
   100%{
-    color: $color-third-complementary-color;
+    color: $color-primary;
   }
 }
 

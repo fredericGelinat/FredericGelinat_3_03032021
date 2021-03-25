@@ -100,7 +100,7 @@
   width: 100%;
 
   z-index: 1;
-  animation: load-1 0s 3s cubic-bezier(1,.02,0,1.28) forwards;
+  animation: load-1 0s 13s cubic-bezier(1,.02,0,1.28) forwards;
   & span{
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -109,6 +109,15 @@
     align-items: center;
    
   }
+  @keyframes load-1 {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      display: none;
+      z-index: -100;
+    }
 }
 
 .loader{
@@ -121,8 +130,8 @@
 }
 .lettre{
   
-  font-size: 80px;
-  letter-spacing: 15px;
+  font-size: 35px;
+  letter-spacing: 10px;
   margin-bottom: 150px;
   animation: flash 1.9s cubic-bezier(.52,.14,1,1.28) infinite;
   
@@ -262,6 +271,19 @@ animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
   animation: load-2 3s 3s forwards;
   
 }
+/*
+@keyframes load-2 {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+    z-index: -100;
+  }
+
+}*/
+
 .conteneur .dot
 {
   position: absolute;
@@ -352,26 +374,10 @@ circle {
   }
 }
 
-@keyframes load-1 {
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    display: none;
-    z-index: -100;
-  }
+
 }
-  /*@keyframes load-2 {
-    0%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-      display: none;
-      z-index: -100;
-    }
   /*
+
 @-webkit-keyframes rotation {
   0% {
     stroke-dasharray: 100 100;
