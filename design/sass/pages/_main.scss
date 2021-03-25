@@ -65,7 +65,9 @@ figure {
   
 .empty-heart{
   color: $color-primary;
-  animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) .10s infinite  ;
+  animation:  fully 1s cubic-bezier(.55,.09,.68,.53) 0.1s infinite ;
+  transition: full 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;
+ 
 }
 .full-heart{
  
@@ -73,7 +75,8 @@ figure {
   margin-top: -1.2em;
   z-index: -1;
   position: absolute;
-  animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) .10s infinite  ;
+  transition: full 3s cubic-bezier(.55,.09,.68,.53).30s infinite  ;
+  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) .10s infinite  ;
 }
 
 @keyframes full {
@@ -97,7 +100,27 @@ color: $color-third;
     color: $color-primary;
   }
 }
-
+@keyframes fully {
+  0%{
+    color: $color-primary;
+    
+  }
+ 
+  25%{
+color: $color-third;
+  }
+  
+  50%{
+    color:$color-secondary;
+  }
+  
+  75%{
+color: $color-third;
+  }
+  100%{
+    color: $color-primary;
+  }
+}
 
 
 .like-page-1:hover .full-heart {
