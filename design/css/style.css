@@ -258,7 +258,7 @@ button {
   color: #99e2d0;
   width: 100%;
   z-index: 1;
-  animation: load-1 0s 1s cubic-bezier(1, 0.02, 0, 1.28) forwards; }
+  animation: load-1 0s 3s cubic-bezier(1, 0.02, 0, 1.28) forwards; }
   .section-1 span {
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -288,7 +288,7 @@ button {
   90% {
     color: #ff79da;
     /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: #5092ac; }
+    text-shadow: #42e294; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc;
@@ -320,7 +320,7 @@ button {
 
 .lettre-1 {
   color: #9256dc;
-  text-shadow: 0 0 7px #098f2d;
+  text-shadow: 0 0 7px #398306;
   animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
 
 .lettre-2 {
@@ -394,7 +394,7 @@ button {
   left: 15px;
   filter: blur(3px);
   border-radius: 50%;
-  background-color: #5a0d08;
+  background-color: #4a2da4;
   animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
   z-index: -10; }
 
@@ -405,7 +405,7 @@ button {
   height: 16px;
   margin-left: 16px;
   filter: blur(3px);
-  background-color: #5a0d08;
+  background-color: #4a2da4;
   border-radius: 50%;
   z-index: -10; }
 
@@ -851,10 +851,19 @@ figure {
 
 .like {
   position: absolute;
-  right: 10%;
+  right: 6%;
   margin-top: -2.4em;
   font-size: x-large;
   margin-right: 0.5em; }
+
+.like:hover .full-heart {
+  z-index: 100;
+  position: absolute; }
+
+.like:hover .empty-heart {
+  color: #4a2da4;
+  z-index: 101;
+  position: relative; }
 
 .empty-heart {
   color: #9256dc;
@@ -864,7 +873,7 @@ figure {
   color: rgba(146, 86, 220, 0.5);
   margin-top: -1.2em;
   z-index: -1;
-  position: relative;
+  position: absolute;
   animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s infinite; }
 
 @keyframes full {
@@ -878,14 +887,8 @@ figure {
     color: #99e2d0; }
   100% {
     color: #e299ab; } }
-.like:hover .full-heart {
-  z-index: 100;
-  position: absolute; }
-
-.like:hover .empty-heart {
-  color: #5a0d08;
-  z-index: 101;
-  position: relative; }
+.like-page-1:hover .full-heart {
+  font-weight: bold; }
 
 .description {
   padding: 2%;
@@ -958,6 +961,7 @@ figure {
     font-size: xx-large;
     content: ""; }
 
+/*---------------------coche verte tournant sur elle meme------------*/
 .fas.fa-check-circle {
   animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
   animation-iteration-count: infinite;
@@ -1225,7 +1229,7 @@ p{
       background: linear-gradient(#ff79da, #9256dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #89140c;
+      color: #5e3bc9;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -1243,7 +1247,7 @@ p{
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #89140c; }
+      color: #5e3bc9; }
 
 .btn {
   border-radius: 2rem;

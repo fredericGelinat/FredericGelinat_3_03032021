@@ -44,12 +44,25 @@ figure {
 
 .like {
   position: absolute;
-  right: 10%;
+  right: 6%;
   margin-top: -2.4em;
   font-size: x-large;
   margin-right: 0.5em;
   
 }
+.like:hover .full-heart{
+
+  z-index: 100;
+  position: absolute;
+  
+  
+  }
+  .like:hover .empty-heart{
+    color:$color-random-color-primary;
+    z-index: 101;
+    position: relative;
+  }
+  
 .empty-heart{
   color: $color-primary;
   animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) .10s infinite  ;
@@ -59,7 +72,7 @@ figure {
   color: $color-primary-hsla;
   margin-top: -1.2em;
   z-index: -1;
-  position: relative;
+  position: absolute;
   animation: full 1s cubic-bezier(0.165, 0.84, 0.44, 1) .10s infinite  ;
 }
 
@@ -85,19 +98,12 @@ color: $color-third;
 }
 
 
-.like:hover .full-heart{
 
-z-index: 100;
-position: absolute;
+.like-page-1:hover .full-heart {
 
-
+  font-weight: bold;
+  
 }
-.like:hover .empty-heart{
-  color:$color-random-color-primary;
-  z-index: 101;
-  position: relative;
-}
-
 
 .description {
   @include padding-margin(2%, 0);
@@ -175,6 +181,9 @@ position: absolute;
   
   }
   }
+
+
+  /*---------------------coche verte tournant sur elle meme------------*/
   .fas.fa-check-circle{
   
   animation: circle .9s cubic-bezier(.52,.14,0,1.28) ;
