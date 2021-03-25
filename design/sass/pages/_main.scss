@@ -65,7 +65,7 @@ figure {
   
 .empty-heart{
   color: $color-primary;
-  animation:  fully 1s cubic-bezier(.55,.09,.68,.53) 1.10s infinite ;
+  animation:  fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.10s infinite ;
   /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
  
 }
@@ -76,7 +76,7 @@ figure {
   z-index: -1;
   position: absolute;
   /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-  animation: fully 1s cubic-bezier(.55,.09,.68,.53) 1.10s infinite  ;
+  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.10s infinite  ;
 }
 
 /*@keyframes full {
@@ -167,17 +167,27 @@ color: $color-third;
   width: 17%;
   display: inline-block;
 }
-.dishes {
+ul, .dishes {
   list-style-type: none;
   @include padding-margin(0, 0);
-}
+  position: fixed;
+  width: 100%;
+ background-color: #f6f6f6;
 
-.hover-checked-1 {
+
+
+}
+ .hover-checked-1 {
   background-color: $color-white;
   @include border-radius(15px);
   display: flex;
+  
+ 
+  width:100%;
   /*flex-direction: column;*/
   @include padding-margin(0, 4% 0 2% 0);
+  transform-origin: translate(-50%, 50%);
+  
 
   & 
   .coche-verte {
@@ -204,13 +214,47 @@ color: $color-third;
     justify-content: center;
     /*padding-left: 62.5px;*/
     font-size: xx-large;
-    content: "";
+  
     
   
   }
   }
+/*-----------------------------------menu top de haut en bas pages------------------------*/
 
+.lien-1{
+  display: flex;
+}
+/*.entree-un{
+  opacity: 1;
+}*/
 
+/*
+.bg-grey:hover ~ .lien-1{
+  opacity: 1;
+  transform: translate(0, 15px);
+  transform-origin: y-offset(0%);
+  transition-duration: 5s;
+ z-index: 20000;
+}*/
+
+/*.slide-dishes{
+  
+  background-color: aquamarine;
+  opacity: 0;
+}
+.slide-dishes:hover{
+  opacity: 1;
+  position: absolute;
+ 
+  transition-duration: 10s;
+  transform: translateY(10);
+  animation: from-top 5s cubic-bezier(0.075, 0.82, 0.165, 1)  .1000ms forwards ;
+}
+@keyframes from-top{
+  0%{
+    transform-origin: top, bottom;
+  }
+}*/
   /*---------------------coche verte tournant sur elle meme------------*/
   .fas.fa-check-circle{
   

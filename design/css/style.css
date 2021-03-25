@@ -258,7 +258,7 @@ button {
   color: #99e2d0;
   width: 100%;
   z-index: 1;
-  animation: load-1 0s 3s cubic-bezier(1, 0.02, 0, 1.28) forwards;
+  animation: load-1 0s 13s cubic-bezier(1, 0.02, 0, 1.28) forwards;
   /*
   @keyframes load-2 {
     0%{
@@ -319,7 +319,7 @@ button {
   90% {
     color: #ff79da;
     /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: #79d194; }
+    text-shadow: #3c7087; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc;
@@ -343,7 +343,7 @@ button {
     animation-delay: 0.99s; }
   .section-1 .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #3a400f;
+    text-shadow: 0 0 7px #a44ea7;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   .section-1 .lettre-2 {
     color: #ff79da;
@@ -408,7 +408,7 @@ button {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #22286c;
+    background-color: #1423b6;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   .section-1 .conteneur .dots span {
@@ -418,7 +418,7 @@ button {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #22286c;
+    background-color: #1423b6;
     border-radius: 50%;
     z-index: -10; }
   .section-1 .conteneur .dots {
@@ -842,13 +842,13 @@ figure {
   position: absolute; }
 
 .like:hover .empty-heart {
-  color: #22286c;
+  color: #1423b6;
   z-index: 101;
   position: relative; }
 
 .empty-heart {
   color: #9256dc;
-  animation: fully 1s cubic-bezier(0.55, 0.09, 0.68, 0.53) 1.1s infinite;
+  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
   /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
 
 .full-heart {
@@ -857,7 +857,7 @@ figure {
   z-index: -1;
   position: absolute;
   /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-  animation: fully 1s cubic-bezier(0.55, 0.09, 0.68, 0.53) 1.1s infinite; }
+  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
 
 /*@keyframes full {
   0%{
@@ -930,18 +930,23 @@ color: $color-third;
   width: 17%;
   display: inline-block; }
 
-.dishes {
+ul, .dishes {
   list-style-type: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #f6f6f6; }
 
 .hover-checked-1 {
   background-color: white;
   border-radius: 15px;
   display: flex;
+  width: 100%;
   /*flex-direction: column;*/
   padding: 0;
-  margin: 4% 0 2% 0; }
+  margin: 4% 0 2% 0;
+  transform-origin: translate(-50%, 50%); }
   .hover-checked-1
   .coche-verte {
     color: white;
@@ -962,9 +967,41 @@ color: $color-third;
     align-items: center;
     justify-content: center;
     /*padding-left: 62.5px;*/
-    font-size: xx-large;
-    content: ""; }
+    font-size: xx-large; }
 
+/*-----------------------------------menu top de haut en bas pages------------------------*/
+.lien-1 {
+  display: flex; }
+
+/*.entree-un{
+  opacity: 1;
+}*/
+/*
+.bg-grey:hover ~ .lien-1{
+  opacity: 1;
+  transform: translate(0, 15px);
+  transform-origin: y-offset(0%);
+  transition-duration: 5s;
+ z-index: 20000;
+}*/
+/*.slide-dishes{
+  
+  background-color: aquamarine;
+  opacity: 0;
+}
+.slide-dishes:hover{
+  opacity: 1;
+  position: absolute;
+ 
+  transition-duration: 10s;
+  transform: translateY(10);
+  animation: from-top 5s cubic-bezier(0.075, 0.82, 0.165, 1)  .1000ms forwards ;
+}
+@keyframes from-top{
+  0%{
+    transform-origin: top, bottom;
+  }
+}*/
 /*---------------------coche verte tournant sur elle meme------------*/
 .fas.fa-check-circle {
   animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
@@ -1233,7 +1270,7 @@ p{
       background: linear-gradient(#ff79da, #9256dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #2e3693;
+      color: #192ce4;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -1251,7 +1288,7 @@ p{
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #2e3693; }
+      color: #192ce4; }
 
 .btn {
   border-radius: 2rem;
@@ -1283,5 +1320,40 @@ p{
   align-items: center; }
 
 /*----------------------------------------------------------------------------case coche verte page1.html*/
+/*-------------------menu pages haut en bas------------------------------*/
+ /*navigation et liste
+
+.navi{
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    opacity: 0;
+    z-index: 1500;
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navigation-liste{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+text-align: center;
+width: 100%;
+}
+
+.liens{
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 300;
+    color: rgb(28, 129, 218);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation:hover:active ~ .navi{
+    opacity: 1;
+    width: 100%;
+}*/
 
 /*# sourceMappingURL=style.css.map */

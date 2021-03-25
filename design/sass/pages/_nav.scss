@@ -97,5 +97,38 @@
 /*----------------------------------------------------------------------------case coche verte page1.html*/
 
 
-  
- 
+  /*-------------------menu pages haut en bas------------------------------*/
+ /*navigation et liste
+
+.navi{
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    opacity: 0;
+    z-index: 1500;
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navigation-liste{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+text-align: center;
+width: 100%;
+}
+
+.liens{
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 300;
+    color: rgb(28, 129, 218);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation:hover:active ~ .navi{
+    opacity: 1;
+    width: 100%;
+}*/
