@@ -1,7 +1,7 @@
 /*---------header--------*/
 header{
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
 }
 header  h1 {
       font-family: "Shrikhand", sans-serif;
@@ -9,12 +9,25 @@ header  h1 {
       
     
   }
-.align{
+
+/*------------------------------------Palette du goût----------------------
+--------------------------------------------------------------------------*/
+.fleche-logo {
     display: flex;
+    justify-content: space-evenly;
+    align-items: last baseline;
+  }
+  .fleche{
+   
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+
+
+.align{
+   
     text-decoration: none;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin-right: 5%;
+   
     color: black;
 }

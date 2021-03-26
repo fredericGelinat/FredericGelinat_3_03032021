@@ -1,11 +1,206 @@
-main {
-  background-color: #f2f2f2;
- 
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
 
-  & .restaurants-img {
+/*------------------------------------Palette du goût "section MAIN"----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Palette du goût "section MAIN"----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Palette du goût "section MAIN"----------------------
+--------------------------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------restaurant-IMG----------------------------------*/
+.restaurant-img {
+  margin: 0;
+
+  img {
     width: 100%;
-    height: 13em;
     object-fit: cover;
+  }
+}
+
+/*--------------------------------LA PALETTE DU GOUT----------------------------------------*/
+/*--------------------------------LA PALETTE DU GOUT----------------------------------------*/
+
+.la-palette-du-gout {
+  background-color: antiquewhite;
+  border-radius: 20% 20% 0 0;
+  position: relative;
+  top: -4em;
+  z-index: 1;
+
+  /*--------------------------restaurant-NOM-------------------------*/
+  .restaurant-name-like {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1em;
+
+    .restaurant-name h2 {
+      font-family: "Shrikhand", sans-serif;
+    }
+
+    /*---------------------------------coeur animé---------------------------------*/
+    .like {
+      font-size: x-large;
+
+      .empty-heart {
+        color: $color-primary;
+        animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+        /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+      }
+      .full-heart {
+        color: $color-primary-hsla;
+        margin-top: -1.2em;
+        z-index: -1;
+        position: absolute;
+        /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+        animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+      }
+
+      &:hover .full-heart {
+        font-weight: bold;
+        z-index: 100;
+        position: absolute;
+      }
+      &:hover .empty-heart {
+        color: $color-random-color-primary;
+        z-index: 101;
+        position: relative;
+      }
+    }
+
+    @keyframes fully {
+      0% {
+        color: $color-third;
+      }
+
+      25% {
+        color: $color-secondary;
+      }
+
+      50% {
+        color: $color-primary;
+      }
+
+      75% {
+        color: $color-third;
+      }
+      100% {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  /*--------------------------Titre menu + UNDERLINE-----------------------------*/
+  .titre-underline {
+    text-transform: uppercase;
+    margin-left: 6%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    .titre h2 {
+      font-weight: lighter;
+      margin: 0;
+    }
+
+    .underline {
+      border-top: 1px solid $color-third;
+      width: 17%;
+      display: inline-block;
+    }
+  }
+
+  /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/
+
+  #liste-dishes{
+    background-color: turquoise;
+    margin: 5%;
+    border-radius: 1em;
+  }
+  .dishes {
+    padding: 0;
+
+    .dishes-un {
+      list-style-type: none;
+
+      .presentation-prix-coche-verte {
+        display: flex;
+        justify-content: space-between;
+        .presentation {
+          font-family: "roboto";
+          margin: 1%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          flex-direction: column;
+          padding: 4%;
+
+          & .span-ellipsis {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .prix-coche-verte {
+          display: flex;
+          .prix {
+            display: flex;
+            align-items: flex-end;
+
+            span{
+              padding: 1em;
+            }
+          }
+          .coche-verte {
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            background-color: $color-third;
+            width: 0;
+            @include border-radius(0 15px 15px 0);
+            overflow: hidden;
+            transition: width 400ms ease-in;
+
+            .icone {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              /*padding-left: 62.5px;*/
+              font-size: xx-large;
+
+              .fas.fa-check-circle {
+                animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+              }
+              @keyframes circle {
+                0% {
+                  transform: rotate(0deg);
+                }
+
+                100% {
+                  transform: rotate(360deg);
+                }
+              }
+            }
+          }
+        }
+
+        &:hover .coche-verte {
+          color: $color-white;
+          height: 100%;
+          width: 5em;
+        }
+      }
+    }
   }
 }
 
@@ -28,55 +223,6 @@ section a {
     @include padding-margin(4%, 0);
     font-family: "Roboto", sans-serif;
   }
-}
-figure {
-  background-color: white;
-  @include padding-margin(0, 4%);
-  border-radius: 0 0 4% 4%;
-
-  & img {
-    width: 100%;
-    height: 10em;
-    border-radius: 4% 4% 0 0;
-    object-fit: cover;
-  }
-}
-
-.like {
-  position: absolute;
-  right: 6%;
-  margin-top: -2.4em;
-  font-size: x-large;
-  margin-right: 0.5em;
-  
-}
-.like:hover .full-heart{
-
-  z-index: 100;
-  position: absolute;
-  
-  
-  }
-  .like:hover .empty-heart{
-    color:$color-random-color-primary;
-    z-index: 101;
-    position: relative;
-  }
-  
-.empty-heart{
-  color: $color-primary;
-  animation:  fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.10s infinite ;
-  /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
- 
-}
-.full-heart{
- 
-  color: $color-primary-hsla;
-  margin-top: -1.2em;
-  z-index: -1;
-  position: absolute;
-  /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.10s infinite  ;
 }
 
 /*@keyframes full {
@@ -101,38 +247,6 @@ color: $color-third;
   }
 }*/
 
-
-
-
-@keyframes fully {
-  0%{
-    color: $color-third;
-    
-  }
- 
-  25%{
-color: $color-secondary;
-  }
-  
-  50%{
-    color:$color-primary;
-  }
-  
-  75%{
-color: $color-third;
-  }
-  100%{
-    color: $color-secondary;
-  }
-}
-
-
-.like-page-1:hover .full-heart {
-
-  font-weight: bold;
-  
-}
-
 .description {
   @include padding-margin(2%, 0);
   font-family: "Roboto", sans-serif;
@@ -146,176 +260,12 @@ color: $color-third;
   }
 }
 /*-------------- pages------*/
-.restaurant-name {
-  @include align-items-center(space-around);
-  font-family: "Shrikhand", sans-serif;
-  & i {
-    @include size-weight(x-large, unset);
-  }
-}
-.weight {
-  font-weight: bold;
-}
-.titre-menu h2 {
-  @include padding-margin(0, 25px 0 0 0);
-  text-transform: uppercase;
-  @include size-weight(larger, unset);
-  font-family: "Roboto", sans-serif;
-}
-.underline {
-  border: 1px solid $color-third;
-  width: 17%;
-  display: inline-block;
-}
-ul, .dishes {
-  list-style-type: none;
-  @include padding-margin(0, 0);
-  position: fixed;
-  width: 100%;
- background-color: #f6f6f6;
 
-
-
-}
- .hover-checked-1 {
-  background-color: $color-white;
-  @include border-radius(15px);
-  display: flex;
-  
- 
-  width:100%;
-  /*flex-direction: column;*/
-  @include padding-margin(0, 4% 0 2% 0);
-  transform-origin: translate(-50%, 50%);
-  
-
-  & 
-  .coche-verte {
-    color: $color-white;
-    display: flex;
-    justify-content: center;
-    background-color: $color-third;
-    width: 0;
-    @include border-radius(0 15px 15px 0);
-    overflow: hidden;
-    transition: width 400ms ease-in;
-  }
-  
-  .container:hover .coche-verte {
-    color: $color-white;
-    height: 100%;
-    width: 5em;
-   
-  }
-  .icone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*padding-left: 62.5px;*/
-    font-size: xx-large;
-  
-    
-  
-  }
-  }
 /*-----------------------------------menu top de haut en bas pages------------------------*/
 
-.lien-1{
-  display: flex;
-}
-/*.entree-un{
-  opacity: 1;
-}*/
+/*---------------------coche verte tournant sur elle meme------------*/
 
 /*
-.bg-grey:hover ~ .lien-1{
-  opacity: 1;
-  transform: translate(0, 15px);
-  transform-origin: y-offset(0%);
-  transition-duration: 5s;
- z-index: 20000;
-}*/
-
-/*.slide-dishes{
-  
-  background-color: aquamarine;
-  opacity: 0;
-}
-.slide-dishes:hover{
-  opacity: 1;
-  position: absolute;
- 
-  transition-duration: 10s;
-  transform: translateY(10);
-  animation: from-top 5s cubic-bezier(0.075, 0.82, 0.165, 1)  .1000ms forwards ;
-}
-@keyframes from-top{
-  0%{
-    transform-origin: top, bottom;
-  }
-}*/
-  /*---------------------coche verte tournant sur elle meme------------*/
-  .fas.fa-check-circle{
-  
-  animation: circle .9s cubic-bezier(.52,.14,0,1.28) ;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-}
-@keyframes circle {
-  0%{
-    transform: rotate(0deg);
-
-  }
- /*50%{
-    transform: rotate(180deg);
-  }
- 
-  75%{
-    transform: rotate(270deg);
-  }*/
-   100%{
-     transform: rotate(360deg);
-   }
-}
-  .contain-box{
-    display: flex;
-    justify-content: flex-end;
-    
-  }
-  .prix {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 10% 5% 4% 0%;
-    flex-direction: column;
-    font-weight: bold;
-}
-.container {
-  width: 100%;
-  display: flex;
-}
-
-.presentation {
-  font-family: "roboto";
-  margin: 1%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.ellipsis{
- 
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-
-
-.entree{
-  font-weight: bold;
-}
-
-  
   p {
     @include padding-margin(0, 2% 4% 2% 4%);
   }
@@ -328,11 +278,7 @@ ul, .dishes {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
-
-
-
-
+*/
 
 .sticker {
   /* display: flex;
@@ -350,7 +296,6 @@ ul, .dishes {
 }
 /*--------------MAIN PAGE-1--------------------*/ /*--------------MAIN PAGE-1--------------------*/
 /*--------------MAIN PAGE-1--------------------*/ /*--------------MAIN PAGE-1--------------------*/
-
 
 /*.green-box{
   overflow: hidden;
@@ -470,13 +415,6 @@ p{
 	transform: translateX(100%);
 }
 */
-
-
-
-
-
-
-
 
 /*
 .centre{

@@ -319,7 +319,7 @@ button {
   90% {
     color: #ff79da;
     /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: #3c7087; }
+    text-shadow: #3b6f27; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc;
@@ -343,7 +343,7 @@ button {
     animation-delay: 0.99s; }
   .section-1 .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #a44ea7;
+    text-shadow: 0 0 7px #315765;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   .section-1 .lettre-2 {
     color: #ff79da;
@@ -408,7 +408,7 @@ button {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #1423b6;
+    background-color: #1542d2;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   .section-1 .conteneur .dots span {
@@ -418,7 +418,7 @@ button {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #1423b6;
+    background-color: #1542d2;
     border-radius: 50%;
     z-index: -10; }
   .section-1 .conteneur .dots {
@@ -759,20 +759,26 @@ circle.is-loading::after {
 */
 /*---------header--------*/
 header {
-  display: flex;
-  justify-content: center; }
+  /*display: flex;
+  justify-content: center;*/ }
 
 header h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: xx-large; }
 
-.align {
+/*------------------------------------Palette du goût----------------------
+--------------------------------------------------------------------------*/
+.fleche-logo {
   display: flex;
+  justify-content: space-evenly;
+  align-items: last baseline; }
+
+.fleche {
+  font-size: x-large;
+  font-weight: bold; }
+
+.align {
   text-decoration: none;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-right: 5%;
   color: black; }
 
 /*----------footer---------*/
@@ -794,12 +800,150 @@ footer {
     margin: 1%;
     font-family: "Roboto", sans-serif; }
 
-main {
-  background-color: #f2f2f2; }
-  main .restaurants-img {
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------Palette du goût "section MAIN"----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Palette du goût "section MAIN"----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Palette du goût "section MAIN"----------------------
+--------------------------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*-------------------------restaurant-IMG----------------------------------*/
+.restaurant-img {
+  margin: 0; }
+  .restaurant-img img {
     width: 100%;
-    height: 13em;
     object-fit: cover; }
+
+/*--------------------------------LA PALETTE DU GOUT----------------------------------------*/
+/*--------------------------------LA PALETTE DU GOUT----------------------------------------*/
+.la-palette-du-gout {
+  background-color: antiquewhite;
+  border-radius: 20% 20% 0 0;
+  position: relative;
+  top: -4em;
+  z-index: 1;
+  /*--------------------------restaurant-NOM-------------------------*/
+  /*--------------------------Titre menu + UNDERLINE-----------------------------*/
+  /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/ }
+  .la-palette-du-gout .restaurant-name-like {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1em;
+    /*---------------------------------coeur animé---------------------------------*/ }
+    .la-palette-du-gout .restaurant-name-like .restaurant-name h2 {
+      font-family: "Shrikhand", sans-serif; }
+    .la-palette-du-gout .restaurant-name-like .like {
+      font-size: x-large; }
+      .la-palette-du-gout .restaurant-name-like .like .empty-heart {
+        color: #9256dc;
+        animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+        /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
+      .la-palette-du-gout .restaurant-name-like .like .full-heart {
+        color: rgba(146, 86, 220, 0.5);
+        margin-top: -1.2em;
+        z-index: -1;
+        position: absolute;
+        /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+        animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
+      .la-palette-du-gout .restaurant-name-like .like:hover .full-heart {
+        font-weight: bold;
+        z-index: 100;
+        position: absolute; }
+      .la-palette-du-gout .restaurant-name-like .like:hover .empty-heart {
+        color: #1542d2;
+        z-index: 101;
+        position: relative; }
+@keyframes fully {
+  0% {
+    color: #99e2d0; }
+  25% {
+    color: #ff79da; }
+  50% {
+    color: #9256dc; }
+  75% {
+    color: #99e2d0; }
+  100% {
+    color: #ff79da; } }
+  .la-palette-du-gout .titre-underline {
+    text-transform: uppercase;
+    margin-left: 6%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column; }
+    .la-palette-du-gout .titre-underline .titre h2 {
+      font-weight: lighter;
+      margin: 0; }
+    .la-palette-du-gout .titre-underline .underline {
+      border-top: 1px solid #99e2d0;
+      width: 17%;
+      display: inline-block; }
+  .la-palette-du-gout #liste-dishes {
+    background-color: turquoise;
+    margin: 5%;
+    border-radius: 1em; }
+  .la-palette-du-gout .dishes {
+    padding: 0; }
+    .la-palette-du-gout .dishes .dishes-un {
+      list-style-type: none; }
+      .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte {
+        display: flex;
+        justify-content: space-between; }
+        .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .presentation {
+          font-family: "roboto";
+          margin: 1%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          flex-direction: column;
+          padding: 4%; }
+          .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .presentation .span-ellipsis {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+        .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte {
+          display: flex; }
+          .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix {
+            display: flex;
+            align-items: flex-end; }
+            .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
+              padding: 1em; }
+          .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
+            color: white;
+            display: flex;
+            justify-content: center;
+            background-color: #99e2d0;
+            width: 0;
+            border-radius: 0 15px 15px 0;
+            overflow: hidden;
+            transition: width 400ms ease-in; }
+            .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              /*padding-left: 62.5px;*/
+              font-size: xx-large; }
+              .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
+                animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards; }
+@keyframes circle {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+        .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
+          color: white;
+          height: 100%;
+          width: 5em; }
 
 /*---------restaurants INDEX---------*/
 section a {
@@ -818,46 +962,6 @@ section a {
     padding: 4%;
     margin: 0;
     font-family: "Roboto", sans-serif; }
-
-figure {
-  background-color: white;
-  padding: 0;
-  margin: 4%;
-  border-radius: 0 0 4% 4%; }
-  figure img {
-    width: 100%;
-    height: 10em;
-    border-radius: 4% 4% 0 0;
-    object-fit: cover; }
-
-.like {
-  position: absolute;
-  right: 6%;
-  margin-top: -2.4em;
-  font-size: x-large;
-  margin-right: 0.5em; }
-
-.like:hover .full-heart {
-  z-index: 100;
-  position: absolute; }
-
-.like:hover .empty-heart {
-  color: #1423b6;
-  z-index: 101;
-  position: relative; }
-
-.empty-heart {
-  color: #9256dc;
-  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
-  /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
-
-.full-heart {
-  color: rgba(146, 86, 220, 0.5);
-  margin-top: -1.2em;
-  z-index: -1;
-  position: absolute;
-  /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
 
 /*@keyframes full {
   0%{
@@ -880,20 +984,6 @@ color: $color-third;
     color: $color-primary;
   }
 }*/
-@keyframes fully {
-  0% {
-    color: #99e2d0; }
-  25% {
-    color: #ff79da; }
-  50% {
-    color: #9256dc; }
-  75% {
-    color: #99e2d0; }
-  100% {
-    color: #ff79da; } }
-.like-page-1:hover .full-heart {
-  font-weight: bold; }
-
 .description {
   padding: 2%;
   margin: 0;
@@ -905,167 +995,22 @@ color: $color-third;
     margin: 0; }
 
 /*-------------- pages------*/
-.restaurant-name {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Shrikhand", sans-serif; }
-  .restaurant-name i {
-    font-size: x-large;
-    font-weight: unset; }
-
-.weight {
-  font-weight: bold; }
-
-.titre-menu h2 {
-  padding: 0;
-  margin: 25px 0 0 0;
-  text-transform: uppercase;
-  font-size: larger;
-  font-weight: unset;
-  font-family: "Roboto", sans-serif; }
-
-.underline {
-  border: 1px solid #99e2d0;
-  width: 17%;
-  display: inline-block; }
-
-ul, .dishes {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  width: 100%;
-  background-color: #f6f6f6; }
-
-.hover-checked-1 {
-  background-color: white;
-  border-radius: 15px;
-  display: flex;
-  width: 100%;
-  /*flex-direction: column;*/
-  padding: 0;
-  margin: 4% 0 2% 0;
-  transform-origin: translate(-50%, 50%); }
-  .hover-checked-1
-  .coche-verte {
-    color: white;
-    display: flex;
-    justify-content: center;
-    background-color: #99e2d0;
-    width: 0;
-    border-radius: 0 15px 15px 0;
-    overflow: hidden;
-    transition: width 400ms ease-in; }
-  .hover-checked-1 .container:hover .coche-verte {
-    color: white;
-    height: 100%;
-    width: 5em; }
-  .hover-checked-1 .icone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*padding-left: 62.5px;*/
-    font-size: xx-large; }
-
 /*-----------------------------------menu top de haut en bas pages------------------------*/
-.lien-1 {
-  display: flex; }
-
-/*.entree-un{
-  opacity: 1;
-}*/
-/*
-.bg-grey:hover ~ .lien-1{
-  opacity: 1;
-  transform: translate(0, 15px);
-  transform-origin: y-offset(0%);
-  transition-duration: 5s;
- z-index: 20000;
-}*/
-/*.slide-dishes{
-  
-  background-color: aquamarine;
-  opacity: 0;
-}
-.slide-dishes:hover{
-  opacity: 1;
-  position: absolute;
- 
-  transition-duration: 10s;
-  transform: translateY(10);
-  animation: from-top 5s cubic-bezier(0.075, 0.82, 0.165, 1)  .1000ms forwards ;
-}
-@keyframes from-top{
-  0%{
-    transform-origin: top, bottom;
-  }
-}*/
 /*---------------------coche verte tournant sur elle meme------------*/
-.fas.fa-check-circle {
-  animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards; }
-
-@keyframes circle {
-  0% {
-    transform: rotate(0deg); }
-  /*50%{
-     transform: rotate(180deg);
-   }
-  
-   75%{
-     transform: rotate(270deg);
-   }*/
-  100% {
-    transform: rotate(360deg); } }
-.contain-box {
-  display: flex;
-  justify-content: flex-end; }
-
-.prix {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 10% 5% 4% 0%;
-  flex-direction: column;
-  font-weight: bold; }
-
-.container {
-  width: 100%;
-  display: flex; }
-
-.presentation {
-  font-family: "roboto";
-  margin: 1%;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-.ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.entree {
-  font-weight: bold; }
-
-p {
-  padding: 0;
-  margin: 2% 4% 2% 4%; }
-
-.alignement {
-  padding: 0;
-  margin: 0 4% 2% 4%;
-  display: flex;
-  justify-content: space-between;
-  align-items: unset; }
-
-#ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
+/*
+  p {
+    @include padding-margin(0, 2% 4% 2% 4%);
+  }
+  .alignement {
+    @include padding-margin(0, 0 4% 2% 4%);
+    @include display-justifyC-alignI(flex, space-between, unset);
+  }
+  #ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+*/
 .sticker {
   /* display: flex;
   justify-content: flex-end;*/
@@ -1270,7 +1215,7 @@ p{
       background: linear-gradient(#ff79da, #9256dc);
       /* background-color: linear-gradient($color-random-color-secondary, $color-third);
         color: darken($color-random-color-third, 35);*/
-      color: #192ce4;
+      color: #305cea;
       transition: background-color 250ms; }
   #navigation li:before {
     content: counter(liste);
@@ -1288,7 +1233,7 @@ p{
     margin: 0;
     color: #acabab; }
     #navigation i:hover {
-      color: #192ce4; }
+      color: #305cea; }
 
 .btn {
   border-radius: 2rem;
