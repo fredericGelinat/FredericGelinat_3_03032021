@@ -27,22 +27,7 @@
   }
 }
 
-button {
-  background: linear-gradient($color-secondary, $color-primary);
 
-  @include border-radius(37px);
-  color: white;
-
-  border: none;
-  @include box-shadow($box-shadow-grey-around);
-
-  @include padding-margin(8%, 0);
-
-  & span {
-    color: white;
-    font-weight: bold;
-  }
-}
 /*& h2 {
       font-size: x-large;
       text-align: center;
