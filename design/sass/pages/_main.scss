@@ -25,215 +25,216 @@ body {
 
   /*--------------------------------LA PALETTE DU GOUT----------------------------------------*/
   /*--------------------------------LA PALETTE DU GOUT----------------------------------------*/
- main{
-   background-color: antiquewhite;
- 
-  .la-palette-du-gout {
+  main {
     background-color: antiquewhite;
-    border-radius: 2em 2em 0 0;
-    position: relative;
-    top: -3em;
-    z-index: 1;
 
-    /*--------------------------restaurant-NOM-------------------------*/
-    .restaurant-name-like {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      padding-top: 1em;
+    .la-palette-du-gout {
+      background-color: antiquewhite;
+      border-radius: 2em 2em 0 0;
+      position: relative;
+      top: -3em;
+      z-index: 1;
 
-      .restaurant-name h2 {
-        font-family: "Shrikhand", sans-serif;
+      /*--------------------------restaurant-NOM-------------------------*/
+      .restaurant-name-like {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 1em;
+
+        .restaurant-name h2 {
+          font-family: "Shrikhand", sans-serif;
+        }
+
+        /*---------------------------------coeur animé---------------------------------*/
+        .like {
+          font-size: x-large;
+
+          .empty-heart {
+            color: $color-primary;
+            animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+            /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+          }
+          .full-heart {
+            color: $color-primary-hsla;
+            margin-top: -1.2em;
+            z-index: -1;
+            position: absolute;
+            /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+            animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+          }
+
+          &:hover .full-heart {
+            font-weight: bold;
+            z-index: 100;
+            position: absolute;
+          }
+          &:hover .empty-heart {
+            color: $color-random-color-primary;
+            z-index: 101;
+            position: relative;
+          }
+        }
+
+        @keyframes fully {
+          0% {
+            color: $color-third;
+          }
+
+          25% {
+            color: $color-secondary;
+          }
+
+          50% {
+            color: $color-primary;
+          }
+
+          75% {
+            color: $color-third;
+          }
+          100% {
+            color: $color-secondary;
+          }
+        }
       }
 
-      /*---------------------------------coeur animé---------------------------------*/
-      .like {
-        font-size: x-large;
+      /*--------------------------Titre menu + UNDERLINE-----------------------------*/
+      .titre-underline {
+        text-transform: uppercase;
+        margin-left: 6%;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        flex-direction: column;
 
-        .empty-heart {
-          color: $color-primary;
-          animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
-          /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-        }
-        .full-heart {
-          color: $color-primary-hsla;
-          margin-top: -1.2em;
-          z-index: -1;
-          position: absolute;
-          /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-          animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+        .titre h2 {
+          font-weight: lighter;
+          margin: 0;
         }
 
-        &:hover .full-heart {
-          font-weight: bold;
-          z-index: 100;
-          position: absolute;
-        }
-        &:hover .empty-heart {
-          color: $color-random-color-primary;
-          z-index: 101;
-          position: relative;
+        .underline {
+          border-top: 1px solid $color-third;
+          width: 17%;
+          display: inline-block;
         }
       }
 
-      @keyframes fully {
-        0% {
-          color: $color-third;
-        }
+      /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/
 
-        25% {
-          color: $color-secondary;
-        }
-
-        50% {
-          color: $color-primary;
-        }
-
-        75% {
-          color: $color-third;
-        }
-        100% {
-          color: $color-secondary;
-        }
+      #liste-dishes {
+        background-color: turquoise;
+        margin: 5%;
+        border-radius: 1em;
       }
-    }
+      .dishes {
+        padding: 0;
 
-    /*--------------------------Titre menu + UNDERLINE-----------------------------*/
-    .titre-underline {
-      text-transform: uppercase;
-      margin-left: 6%;
-      font-family: "Roboto", sans-serif;
-      display: flex;
-      flex-direction: column;
+        .dishes-un {
+          list-style-type: none;
 
-      .titre h2 {
-        font-weight: lighter;
-        margin: 0;
-      }
-
-      .underline {
-        border-top: 1px solid $color-third;
-        width: 17%;
-        display: inline-block;
-      }
-    }
-
-    /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/
-
-    #liste-dishes {
-      background-color: turquoise;
-      margin: 5%;
-      border-radius: 1em;
-    }
-    .dishes {
-      padding: 0;
-
-      .dishes-un {
-        list-style-type: none;
-
-        .presentation-prix-coche-verte {
-          display: flex;
-          justify-content: space-between;
-          .presentation {
-            font-family: "roboto";
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
+          .presentation-prix-coche-verte {
             display: flex;
-            flex-direction: column;
-            padding: 1em;
-
-            & .span-ellipsis {
+            justify-content: space-between;
+            .presentation {
+              font-family: "roboto";
+              margin: 0;
               overflow: hidden;
               text-overflow: ellipsis;
-              white-space: nowrap;
-            }
-          }
-          .prix-coche-verte {
-            display: flex;
-            .prix {
               display: flex;
-              align-items: flex-end;
+              flex-direction: column;
+              padding: 1em;
 
-              span {
-                padding: 1em;
+              & .span-ellipsis {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
               }
             }
-            .coche-verte {
-              color: $color-white;
+            .prix-coche-verte {
               display: flex;
-              justify-content: center;
-              background-color: $color-third;
-              width: 0;
-              @include border-radius(0 15px 15px 0);
-              overflow: hidden;
-              transition: width 400ms ease-in;
-
-              .icone {
+              .prix {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                /*padding-left: 62.5px;*/
-                font-size: xx-large;
+                align-items: flex-end;
 
-                .fas.fa-check-circle {
-                  animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
-                  animation-iteration-count: infinite;
-                  animation-fill-mode: forwards;
+                span {
+                  padding: 1em;
                 }
-                @keyframes circle {
-                  0% {
-                    transform: rotate(0deg);
-                  }
+              }
+              .coche-verte {
+                color: $color-white;
+                display: flex;
+                justify-content: center;
+                background-color: $color-third;
+                width: 0;
+                @include border-radius(0 15px 15px 0);
+                overflow: hidden;
+                transition: width 400ms ease-in;
 
-                  100% {
-                    transform: rotate(360deg);
+                .icone {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  /*padding-left: 62.5px;*/
+                  font-size: xx-large;
+
+                  .fas.fa-check-circle {
+                    animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: forwards;
+                  }
+                  @keyframes circle {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+
+                    100% {
+                      transform: rotate(360deg);
+                    }
                   }
                 }
               }
             }
-          }
 
-          &:hover .coche-verte {
-            color: $color-white;
-            height: 100%;
-            width: 5em;
+            &:hover .coche-verte {
+              color: $color-white;
+              height: 100%;
+              width: 5em;
+            }
           }
         }
       }
     }
-  }
-  .bouton-interactif {
-    display: flex;
-    justify-content: center;
+    .bouton-interactif {
+      display: flex;
+      justify-content: center;
 
-    .bouton {
-      background: linear-gradient($color-secondary, $color-primary);
+      .bouton {
+        background: linear-gradient($color-secondary, $color-primary);
 
-      @include border-radius(37px);
-      color: white;
-      
-      border: none;
-      @include box-shadow($box-shadow-grey-around);
-
-      @include padding-margin(8% 19% 8% 19%, 4% 0 15% 0);
-
-      & span {
+        @include border-radius(37px);
         color: white;
-        font-weight: bold;
-        background: linear-gradient($color-secondary, $color-primary);
-        letter-spacing: 0.23em;
-      }
 
-      button, .commander{
-        background: linear-gradient($color-secondary, $color-primary);
         border: none;
-        border-radius: 31em;
+        @include box-shadow($box-shadow-grey-around);
+
+        @include padding-margin(8% 19% 8% 19%, 4% 0 15% 0);
+
+        & span {
+          color: white;
+          font-weight: bold;
+          background: linear-gradient($color-secondary, $color-primary);
+          letter-spacing: 0.23em;
+        }
+
+        button,
+        .commander {
+          background: linear-gradient($color-secondary, $color-primary);
+          border: none;
+          border-radius: 31em;
+        }
       }
     }
   }
- }
   .footer-logo-txtUn-textDeux-txtTrois-txtQuatre {
     display: flex;
     flex-direction: column;
@@ -247,6 +248,41 @@ body {
 
       p {
         font-size: x-large;
+        font-weight: bold;
+      }
+    }
+    .txtUn-textDeux-txtTrois-txtQuatre {
+      margin-top: -1em;
+      .txtUn,
+      .color {
+        font-family: "Roboto", sans-serif;
+        color: $color-white;
+        cursor: pointer;
+
+        .icone-hTrois {
+          display: flex;
+          justify-content: center;
+
+          .icone {
+            margin: 0 0 0 1em;
+          }
+          .span-i{
+            margin-left: -1.6em;
+          }
+        }
+
+        .hTrois {
+          margin: 0 0 0 1em;
+        }
+
+        .hTrois h3 {
+          margin: 0;
+        }
+      }
+      .mail{
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-size: large;
         font-weight: bold;
       }
     }
