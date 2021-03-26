@@ -1,1 +1,4 @@
 .vscode/
+.vs/
+.sass-cache
+dart-sass/
