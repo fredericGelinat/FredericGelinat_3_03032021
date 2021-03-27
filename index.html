@@ -1,368 +1,352 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="design/css/style.css" />
+
+        <!--<meta description>-->
+        <title>OhMyFood</title>
+    </head>
+
+    <body>
+        
+
+        <aside id="loading-page">
+            <div class="dot-dots">
+                <div class="dot"> 
+                    <span></span>
+                </div> 
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
     
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="design/css/style.css" />
-
-    <!--<meta description>-->
-    <title>OhMyFood</title>
-</head>
-<body>
+            <div class="loader-letters">
+            <span class="lettre lettre-1">O</span>
+            <span class="lettre lettre-2">h</span>
+            <span class="lettre lettre-3">m</span>
+            <span class="lettre lettre-4">y</span>
+            <span class="lettre lettre-5">f</span>
+            <span class="lettre lettre-6">o</span>
+            <span class="lettre lettre-7">o</span>
+            <span class="lettre lettre-8">d</span>
+            </div>
     
+        </aside>
 
-    <aside id="loading-page">
-        <div class="dot-dots">
-            <div class="dot"> 
-                <span></span>
-            </div> 
-            <div class="dots">
-                <span></span>
-                <span></span>
+        <header>
+            <div class="logo-header">
+                <h1>Ohmyfood</h1>
             </div>
-        </div>
-  
-        <div class="loader-letters">
-          <span class="lettre lettre-1">O</span>
-          <span class="lettre lettre-2">h</span>
-          <span class="lettre lettre-3">m</span>
-          <span class="lettre lettre-4">y</span>
-          <span class="lettre lettre-5">f</span>
-          <span class="lettre lettre-6">o</span>
-          <span class="lettre lettre-7">o</span>
-          <span class="lettre lettre-8">d</span>
-        </div>
-  
-    </aside>
+        </header>
 
-    <header>
-        <div class="logo-header">
-            <h1>Ohmyfood</h1>
-        </div>
-    </header>
-
-    <aside class="accueil-index">
-        <div class="formulaires-recherche">
-            <form action="submit"  class="icone-input-paragraphes">
-                <div class="icone-input">
-                    <div class="icone">
-                        <i class="fas fa-map-marker-alt">
-                        </i>
-                    </div>
-                    <div class="input">
-                        <input
-                            type="text"
-                            id="site-search"
-                            placeholder="Paris, Belleville"
-                        />
-                    </div>
-                </div>
-                <div class="paragraphes">
-                    <div class="paragrapheUn">
-                        <p>
-                            Réservez le menu qui <br />
-                            vous convient
-                        </p>
-                    </div>
-                    <div class="paragrapheDeux">
-                        <p>Découvrez des restaurants d'exception, sélectionnés par nos
-                        soins
-                        </p>
-                    </div>
-
-                <div class="bouton-rose">
-                    <button class="texteBoutonRose">
-                    <span class="weight">Explorez nos restaurants</span>
-                    </button>
-                </div>
-                </div>
-            </form>
-        </div>
-    
-    </aside>
-
-    <nav class="navigation-index">
-        <div class="titreFonctionnement">
-            <h2>Fonctionnement</h2>
-        </div>
-        <ol class="liste-fonctionnement">
-            <li class="items-fonctionnement">
-                <div class="awesome-boutonChoixRestaurant-btn_bg">
-                    <div class="awesome">
-                      <i class="fas fa-mobile-alt "></i>
-                    </div>
-                    <div class="bouton-choix-restaurant">
-                      <p>Choisissez un restaurant</p>
-                    </div>
-                    <div class="btn_bg"></div>
-                </div>
-            </li>
-            <li class="items-fonctionnement">
-                <div class="awesome-boutonChoixRestaurant-btn_bg">
-                    <div class="awesome">
-                      <i class="fas fa-mobile-alt "></i>
-                    </div>
-                    <div class="bouton-choix-restaurant">
-                      <p>Choisissez un restaurant</p>
-                    </div>
-                    <div class="btn_bg"></div>
-                </div>
-            </li>
-            <li class="items-fonctionnement">
-                <div class="awesome-boutonChoixRestaurant-btn_bg">
-                    <div class="awesome">
-                      <i class="fas fa-mobile-alt "></i>
-                    </div>
-                    <div class="bouton-choix-restaurant">
-                      <p>Choisissez un restaurant</p>
-                    </div>
-                    <div class="btn_bg"></div>
-                </div>
-            </li>
-        </ol>
-    </nav>
-
-    <main>
-        <section class="cartes-restaurants">
-            <div class="titres-cartes-restaurant">
-                <h2>Restaurants</h2>
-            </div>
-        </section>
-    </main>
-    <figure class="img-resto">
-        <div class="lien-stickerNew-img">
-            <div class="lien">
-                <a href="la-palette-du-gout.html">
-                    <div class="sticker-new">
-                        <div class="sticker">
-                            <p class="new">Nouveau
-                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img
-                        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="restaurants Menilmontant"
-                        />
-                    </div>
-                </a>
-            </div>
-        </div>
-        <figcaption class="description-like">
-            <div class="lien-description-like">
-                <div class="lien">
-                    <a href="page-1.html">
-                        <div class="decription-hTrois-p">
-                            <div class="hTrois">
-                                <h3>La palette du goût</h3>
-                            </div>
-                            <div class="p">
-                                <p>Ménilmontant</p>
-                            </div>
-                        </div>
-                        <div class="like-empty-full">
-                            <div class="empty">
-                                <i class="far fa-heart empty-heart "></i>
-                            </div>
-                            <div class="full">
-                                <i class="fas fa-heart full-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </figcaption>
-    </figure>
-    <figure class="img-resto">
-        <div class="lien-stickerNew-img">
-            <div class="lien">
-                <a href="la-palette-du-gout.html">
-                    <div class="sticker-new">
-                        <div class="sticker">
-                            <p class="new">Nouveau
-                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img
-                        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="restaurants Menilmontant"
-                        />
-                    </div>
-                </a>
-            </div>
-        </div>
-        <figcaption class="description-like">
-            <div class="lien-description-like">
-                <div class="lien">
-                    <a href="page-1.html">
-                        <div class="decription-hTrois-p">
-                            <div class="hTrois">
-                                <h3>La palette du goût</h3>
-                            </div>
-                            <div class="p">
-                                <p>Ménilmontant</p>
-                            </div>
-                        </div>
-                        <div class="like-empty-full">
-                            <div class="empty">
-                                <i class="far fa-heart empty-heart "></i>
-                            </div>
-                            <div class="full">
-                                <i class="fas fa-heart full-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </figcaption>
-    </figure>
-    <figure class="img-resto">
-        <div class="lien-stickerNew-img">
-            <div class="lien">
-                <a href="la-palette-du-gout.html">
-                    <div class="sticker-new">
-                        <div class="sticker">
-                            <p class="new">Nouveau
-                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img
-                        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="restaurants Menilmontant"
-                        />
-                    </div>
-                </a>
-            </div>
-        </div>
-        <figcaption class="description-like">
-            <div class="lien-description-like">
-                <div class="lien">
-                    <a href="page-1.html">
-                        <div class="decription-hTrois-p">
-                            <div class="hTrois">
-                                <h3>La palette du goût</h3>
-                            </div>
-                            <div class="p">
-                                <p>Ménilmontant</p>
-                            </div>
-                        </div>
-                        <div class="like-empty-full">
-                            <div class="empty">
-                                <i class="far fa-heart empty-heart "></i>
-                            </div>
-                            <div class="full">
-                                <i class="fas fa-heart full-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </figcaption>
-    </figure>
-    <figure class="img-resto">
-        <div class="lien-stickerNew-img">
-            <div class="lien">
-                <a href="la-palette-du-gout.html">
-                    <div class="sticker-new">
-                        <div class="sticker">
-                            <p class="new">Nouveau
-                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img
-                        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="restaurants Menilmontant"
-                        />
-                    </div>
-                </a>
-            </div>
-        </div>
-        <figcaption class="description-like">
-            <div class="lien-description-like">
-                <div class="lien">
-                    <a href="page-1.html">
-                        <div class="decription-hTrois-p">
-                            <div class="hTrois">
-                                <h3>La palette du goût</h3>
-                            </div>
-                            <div class="p">
-                                <p>Ménilmontant</p>
-                            </div>
-                        </div>
-                        <div class="like-empty-full">
-                            <div class="empty">
-                                <i class="far fa-heart empty-heart "></i>
-                            </div>
-                            <div class="full">
-                                <i class="fas fa-heart full-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </figcaption>
-    </figure>
-    <footer>
-        <div class="footer-logo-txtUn-textDeux-txtTrois-txtQuatre">
-            <div class="logo">
-                <p>Ohmyfood</p>
-            </div>
-            <div class="txtUn-textDeux-txtTrois-txtQuatre">
-                <div class="txtUn color">
-                
-                    <div class="icone-hTrois">
-
+        <aside class="accueil-formulaires-recherche">
+            <div class="icone-input-paragraphes-boutonRose">
+                <form action="submit"  class="icone-input-paragraphes">
+                    <div class="icone-input">
                         <div class="icone">
-                            <span><i class="fas fa-utensils"></i></span>
+                            <i class="fas fa-map-marker-alt">
+                            </i>
                         </div>
-                        <div class="hTrois">
-                            <h3>Proposer un restaurant</h3>
+                        <div class="input">
+                            <input
+                                type="text"
+                                class="input-site-search"
+                                placeholder="Paris, Belleville"
+                            />
                         </div>
                     </div>
-                        
-                    
-                </div>
-                <div class="txtDeux color">
+                    <div class="paragraphes">
+                        <div class="paragrapheUn">
+                            <p>
+                                Réservez le menu qui <br />
+                                vous convient
+                            </p>
+                        </div>
+                        <div class="paragrapheDeux">
+                            <p>Découvrez des restaurants d'exception, sélectionnés par nos
+                            soins
+                            </p>
+                        </div>
+
                 
-                    <div class="icone-hTrois">
+                    </div>
+                </form>
+                <aside class="submit-bouton">
+                    <div class="bouton-rose">
+                        <button class="texte-bouton-rose">
+                            <span class="clic">Explorez nos restaurants</span>
+                        </button>
+                    </div>
+                </aside>
+            </div>      
+        </aside>
 
-                        <div class="icone span-i">
-                            <span><i class="fas fa-utensils"></i></span>
+        <nav class="navigation-index">
+            <div class="titreFonctionnement">
+                <h2>Fonctionnement</h2>
+            </div>
+            <ol class="liste-fonctionnement">
+                <li class="items-fonctionnement">
+                    <div class="awesome-boutonChoixRestaurant-btn_bg">
+                        <div class="awesome">
+                        <i class="fas fa-mobile-alt "></i>
                         </div>
+                        <div class="bouton-choix-restaurant">
+                        <p>Choisissez un restaurant</p>
+                        </div>
+                    
+                    </div>
+                </li>
+                <li class="items-fonctionnement">
+                    <div class="awesome-boutonChoixRestaurant-btn_bg">
+                        <div class="awesome">
+                        <i class="fas fa-mobile-alt "></i>
+                        </div>
+                        <div class="bouton-choix-restaurant">
+                        <p>Choisissez un restaurant</p>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="items-fonctionnement">
+                    <div class="awesome-boutonChoixRestaurant-btn_bg">
+                        <div class="awesome">
+                        <i class="fas fa-mobile-alt "></i>
+                        </div>
+                        <div class="bouton-choix-restaurant">
+                        <p>Choisissez un restaurant</p>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
+        <main class="main-index">
+            <section class="cartes-restaurants">
+                <div class="titres-cartes-restaurant">
+                    <h2>Restaurants</h2>
+                </div>
+        
+                    
+                <figure class="carte-resto">
+                    <div class="lien-stickerNew-img">
+                        <div class="lien">
+                            <a href="la-palette-du-gout.html">
+                                <div class="sticker-new">
+                                    <div class="sticker">
+                                        <p class="new">Nouveau
+                                        
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img
+                                    src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="restaurants Menilmontant"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <figcaption class="description-like">
+                        <div class="lien-description-like">
+                            <div class="lien">
+                                <a href="page-1.html">
+                                    <div class="decription-hTrois-p">
+                                        <div class="hTrois">
+                                            <h3>La palette du goût</h3>
+                                        </div>
+                                        <div class="p">
+                                            <p>Ménilmontant</p>
+                                        </div>
+                                    </div>
+                                    <!--<div class="like-empty-full">
+                                        <div class="empty">
+                                            <i class="far fa-heart empty-heart "></i>
+                                        </div>
+                                        <div class="full">
+                                            <i class="fas fa-heart full-heart"></i>
+                                        </div>
+                                    </div>-->
+
+                                    <div class="like">
+                                        <div class="empty"><i class="far fa-heart empty-heart "></i></div>
+                                        <div class="full"><i class="fas fa-heart full-heart"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="carte-resto">
+                    <div class="lien-stickerNew-img">
+                        <div class="lien">
+                            <a href="la-palette-du-gout.html" class="txt-deco-none">
+                                <div class="sticker-new">
+                                    <div class="sticker">
+                                        <p class="new">Nouveau
+                                        
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img
+                                    src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="restaurants Menilmontant"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <figcaption class="description-like">
+                        <div class="lien-description-like">
+                            <div class="lien">
+                                <a href="page-1.html">
+                                    <div class="decription-hTrois-p">
+                                        <div class="hTrois">
+                                            <h3>La palette du goût</h3>
+                                        </div>
+                                        <div class="p">
+                                            <p>Ménilmontant</p>
+                                        </div>
+                                    </div>
+                                    <div class="like">
+                                        <div class="empty"><i class="far fa-heart empty-heart "></i></div>
+                                        <div class="full"><i class="fas fa-heart full-heart"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="carte-resto">
+                    <div class="lien-stickerNew-img">
+                        <div class="lien">
+                            <a href="la-palette-du-gout.html">
+                                
+                                <div class="img">
+                                    <img
+                                    src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="restaurants Menilmontant"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <figcaption class="description-like">
+                        <div class="lien-description-like">
+                            <div class="lien">
+                                <a href="page-1.html">
+                                    <div class="decription-hTrois-p">
+                                        <div class="hTrois">
+                                            <h3>La palette du goût</h3>
+                                        </div>
+                                        <div class="p">
+                                            <p>Ménilmontant</p>
+                                        </div>
+                                    </div>
+                                    <div class="like">
+                                        <div class="empty"><i class="far fa-heart empty-heart "></i></div>
+                                        <div class="full"><i class="fas fa-heart full-heart"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="carte-resto">
+                    <div class="lien-stickerNew-img">
+                        <div class="lien">
+                            <a href="la-palette-du-gout.html"class="txt-deco-none">
+                                
+                                <div class="img">
+                                    <img
+                                    src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="restaurants Menilmontant"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <figcaption class="description-like">
+                        <div class="lien-description-like">
+                            <div class="lien">
+                                <a href="page-1.html">
+                                    <div class="decription-hTrois-p">
+                                        <div class="hTrois">
+                                            <h3>La palette du goût</h3>
+                                        </div>
+                                        <div class="p">
+                                            <p>Ménilmontant</p>
+                                        </div>
+                                    </div>
+                                    <div class="like">
+                                        <div class="empty"><i class="far fa-heart empty-heart "></i></div>
+                                        <div class="full"><i class="fas fa-heart full-heart"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </figcaption>
+              </figure>
+         </section>
+     </main>
+        <footer>
+            <div class="footer-logo-txtUn-textDeux-txtTrois-txtQuatre">
+                <div class="logo">
+                    <p>Ohmyfood</p>
+                </div>
+                <div class="txtUn-textDeux-txtTrois-txtQuatre">
+                    <div class="txtUn color">
+                    
+                        <div class="icone-hTrois">
+
+                            <div class="icone">
+                                <span><i class="fas fa-utensils"></i></span>
+                            </div>
+                            <div class="hTrois">
+                                <h3>Proposer un restaurant</h3>
+                            </div>
+                        </div>
+                            
+                        
+                    </div>
+                    <div class="txtDeux color">
+                    
+                        <div class="icone-hTrois">
+
+                            <div class="icone span-i">
+                                <span><i class="fas fa-utensils"></i></span>
+                            </div>
+                            <div class="hTrois">
+                                <h3>Devenir partenaire</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="txtTrois color">
                         <div class="hTrois">
-                            <h3>Devenir partenaire</h3>
+                            <h3>Mentions légales</h3>
                         </div>
                     </div>
 
-                </div>
-                <div class="txtTrois color">
-                    <div class="hTrois">
-                        <h3>Mentions légales</h3>
+                    <div class="txtQuatre color">
+                        <div class="hTrois">
+                            <a href="mailto:contact@hotmail.com" class="color mail">Contact</a>
+                        </div>     
                     </div>
-                </div>
-
-                <div class="txtQuatre color">
-                    <div class="hTrois">
-                        <a href="mailto:contact@hotmail.com" class="color mail">Contact</a>
-                    </div>     
                 </div>
             </div>
-        </div>
-    </footer>
-
-    
-</body>
+        </footer>
+    </body>
 </html>
