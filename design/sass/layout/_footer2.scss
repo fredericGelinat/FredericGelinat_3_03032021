@@ -1,22 +1,52 @@
-/*----------footer---------*/
-/*footer {
-    background-color: #222121;
-    color: rgb(223, 219, 219);
-    height: 12em;
-    margin-top: -5%;*/
-    /*& p {
-      width: 25%;
-      display: flex;
-      justify-content: flex-start;
-      padding: $padding;
-      font-family: "Shrikhand", sans-serif;
+.footer-logo-txtUn-textDeux-txtTrois-txtQuatre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: hsla(0, 0%, 0%, 0.9);
+
+  .logo {
+    color: $color-white;
+    margin: 4%;
+    font-family: "Shrikhand", sans-serif;
+
+    p {
+      font-size: x-large;
+      font-weight: bold;
     }
-    & ul {
-      list-style-type: none;
-      padding: 0 0 5% 7%;
-    }
-    & li {
-      margin: 1%;
+  }
+  .txtUn-textDeux-txtTrois-txtQuatre {
+    margin-top: -1em;
+    .txtUn,
+    .color {
       font-family: "Roboto", sans-serif;
+      color: $color-white;
+      cursor: pointer;
+
+      .icone-hTrois {
+        display: flex;
+        justify-content: center;
+
+        .icone {
+          margin: 0 0 0 1em;
+        }
+        .span-i {
+          margin-left: -1.6em;
+        }
+      }
+
+      .hTrois {
+        margin: 0 0 0 1em;
+      }
+
+      .hTrois h3 {
+        margin: 0;
+      }
     }
-  }*/
+    .mail {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-size: large;
+      font-weight: bold;
+    }
+  }
+}

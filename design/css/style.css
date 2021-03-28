@@ -1,137 +1,12 @@
 @charset "UTF-8";
-/*$color-primary-palette: (
-  primary: $color-primary,
-  primary-random: $color-random-color-primary,
-  primary-secondary-linear-gradient: linear-gradient($colour-primary,$color-secondary),
-  secondary-primary-linear-gradient: linear-gradient($color-secondary, $colour-primary),)
-
-  @mixin primary-secondary-bg-radial-gradient-circle ($param) {
-
- background-color: radial-gradient(circle at $param, $param, $param)
-}
-
- background: radial-gradient(circle at bottom, #9356DC 0%, #FF79DA  100%);
-      bg: $colour-primary,
-    bg-random:
-    circle: $colour-primary,
-    circle-random:
-    txt:
-txt-random: $colour-white,
-  ),
-  random: (
-      bg: $colour-primary,
-      border: $colour-primary,
-      txt: $colour-white,
-  ),
-  linear: (
-      bg: $colour-invalid,
-      border: $colour-white,
-      txt: $colour-white,
-  )
-  circle:(
-
-  )
-);*/
-/* $text-deco: (text-decoration: none, )
-$text-deco: none;*/
-/*
-$section:".section-1";
-
-%theme {
-  @if ($section <= $duration){
-    .section-2{
-      display: none;
-    }
-    
-}
-@else {
-  .section-2{
-    display: flex;
-  }
-}
-}
-$i: 1s;
-
-@for $i from 1 to 3{
-
-}*/
-/***********************heart*****************/
 /*-----------------------justify content center-----------------------*/
+/*--------general--------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
-/*--------general--------*/
 body {
   margin: 0;
   padding: 0; }
 
-/*--------search---------*/
-/*
-.rechercher {
-  font-family: "Roboto", sans-serif;
-  @extend %column-center;
-  margin-top: -2%;
-}
-#textes {
-  @include text-align-center(column);
-  background-color: $color-background;
-  & #centre {
-    @include padding-margin(10%, 0);
-  }
-}
-
-#search {
-  @include justify-content-center(row);
-  background-color: $color-search;
-  @include padding-margin(4%, 0);
-  @include box-shadow($box-shadow-grey-up);
-  & input {
-    border: none;
-    background-color: $color-search;
-    @include text-align-center(column);
-  }
-  & #site-search .icone {
-    display: flex;
-  }
-}
-
-
-/*& h2 {
-      font-size: x-large;
-      text-align: center;
-    }
-    & 
-    & 
-    section {
-      background-color: #f2f2f2;
-      height: 19em;
-      width: auto;
-    }
-    & .font {
-      font-weight: bold;
-      font-size: 1em;
-    }
-  }
-form {
-  background-color: $color-search;
-
-  @extend %column-center;
-  /*box-shadow: 15px 25px 6px 28px #cfcfcf;*/
-/* & .icone {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: $color-search;
-    }
-    &
-    
-  }*/
-/*form {
-    background-color: $color-search;
-  
-    @include justify-content-center(column);
-  
-  }*/
-/*@import "../sass/componants/button";*/
 #loading-page {
   background: radial-gradient(circle at center, #99e2d0 10%, #9256dc 100%);
   height: 100vh;
@@ -152,13 +27,6 @@ form {
     display: flex;
     justify-content: center;
     align-items: center; }
-@keyframes load-1 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    display: none;
-    z-index: -100; } }
   #loading-page .loader-letters {
     position: absolute;
     width: 100%;
@@ -171,20 +39,6 @@ form {
     letter-spacing: 10px;
     margin-bottom: 150px;
     animation: flash 1.9s cubic-bezier(0.52, 0.14, 1, 1.28) infinite; }
-@keyframes flash {
-  0% {
-    color: #99e2d0;
-    /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
-    text-shadow: 0 0 7px #ff79da; }
-  90% {
-    color: #ff79da;
-    /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: #06877d; }
-  100% {
-    color: #9256dc;
-    text-shadow: 0 0 7px #9256dc;
-    /*$color-secondary;*/
-    /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/ } }
   #loading-page .lettre:nth-child(1) {
     animation-delay: 0.30s; }
   #loading-page .lettre:nth-child(2) {
@@ -203,7 +57,7 @@ form {
     animation-delay: 0.99s; }
   #loading-page .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #24786e;
+    text-shadow: 0 0 7px #c95f7f;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   #loading-page .lettre-2 {
     color: #ff79da;
@@ -233,21 +87,6 @@ form {
     color: #ff79da;
     text-shadow: 0 0 7px #99e2d0;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
-@keyframes lettres {
-  0% {
-    opacity: 1;
-    text-shadow: 0 0 7px #9256dc; }
-  25% {
-    opacity: 1;
-    text-shadow: 0 0 7px #99e2d0; }
-  50% {
-    opacity: 0; }
-  75% {
-    opacity: 1;
-    text-shadow: 0 0 7px #ff79da; }
-  100% {
-    opacity: 1;
-    text-shadow: 0 0 7px #e299ab; } }
   #loading-page .dot-dots {
     position: absolute;
     top: 50%;
@@ -268,7 +107,7 @@ form {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #553b33;
+    background-color: #514284;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   #loading-page .dot-dots .dots span {
@@ -278,96 +117,13 @@ form {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #553b33;
+    background-color: #514284;
     border-radius: 50%;
     z-index: -10; }
   #loading-page .dot-dots .dots {
     margin-top: 12px;
     margin-left: 31px;
     animation: points 4s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite; }
-@keyframes point {
-  0% {
-    opacity: 1;
-    color: #9256dc;
-    text-shadow: 0 0 7px #9256dc; }
-  50% {
-    transform: translateX(96px); }
-  90% {
-    color: #9256dc;
-    text-shadow: none; }
-  100% {
-    opacity: 1;
-    display: none;
-    color: #9256dc;
-    text-shadow: 0 0 7px #9256dc; } }
-@keyframes points {
-  0% {
-    opacity: 1;
-    color: #9256dc;
-    text-shadow: 0 0 7px #ff79da; }
-  50% {
-    transform: translateX(-31px); }
-  90% {
-    color: #ff79da;
-    text-shadow: none; }
-  100% {
-    opacity: 1;
-    display: none;
-    color: #9256dc;
-    text-shadow: 0 0 7px #ff79da; } }
-/*---------header--------*/
-.header-index {
-  display: flex;
-  justify-content: center; }
-
-header h1 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: xx-large; }
-
-/*------------------------------------Palette du goût----------------------
---------------------------------------------------------------------------*/
-.fleche-logo {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: last baseline; }
-
-.fleche {
-  font-size: x-large;
-  font-weight: bold; }
-
-.align {
-  text-decoration: none;
-  color: black; }
-
-/*----------footer---------*/
-/*footer {
-    background-color: #222121;
-    color: rgb(223, 219, 219);
-    height: 12em;
-    margin-top: -5%;*/
-  /*& p {
-    width: 25%;
-    display: flex;
-    justify-content: flex-start;
-    padding: $padding;
-    font-family: "Shrikhand", sans-serif;
-  }
-  & ul {
-    list-style-type: none;
-    padding: 0 0 5% 7%;
-  }
-  & li {
-    margin: 1%;
-    font-family: "Roboto", sans-serif;
-  }
-}*/
-/*------------------------------------------------------INDEX------------------------------*/
-/*------------------------------------------------------INDEX------------------------------*/
-/*------------------------------------------------------INDEX------------------------------*/
-.logo-header {
-  display: flex;
-  justify-content: center;
-  font-family: "Shrikhand", sans-serif; }
 
 .accueil-formulaires-recherche {
   background-color: whitesmoke;
@@ -378,7 +134,7 @@ header h1 {
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
-    height: 2em;
+    height: 7vh;
     align-items: center;
     box-shadow: 0px -2px 1.9px 1.2px #9f9d9d; }
     .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .icone-input .icone {
@@ -398,217 +154,160 @@ header h1 {
     font-family: "Roboto", sans-serif; }
     .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .paragraphes .paragrapheUn {
       font-weight: bold;
-      font-size: x-large; }
+      font-size: 7.5vw; }
     .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .paragraphes .paragrapheDeux p {
-      margin: 0; }
-  .accueil-formulaires-recherche .submit-bouton {
-    display: flex;
-    justify-content: center; }
-    .accueil-formulaires-recherche .submit-bouton .bouton-rose {
-      margin-top: 2em;
-      box-shadow: 7px 7px 10px #d2cccc;
-      border-radius: 3em; }
-      .accueil-formulaires-recherche .submit-bouton .bouton-rose .texte-bouton-rose {
-        border: none;
-        background: linear-gradient(#ff79da, #9256dc);
-        font-family: roboto;
-        letter-spacing: 1px;
-        color: white;
-        cursor: pointer;
-        border-radius: 3em;
-        height: 3em;
-        padding: 0 2em; }
-
-.navigation-index {
-  padding: 0;
-  margin: 4%;
-  padding-bottom: 10%;
-  font-family: "Roboto", sans-serif; }
-  .navigation-index .titreFonctionnement {
-    font-family: "Roboto", sans-serif; }
-  .navigation-index .liste-fonctionnement {
-    padding: 0;
-    counter-reset: liste;
-    display: flex;
-    flex-direction: column; }
-    .navigation-index .liste-fonctionnement .items-fonctionnement {
-      background-color: white;
-      padding: 4%;
-      margin: 4%;
-      position: relative;
-      border-radius: 1.5em;
-      text-align: center;
-      list-style-type: none;
-      counter-increment: liste;
-      box-shadow: 7px 7px 10px #d2cccc;
-      cursor: pointer;
-      transform: scale(1);
-      transition: transform 450ms, background-color 300ms; }
-      .navigation-index .liste-fonctionnement .items-fonctionnement:hover {
-        background-color: #f5edff;
-      /*linear-gradient($color-primary, $color-secondary);
-      background-color: linear-gradient($color-random-color-secondary, $color-third);
-    color: darken($color-random-color-third, 35);
-      /*color: lighten($color-random-color-primary, 10);*/
-        color: #9256dc;
-        border-radius: 10em; }
-        .navigation-index .liste-fonctionnement .items-fonctionnement:hover :hover .awesome {
-          color: #9256dc; }
-      .navigation-index .liste-fonctionnement .items-fonctionnement:before {
-        content: counter(liste);
-        padding: 1% 3% 1%;
-        background-color: #bb95e9;
-        border-radius: 50%;
-        font-weight: bold;
-        font-size: 0.8em;
-        color: white;
-        position: absolute;
-        left: -3%;
-        top: 36%; }
-      .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg {
-        display: flex;
-        justify-content: space-evenly; }
-        .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome {
-          color: #0d0d0e;
-          display: flex;
-          align-items: center; }
-          .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
-            color: #755146; }
-
-/*-----------------------main html----------------------------------------------*/
-.main-index {
-  background-color: #f4f4f4;
-  padding-bottom: 12%; }
-  .main-index .cartes-restaurants {
-    font-family: "Roboto", sans-serif; }
-    .main-index .cartes-restaurants .titres-cartes-restaurant h2 {
       margin: 0;
-      padding: 11% 0 0 2%; }
-    .main-index .cartes-restaurants .carte-resto {
-      background-color: white;
-      margin: 4%;
-      padding-bottom: 4%;
-      border-radius: 1em; }
-      .main-index .cartes-restaurants .carte-resto .lien .sticker-new .sticker {
-        background-color: #99e2d0;
-        position: absolute;
-        left: 59%;
-        margin-top: 9%;
-        padding: 0.1em 1.1em;
-        border-radius: 8px; }
-        .main-index .cartes-restaurants .carte-resto .lien .sticker-new .sticker .new {
-          color: #008766; }
-      .main-index .cartes-restaurants .carte-resto .img img {
-        width: 100%;
-        height: 12em;
-        object-fit: cover;
-        border-radius: 1em 1em 0 0; }
-      .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a {
-        text-decoration: none;
-        color: black; }
-        .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p {
-          margin: 1% 4%; }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
-            margin: 0; }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
-            margin: 0; }
-        .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .like {
-          font-size: x-large;
-          position: absolute;
-          left: 82%;
-          margin-top: -2em; }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .like .empty-heart {
-            color: #9256dc;
-            animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
-            /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .like .full-heart {
-            color: rgba(146, 86, 220, 0.5);
-            margin-top: -1.2em;
-            z-index: -1;
-            position: absolute;
-            /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-            animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .like:hover .full-heart {
-            font-weight: bold;
-            z-index: 100;
-            position: absolute; }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .like:hover .empty-heart {
-            color: #553b33;
-            z-index: 101;
-            position: relative; }
-@keyframes fully {
-  0% {
-    color: #99e2d0; }
-  25% {
-    color: #ff79da; }
-  50% {
-    color: #9256dc; }
-  75% {
-    color: #99e2d0; }
-  100% {
-    color: #ff79da; } }
-/*------------------------------------Pages restaurants----------------------
---------------------------------------------------------------------------*/
-/*------------------------------------Pages restaurants----------------------
---------------------------------------------------------------------------*/
-/*------------------------------------Pages restaurants----------------------
---------------------------------------------------------------------------*/
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /*-------------------------restaurant-IMG----------------------------------*/
-  /*--------------------------------LA PALETTE DU GOUT----------------------------------------*/
-  /*--------------------------------LA PALETTE DU GOUT----------------------------------------*/ }
-  body .header-pages-resto .fleche-logo .logo {
-    margin-right: 2em; }
-  body .restaurant-img {
+      font-size: 5vw; }
+
+/*----------------bouton rose INDEX + PAGES-----------------*/
+.submit-bouton {
+  display: flex;
+  justify-content: center; }
+  .submit-bouton .bouton-rose {
+    margin-top: 2em;
+    box-shadow: 7px 7px 10px #d2cccc;
+    border-radius: 3em; }
+    .submit-bouton .bouton-rose .texte-bouton-rose {
+      border: none;
+      background: linear-gradient(#ff79da, #9256dc);
+      font-family: roboto;
+      letter-spacing: 1px;
+      color: white;
+      cursor: pointer;
+      border-radius: 3em;
+      height: 3em;
+      padding: 0 2em;
+      font-size: 3.5vw; }
+
+/*--------------------------------*/
+/*--------------------------heart page index------------*/
+.like-index {
+  font-size: x-large;
+  position: absolute;
+  left: 82%;
+  margin-top: -2em; }
+  .like-index .empty-heart {
+    color: #9256dc;
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
+  .like-index .full-heart {
+    color: rgba(146, 86, 220, 0.5);
+    margin-top: -1.2em;
+    z-index: -1;
+    position: absolute;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
+  .like-index:hover .full-heart {
+    font-weight: bold;
+    z-index: 100;
+    position: absolute; }
+  .like-index:hover .empty-heart {
+    color: #514284;
+    z-index: 101;
+    position: relative; }
+
+/*------------------like pages menus---------------*/
+.like {
+  font-size: x-large; }
+  .like .empty-heart {
+    color: #9256dc;
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
+  .like .full-heart {
+    color: rgba(146, 86, 220, 0.5);
+    margin-top: -1.2em;
+    z-index: -1;
+    position: absolute;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
+  .like:hover .full-heart {
+    font-weight: bold;
+    z-index: 100;
+    position: absolute; }
+  .like:hover .empty-heart {
+    color: #514284;
+    z-index: 101;
+    position: relative; }
+
+.sticker-new .sticker {
+  background-color: #99e2d0;
+  position: absolute;
+  left: 62%;
+  margin-top: 4%;
+  padding: 0.9em;
+  border-radius: 8px; }
+  .sticker-new .sticker .new {
+    color: #008766;
     margin: 0; }
-    body .restaurant-img img {
-      width: 100%;
-      object-fit: cover;
-      height: 15em; }
-  body main {
-    background-color: whitesmoke; }
-    body main .la-palette-du-gout {
-      background-color: whitesmoke;
-      border-radius: 2em 2em 0 0;
-      position: relative;
-      top: -3em;
-      z-index: 1;
-      /*--------------------------restaurant-NOM-------------------------*/
-      /*--------------------------Titre menu + UNDERLINE-----------------------------*/
-      /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/ }
-      body main .la-palette-du-gout .restaurant-name-like {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-top: 1em;
-        /*---------------------------------coeur animé---------------------------------*/ }
-        body main .la-palette-du-gout .restaurant-name-like .restaurant-name h2 {
-          font-family: "Shrikhand", sans-serif;
-          font-weight: 500; }
-        body main .la-palette-du-gout .restaurant-name-like .like {
-          font-size: x-large; }
-          body main .la-palette-du-gout .restaurant-name-like .like .empty-heart {
-            color: #9256dc;
-            animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
-            /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
-          body main .la-palette-du-gout .restaurant-name-like .like .full-heart {
-            color: rgba(146, 86, 220, 0.5);
-            margin-top: -1.2em;
-            z-index: -1;
-            position: absolute;
-            /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-            animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
-          body main .la-palette-du-gout .restaurant-name-like .like:hover .full-heart {
-            font-weight: bold;
-            z-index: 100;
-            position: absolute; }
-          body main .la-palette-du-gout .restaurant-name-like .like:hover .empty-heart {
-            color: #553b33;
-            z-index: 101;
-            position: relative; }
+
+/*----------------------@keyframe loading page----------------*/
+@keyframes load-1 {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -100; } }
+/*----------------------@keyframe loading page Letter------------*/
+@keyframes flash {
+  0% {
+    color: #99e2d0;
+    text-shadow: 0 0 7px #ff79da; }
+  90% {
+    color: #ff79da;
+    text-shadow: #78b32e; }
+  100% {
+    color: #9256dc;
+    text-shadow: 0 0 7px #9256dc; } }
+/*----------------------@keyframe loading page LETTERS-----------*/
+@keyframes lettres {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 7px #9256dc; }
+  25% {
+    opacity: 1;
+    text-shadow: 0 0 7px #99e2d0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 7px #ff79da; }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 7px #e299ab; } }
+/*----------------------@keyframe loading page point-------------*/
+@keyframes point {
+  0% {
+    opacity: 1;
+    color: #9256dc;
+    text-shadow: 0 0 7px #9256dc; }
+  50% {
+    transform: translateX(96px); }
+  90% {
+    color: #9256dc;
+    text-shadow: none; }
+  100% {
+    opacity: 1;
+    display: none;
+    color: #9256dc;
+    text-shadow: 0 0 7px #9256dc; } }
+/*----------------------@keyframe loading page POINTS-------*/
+@keyframes points {
+  0% {
+    opacity: 1;
+    color: #9256dc;
+    text-shadow: 0 0 7px #ff79da; }
+  50% {
+    transform: translateX(-31px); }
+  90% {
+    color: #ff79da;
+    text-shadow: none; }
+  100% {
+    opacity: 1;
+    display: none;
+    color: #9256dc;
+    text-shadow: 0 0 7px #ff79da; } }
+/*----------------------@keyframe Coeur-heart----------------*/
 @keyframes fully {
   0% {
     color: #99e2d0; }
@@ -620,27 +319,7 @@ body {
     color: #99e2d0; }
   100% {
     color: #ff79da; } }
-      body main .la-palette-du-gout .titre-underline {
-        text-transform: uppercase;
-        margin-left: 6%;
-        font-family: "Roboto", sans-serif;
-        display: flex;
-        flex-direction: column; }
-        body main .la-palette-du-gout .titre-underline .titre h2 {
-          font-weight: lighter;
-          margin: 0; }
-        body main .la-palette-du-gout .titre-underline .underline {
-          border-top: 1px solid #99e2d0;
-          width: 17%;
-          display: inline-block; }
-      body main .la-palette-du-gout #liste-dishes {
-        background-color: white;
-        margin: 5%;
-        border-radius: 1em;
-        transition-duration: 5s;
-        animation-name: apparition-menus;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69); }
+/*------------------------@keyframe apparition menu décalé pages---------------*/
 @keyframes apparition-menus {
   0% {
     opacity: 0;
@@ -675,13 +354,7 @@ body {
   100% {
     opacity: 1;
     transform: translateY(5px); } }
-        body main .la-palette-du-gout #liste-dishes .dishes {
-          padding: 0; }
-          body main .la-palette-du-gout #liste-dishes .dishes .dishes-un {
-            list-style-type: none;
-            animation-name: apparition-plats;
-            animation-duration: 2s;
-            animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73); }
+/*----------------------@keyframe apparition plats décalé-------------*/
 @keyframes apparition-plats {
   0% {
     opacity: 0;
@@ -716,142 +389,276 @@ body {
   100% {
     opacity: 1;
     transform: translateY(5px); } }
-            body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte {
-              display: flex;
-              justify-content: space-between; }
-              body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation {
-                font-family: "roboto";
-                margin: 0;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: flex;
-                flex-direction: column;
-                padding: 1em; }
-                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .span-ellipsis {
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  white-space: nowrap; }
-                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .weight {
-                  font-weight: bold; }
-              body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte {
-                display: flex; }
-                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix {
-                  display: flex;
-                  align-items: flex-end; }
-                  body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
-                    padding: 1em; }
-                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
-                  color: white;
-                  display: flex;
-                  justify-content: center;
-                  background-color: #99e2d0;
-                  width: 0;
-                  border-radius: 0 15px 15px 0;
-                  overflow: hidden;
-                  transition: width 400ms ease-in; }
-                  body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    /*padding-left: 62.5px;*/
-                    font-size: xx-large; }
-                    body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
-                      animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
-                      animation-iteration-count: infinite;
-                      animation-fill-mode: forwards; }
+/*--------------------@keyframe coche verte tournante-------------*/
 @keyframes circle {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-              body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
-                color: white;
-                height: 100%;
-                width: 5em; }
-      body main .la-palette-du-gout .submit-bouton {
-        display: flex;
-        justify-content: center;
-        /*.bouton {
-        background: linear-gradient($color-secondary, $color-primary);
-
-        @include border-radius(37px);
-        color: white;
-
-        border: none;
-        @include box-shadow($box-shadow-grey-around);
-
-        @include padding-margin(8% 19% 8% 19%, 4% 0 15% 0);
-
-        & span {
-          color: white;
-          font-weight: bold;
-          background: linear-gradient($color-secondary, $color-primary);
-          letter-spacing: 0.23em;
-        }
-
-        button,
-        .commander {
-          background: linear-gradient($color-secondary, $color-primary);
-          border: none;
-          border-radius: 31em;
-        }
-      }*/ }
-        body main .la-palette-du-gout .submit-bouton .bouton-rose {
-          margin-top: 2em;
-          box-shadow: 7px 7px 10px #d2cccc;
-          border-radius: 3em; }
-          body main .la-palette-du-gout .submit-bouton .bouton-rose .texte-bouton-rose {
-            border: none;
-            background: linear-gradient(#ff79da, #9256dc);
-            font-family: roboto;
-            letter-spacing: 1px;
-            color: white;
-            cursor: pointer;
-            border-radius: 3em;
-            height: 3em;
-            padding: 0 2em; }
-  body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre {
+/*---------header--------*/
+.header-index {
+  display: flex;
+  justify-content: center; }
+  .header-index .logo-header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.9); }
-    body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo {
-      color: white;
-      margin: 4%;
-      font-family: "Shrikhand", sans-serif; }
-      body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo p {
-        font-size: x-large;
-        font-weight: bold; }
-    body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre {
-      margin-top: -1em; }
-      body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn,
-      body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color {
-        font-family: "Roboto", sans-serif;
-        color: white;
-        cursor: pointer; }
-        body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois,
-        body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois {
-          display: flex;
-          justify-content: center; }
-          body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois .icone,
-          body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois .icone {
-            margin: 0 0 0 1em; }
-          body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois .span-i,
-          body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois .span-i {
-            margin-left: -1.6em; }
-        body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .hTrois,
-        body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .hTrois {
-          margin: 0 0 0 1em; }
-        body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .hTrois h3,
-        body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .hTrois h3 {
-          margin: 0; }
-      body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .mail {
-        text-decoration: none;
-        font-family: "Roboto", sans-serif;
-        font-size: large;
-        font-weight: bold; }
+    justify-content: center;
+    font-family: "Shrikhand", sans-serif; }
 
-/*@import "../sass/pages/nav";*/
+header h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: xx-large; }
+
+/*------------------------------------Palette du goût----------------------
+--------------------------------------------------------------------------*/
+.header-pages-resto .fleche-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: last baseline; }
+  .header-pages-resto .fleche-logo .fleche {
+    font-size: x-large;
+    font-weight: bold; }
+    .header-pages-resto .fleche-logo .fleche .align {
+      text-decoration: none;
+      color: black; }
+  .header-pages-resto .fleche-logo .logo {
+    margin-right: 2em; }
+
+.footer-logo-txtUn-textDeux-txtTrois-txtQuatre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo {
+    color: white;
+    margin: 4%;
+    font-family: "Shrikhand", sans-serif; }
+    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo p {
+      font-size: x-large;
+      font-weight: bold; }
+  .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre {
+    margin-top: -1em; }
+    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn,
+    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      cursor: pointer; }
+      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois,
+      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois {
+        display: flex;
+        justify-content: center; }
+        .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois .icone,
+        .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois .icone {
+          margin: 0 0 0 1em; }
+        .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois .span-i,
+        .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois .span-i {
+          margin-left: -1.6em; }
+      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .hTrois,
+      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .hTrois {
+        margin: 0 0 0 1em; }
+      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .hTrois h3,
+      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .hTrois h3 {
+        margin: 0; }
+    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .mail {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-size: large;
+      font-weight: bold; }
+
+.navigation-index {
+  padding: 0;
+  margin: 4%;
+  padding-bottom: 10%;
+  font-family: "Roboto", sans-serif; }
+  .navigation-index .titreFonctionnement {
+    font-family: "Roboto", sans-serif; }
+    .navigation-index .titreFonctionnement h2 {
+      font-size: 7vw; }
+  .navigation-index .liste-fonctionnement {
+    padding: 0;
+    counter-reset: liste;
+    display: flex;
+    flex-direction: column; }
+    .navigation-index .liste-fonctionnement .items-fonctionnement {
+      background-color: white;
+      padding: 4%;
+      margin: 4%;
+      position: relative;
+      border-radius: 1.5em;
+      text-align: center;
+      list-style-type: none;
+      counter-increment: liste;
+      box-shadow: 7px 7px 10px #d2cccc;
+      cursor: pointer;
+      transform: scale(1);
+      font-size: 5vw;
+      transition: transform 450ms, background-color 300ms; }
+      .navigation-index .liste-fonctionnement .items-fonctionnement:hover {
+        background-color: #f5edff;
+        color: #9256dc;
+        border-radius: 10em; }
+        .navigation-index .liste-fonctionnement .items-fonctionnement:hover :hover .awesome {
+          color: #9256dc; }
+      .navigation-index .liste-fonctionnement .items-fonctionnement:before {
+        content: counter(liste);
+        padding: 1% 3% 1%;
+        background-color: #bb95e9;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 2.8vh;
+        color: white;
+        position: absolute;
+        left: -3%;
+        top: 36%; }
+      .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg {
+        display: flex;
+        justify-content: space-evenly; }
+        .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome {
+          color: #0d0d0e;
+          display: flex;
+          align-items: center; }
+          .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
+            color: #6653a6; }
+
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
+/*-----------------------main html----------------------------------------------*/
+.main-index {
+  background-color: #f4f4f4;
+  padding-bottom: 12%; }
+  .main-index .cartes-restaurants {
+    font-family: "Roboto", sans-serif; }
+    .main-index .cartes-restaurants .titres-cartes-restaurant h2 {
+      margin: 0;
+      padding: 11% 0 0 2%; }
+    .main-index .cartes-restaurants .carte-resto {
+      background-color: white;
+      margin: 4%;
+      padding-bottom: 4%;
+      border-radius: 1em; }
+      .main-index .cartes-restaurants .carte-resto .img img {
+        width: 100%;
+        height: 12em;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0; }
+      .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a {
+        text-decoration: none;
+        color: black; }
+        .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p {
+          margin: 1% 4%; }
+          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
+            margin: 0; }
+          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
+            margin: 0; }
+
+/*------------------------------------Pages restaurants----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Pages restaurants----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Pages restaurants----------------------
+--------------------------------------------------------------------------*/
+/*-------------------------restaurant-IMG----------------------------------*/
+.restaurant-img {
+  margin: 0; }
+  .restaurant-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 15em; }
+
+main {
+  background-color: whitesmoke; }
+  main .la-palette-du-gout {
+    background-color: whitesmoke;
+    border-radius: 2em 2em 0 0;
+    position: relative;
+    top: -3em;
+    z-index: 1;
+    /*--------------------------restaurant-NOM-------------------------*/
+    /*--------------------------Titre menu + UNDERLINE-----------------------------*/
+    /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/ }
+    main .la-palette-du-gout .restaurant-name-like {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 1em; }
+      main .la-palette-du-gout .restaurant-name-like .restaurant-name h2 {
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 500; }
+    main .la-palette-du-gout .titre-underline {
+      text-transform: uppercase;
+      margin-left: 6%;
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      flex-direction: column; }
+      main .la-palette-du-gout .titre-underline .titre h2 {
+        font-weight: lighter;
+        margin: 0; }
+      main .la-palette-du-gout .titre-underline .underline {
+        border-top: 1px solid #99e2d0;
+        width: 17%;
+        display: inline-block; }
+    main .la-palette-du-gout #liste-dishes {
+      background-color: white;
+      margin: 5%;
+      border-radius: 1em;
+      transition-duration: 5s;
+      animation-name: apparition-menus;
+      animation-duration: 2s;
+      animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69); }
+      main .la-palette-du-gout #liste-dishes .dishes {
+        padding: 0; }
+        main .la-palette-du-gout #liste-dishes .dishes .dishes-un {
+          list-style-type: none;
+          animation-name: apparition-plats;
+          animation-duration: 2s;
+          animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73); }
+          main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte {
+            display: flex;
+            justify-content: space-between; }
+            main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation {
+              font-family: "roboto";
+              margin: 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: flex;
+              flex-direction: column;
+              padding: 1em; }
+              main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .span-ellipsis {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+              main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .weight {
+                font-weight: bold; }
+            main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte {
+              display: flex; }
+              main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix {
+                display: flex;
+                align-items: flex-end; }
+                main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
+                  padding: 1em; }
+              main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
+                color: white;
+                display: flex;
+                justify-content: center;
+                background-color: #99e2d0;
+                width: 0;
+                border-radius: 0 15px 15px 0;
+                overflow: hidden;
+                transition: width 400ms ease-in; }
+                main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  /*padding-left: 62.5px;*/
+                  font-size: xx-large; }
+                  main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
+                    animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: forwards; }
+            main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
+              color: white;
+              height: 100%;
+              width: 5em; }
 
 /*# sourceMappingURL=style.css.map */

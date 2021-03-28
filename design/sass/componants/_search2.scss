@@ -1,62 +1,46 @@
-/*--------search---------*/
-/*
-.rechercher {
-  font-family: "Roboto", sans-serif;
-  @extend %column-center;
-  margin-top: -2%;
-}
-#textes {
-  @include text-align-center(column);
+.accueil-formulaires-recherche {
   background-color: $color-background;
-  & #centre {
-    @include padding-margin(10%, 0);
-  }
-}
-
-#search {
-  @include justify-content-center(row);
-  background-color: $color-search;
-  @include padding-margin(4%, 0);
-  @include box-shadow($box-shadow-grey-up);
-  & input {
-    border: none;
-    background-color: $color-search;
-    @include text-align-center(column);
-  }
-  & #site-search .icone {
-    display: flex;
-  }
-}
-
-
-/*& h2 {
-      font-size: x-large;
-      text-align: center;
-    }
-    & 
-    & 
-    section {
-      background-color: #f2f2f2;
-      height: 19em;
-      width: auto;
-    }
-    & .font {
-      font-weight: bold;
-      font-size: 1em;
-    }
-  }
-form {
-  background-color: $color-search;
-
-  @extend %column-center;
-  /*box-shadow: 15px 25px 6px 28px #cfcfcf;*/
-
-/* & .icone {
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  .icone-input-paragraphes-boutonRose {
+    .icone-input {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       background-color: $color-search;
+      height: 7vh;
+      align-items: center;
+      box-shadow: 0px -2px 1.9px 1.2px #9f9d9d;
+
+      .icone {
+        color: rgb(15, 15, 15);
+        padding-left: 2em;
+      }
+      .input-site-search {
+        background-color: $color-search;
+        border: none;
+        font-weight: bold;
+        font-size: medium;
+        margin-left: 15%;
+      }
     }
-    &
-    
-  }*/
+    .paragraphes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+
+      .paragrapheUn {
+        font-weight: bold;
+        font-size: 7.5vw;
+      }
+
+      .paragrapheDeux p {
+        margin: 0;
+        font-size: 5vw;
+      }
+    }
+  }
+
+}

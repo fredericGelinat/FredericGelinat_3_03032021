@@ -10,39 +10,6 @@ $color-background: hsl(0, 0%, 96%);
 $color-black: black;
 $color-white: white;
 
-/*$color-primary-palette: (
-  primary: $color-primary,
-  primary-random: $color-random-color-primary,
-  primary-secondary-linear-gradient: linear-gradient($colour-primary,$color-secondary),
-  secondary-primary-linear-gradient: linear-gradient($color-secondary, $colour-primary),)
-
-  @mixin primary-secondary-bg-radial-gradient-circle ($param) {
-
- background-color: radial-gradient(circle at $param, $param, $param)
-}
-
- background: radial-gradient(circle at bottom, #9356DC 0%, #FF79DA  100%);
-      bg: $colour-primary,
-    bg-random:
-    circle: $colour-primary,
-    circle-random:
-    txt:
-txt-random: $colour-white,
-  ),
-  random: (
-      bg: $colour-primary,
-      border: $colour-primary,
-      txt: $colour-white,
-  ),
-  linear: (
-      bg: $colour-invalid,
-      border: $colour-white,
-      txt: $colour-white,
-  )
-  circle:(
-
-  )
-);*/
 
 $color-random-color-primary: rgb(random(147),random(86),random(220));
 $color-random-color-secondary: rgb(random(255), random(121), random(218));
@@ -55,29 +22,4 @@ $padding: 7% 0 0% 7%;
 //-----------box-shadow---------------------
 $box-shadow-grey-around: 7px 7px 10px #d2cccc;
 $box-shadow-grey-up: 1px -1px 1px $color-background;
-//---------------text-deco---------------
-/* $text-deco: (text-decoration: none, )
-$text-deco: none;*/
 
-$duration: 3000ms;
-/*
-$section:".section-1";
-
-%theme {
-  @if ($section <= $duration){
-    .section-2{
-      display: none;
-    }
-    
-}
-@else {
-  .section-2{
-    display: flex;
-  }
-}
-}
-$i: 1s;
-
-@for $i from 1 to 3{
-
-}*/

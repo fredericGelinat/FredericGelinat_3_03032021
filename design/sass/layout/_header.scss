@@ -2,6 +2,11 @@
 .header-index{
     display: flex;
     justify-content: center;
+    .logo-header {
+      display: flex;
+      justify-content: center;
+      font-family: "Shrikhand", sans-serif;
+    }
 }
 
 header  h1 {
@@ -13,22 +18,29 @@ header  h1 {
 
 /*------------------------------------Palette du goût----------------------
 --------------------------------------------------------------------------*/
+.header-pages-resto {
+  
+
 .fleche-logo {
     display: flex;
     justify-content: space-evenly;
     align-items: last baseline;
+    .fleche{
+   
+      font-size: x-large;
+      font-weight: bold;
+      .align{
+   
+        text-decoration: none;
+       
+        color: black;
+    }
+    }
+    .logo {
+      margin-right: 2em;
+    }
   }
-  .fleche{
-   
-    font-size: x-large;
-    font-weight: bold;
-  }
-
-
-
-.align{
-   
-    text-decoration: none;
-   
-    color: black;
 }
+
+
+

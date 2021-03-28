@@ -1,0 +1,61 @@
+/*--------------------------heart page index------------*/
+
+  .like-index {
+    font-size: x-large;
+    position: absolute;
+    left: 82%;
+    margin-top: -2em;
+    .empty-heart {
+      color: $color-primary;
+      animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+      /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+    }
+    .full-heart {
+      color: $color-primary-hsla;
+      margin-top: -1.2em;
+      z-index: -1;
+      position: absolute;
+      /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+      animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+    }
+
+    &:hover .full-heart {
+      font-weight: bold;
+      z-index: 100;
+      position: absolute;
+    }
+    &:hover .empty-heart {
+      color: $color-random-color-primary;
+      z-index: 101;
+      position: relative;
+    }
+  }
+  /*------------------like pages menus---------------*/
+  .like {
+    font-size: x-large;
+
+    .empty-heart {
+      color: $color-primary;
+      animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+      /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+    }
+    .full-heart {
+      color: $color-primary-hsla;
+      margin-top: -1.2em;
+      z-index: -1;
+      position: absolute;
+      /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+      animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+    }
+
+    &:hover .full-heart {
+      font-weight: bold;
+      z-index: 100;
+      position: absolute;
+    }
+    &:hover .empty-heart {
+      color: $color-random-color-primary;
+      z-index: 101;
+      position: relative;
+    }
+  }

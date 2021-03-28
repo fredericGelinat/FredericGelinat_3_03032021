@@ -24,16 +24,7 @@
     align-items: center;
    
   }
-  @keyframes load-1 {
-    0%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-      display: none;
-      z-index: -100;
-    }
-}
+
 
 .loader-letters{
   position: absolute;
@@ -51,26 +42,7 @@
   animation: flash 1.9s cubic-bezier(.52,.14,1,1.28) infinite;
   
 }
-@keyframes flash {
-  0%{
-    color: $color-third;
-     /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
-    text-shadow: 0 0 7px $color-secondary ;
-  }
- 
-  90%{
-   color: $color-secondary;
-   /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: $color-random-color-third;
-  }
-  100%{
-    color:$color-primary;
-    text-shadow: 0 0 7px  $color-primary; 
-    
-    /*$color-secondary;*/
-    /*@include radial-gradient-transparent(top,$color-primary, $color-primary 10%, bottom,$color-secondary, $color-secondary 90%);*/
-  }
-}
+
 
 
 
@@ -145,33 +117,7 @@ animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
   text-shadow: 0 0 7px $color-third;
   animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }
-@keyframes lettres {
-  0%{
-    opacity: 1;
 
-    text-shadow: 0 0 7px $color-primary;
-}
-25%{
-  opacity: 1;
-  text-shadow: 0 0 7px $color-third;
-}
-50%{
-  opacity: 0;
-  
-
-}
-75%{
-  opacity: 1;
-  text-shadow: 0 0 7px $color-secondary
-}
-100%{
-    opacity: 1;
-    
-
-    text-shadow: 0 0 7px $color-third-complementary-color;
-  
-}
-}
 .dot-dots{
   position: absolute;
   top: 50%;
@@ -221,48 +167,7 @@ animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
 }
 
 
-@keyframes point {
-  0%{
-      opacity: 1;
-      color: $color-primary;
-      text-shadow: 0 0 7px $color-primary
-  }
-  50%{
-      transform: translateX(96px);
-  }
-  90%{
-    color: $color-primary;
-    text-shadow: none;
 
-  }
-  100%{
-      opacity: 1;
-      display: none;
-      color:$color-primary ;
-      text-shadow: 0 0 7px $color-primary;
-  }
-}
-@keyframes points{
-  0%{
-      opacity: 1;
-      color: $color-primary;
-      text-shadow: 0 0 7px $color-secondary
-  }
-  50%{
-      transform: translateX(-31px);
-  }
-  90%{
-    color: $color-secondary;
-    text-shadow: none;
-
-  }
-  100%{
-      opacity: 1;
-      display: none;
-      color:$color-primary ;
-    text-shadow: 0 0 7px $color-secondary;
-  }
-}
 
 
 }

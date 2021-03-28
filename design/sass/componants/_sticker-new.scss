@@ -1,0 +1,15 @@
+.sticker-new {
+    .sticker {
+        background-color: $color-third;
+        position: absolute;
+        left: 62%;
+        margin-top: 4%;
+        padding: 0.9em;
+        border-radius: 8px;
+
+        .new {
+            color: #008766;
+            margin: 0;
+        }
+    }
+}
