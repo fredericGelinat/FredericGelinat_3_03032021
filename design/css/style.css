@@ -177,7 +177,7 @@ form {
   90% {
     color: #ff79da;
     /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: #1a72ad; }
+    text-shadow: #5754c1; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc;
@@ -201,7 +201,7 @@ form {
     animation-delay: 0.99s; }
   #loading-page .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #916d85;
+    text-shadow: 0 0 7px #494710;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   #loading-page .lettre-2 {
     color: #ff79da;
@@ -266,7 +266,7 @@ form {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #103c7b;
+    background-color: #572e14;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   #loading-page .dot-dots .dots span {
@@ -276,7 +276,7 @@ form {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #103c7b;
+    background-color: #572e14;
     border-radius: 50%;
     z-index: -10; }
   #loading-page .dot-dots .dots {
@@ -315,16 +315,13 @@ form {
     text-shadow: 0 0 7px #ff79da; } }
 /*---------header--------*/
 header {
-  /*display: flex;
-  justify-content: center;*/ }
+  display: flex;
+  justify-content: center; }
 
-/*
-header  h1 {
-      font-family: "Shrikhand", sans-serif;
-      font-size: xx-large;
-      
-    
-  }*/
+header h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: xx-large; }
+
 /*------------------------------------Palette du goût----------------------
 --------------------------------------------------------------------------*/
 .fleche-logo {
@@ -474,7 +471,7 @@ header  h1 {
           display: flex;
           align-items: center; }
           .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
-            color: #1652a8; }
+            color: #80441e; }
 
 /*-----------------------main html----------------------------------------------*/
 .main-index {
@@ -533,7 +530,7 @@ header  h1 {
             z-index: 100;
             position: absolute; }
           .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .like:hover .empty-heart {
-            color: #103c7b;
+            color: #572e14;
             z-index: 101;
             position: relative; }
 @keyframes fully {
@@ -602,7 +599,7 @@ body {
             z-index: 100;
             position: absolute; }
           body main .la-palette-du-gout .restaurant-name-like .like:hover .empty-heart {
-            color: #103c7b;
+            color: #572e14;
             z-index: 101;
             position: relative; }
 @keyframes fully {
@@ -671,13 +668,13 @@ body {
   100% {
     opacity: 1;
     transform: translateY(5px); } }
-      body main .la-palette-du-gout .dishes {
-        padding: 0; }
-        body main .la-palette-du-gout .dishes .dishes-un {
-          list-style-type: none;
-          animation-name: apparition-plats;
-          animation-duration: 2s;
-          animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73); }
+        body main .la-palette-du-gout #liste-dishes .dishes {
+          padding: 0; }
+          body main .la-palette-du-gout #liste-dishes .dishes .dishes-un {
+            list-style-type: none;
+            animation-name: apparition-plats;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73); }
 @keyframes apparition-plats {
   0% {
     opacity: 0;
@@ -712,80 +709,101 @@ body {
   100% {
     opacity: 1;
     transform: translateY(5px); } }
-          body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte {
-            display: flex;
-            justify-content: space-between; }
-            body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .presentation {
-              font-family: "roboto";
-              margin: 0;
-              overflow: hidden;
-              text-overflow: ellipsis;
+            body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte {
               display: flex;
-              flex-direction: column;
-              padding: 1em; }
-              body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .presentation .span-ellipsis {
+              justify-content: space-between; }
+              body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation {
+                font-family: "roboto";
+                margin: 0;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                white-space: nowrap; }
-              body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .presentation .weight {
-                font-weight: bold; }
-            body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte {
-              display: flex; }
-              body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix {
                 display: flex;
-                align-items: flex-end; }
-                body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
-                  padding: 1em; }
-              body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
-                color: white;
-                display: flex;
-                justify-content: center;
-                background-color: #99e2d0;
-                width: 0;
-                border-radius: 0 15px 15px 0;
-                overflow: hidden;
-                transition: width 400ms ease-in; }
-                body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
+                flex-direction: column;
+                padding: 1em; }
+                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .span-ellipsis {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap; }
+                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .weight {
+                  font-weight: bold; }
+              body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte {
+                display: flex; }
+                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix {
                   display: flex;
-                  flex-direction: column;
-                  align-items: center;
+                  align-items: flex-end; }
+                  body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
+                    padding: 1em; }
+                body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
+                  color: white;
+                  display: flex;
                   justify-content: center;
-                  /*padding-left: 62.5px;*/
-                  font-size: xx-large; }
-                  body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
-                    animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
-                    animation-iteration-count: infinite;
-                    animation-fill-mode: forwards; }
+                  background-color: #99e2d0;
+                  width: 0;
+                  border-radius: 0 15px 15px 0;
+                  overflow: hidden;
+                  transition: width 400ms ease-in; }
+                  body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    /*padding-left: 62.5px;*/
+                    font-size: xx-large; }
+                    body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
+                      animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+                      animation-iteration-count: infinite;
+                      animation-fill-mode: forwards; }
 @keyframes circle {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-            body main .la-palette-du-gout .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
-              color: white;
-              height: 100%;
-              width: 5em; }
-    body main .bouton-interactif {
-      display: flex;
-      justify-content: center; }
-      body main .bouton-interactif .bouton {
-        background: linear-gradient(#ff79da, #9256dc);
-        border-radius: 37px;
+              body main .la-palette-du-gout #liste-dishes .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
+                color: white;
+                height: 100%;
+                width: 5em; }
+      body main .la-palette-du-gout .submit-bouton {
+        display: flex;
+        justify-content: center;
+        /*.bouton {
+        background: linear-gradient($color-secondary, $color-primary);
+
+        @include border-radius(37px);
         color: white;
+
         border: none;
-        box-shadow: 7px 7px 10px #d2cccc;
-        padding: 8% 19% 8% 19%;
-        margin: 4% 0 15% 0; }
-        body main .bouton-interactif .bouton span {
+        @include box-shadow($box-shadow-grey-around);
+
+        @include padding-margin(8% 19% 8% 19%, 4% 0 15% 0);
+
+        & span {
           color: white;
           font-weight: bold;
-          background: linear-gradient(#ff79da, #9256dc);
-          letter-spacing: 0.23em; }
-        body main .bouton-interactif .bouton button,
-        body main .bouton-interactif .bouton .commander {
-          background: linear-gradient(#ff79da, #9256dc);
+          background: linear-gradient($color-secondary, $color-primary);
+          letter-spacing: 0.23em;
+        }
+
+        button,
+        .commander {
+          background: linear-gradient($color-secondary, $color-primary);
           border: none;
-          border-radius: 31em; }
+          border-radius: 31em;
+        }
+      }*/ }
+        body main .la-palette-du-gout .submit-bouton .bouton-rose {
+          margin-top: 2em;
+          box-shadow: 7px 7px 10px #d2cccc;
+          border-radius: 3em; }
+          body main .la-palette-du-gout .submit-bouton .bouton-rose .texte-bouton-rose {
+            border: none;
+            background: linear-gradient(#ff79da, #9256dc);
+            font-family: roboto;
+            letter-spacing: 1px;
+            color: white;
+            cursor: pointer;
+            border-radius: 3em;
+            height: 3em;
+            padding: 0 2em; }
   body .footer-logo-txtUn-textDeux-txtTrois-txtQuatre {
     display: flex;
     flex-direction: column;

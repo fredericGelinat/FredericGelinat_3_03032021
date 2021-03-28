@@ -2,3 +2,5 @@
 .vs/
 .sass-cache
 dart-sass/
+.vscode/
+page-1.html
