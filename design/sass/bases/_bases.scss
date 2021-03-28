@@ -1,4 +1,4 @@
-//----------font-----------------------
+//----------font-family-----------------------
 @mixin googleFonts($font) {
     @import url("https://fonts.googleapis.com/css2?family=#{$font}");
   }

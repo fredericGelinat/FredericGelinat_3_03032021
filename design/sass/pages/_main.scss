@@ -268,11 +268,19 @@
 --------------------------------------------------------------------------*/
 /*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
+  .header-pages-resto {
+    .fleche-logo {
+      .logo {
+        margin-right: 2em;
+      }
+    }
+  }
   /*-------------------------restaurant-IMG----------------------------------*/
   .restaurant-img {
     margin: 0;
@@ -305,6 +313,7 @@ body {
 
         .restaurant-name h2 {
           font-family: "Shrikhand", sans-serif;
+          font-weight: 500;
         }
 
         /*---------------------------------coeur animé---------------------------------*/
