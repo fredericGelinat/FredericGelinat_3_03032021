@@ -21,16 +21,11 @@
   align-items: $align;
 }
 
-
-
-
 //-----------padding-----------------
 @mixin padding-margin($padding, $margin) {
   padding: $padding;
   margin: $margin;
 }
-
-
 
 //----------size & weight---------
 @mixin size-weight($unite, $params) {
@@ -38,44 +33,48 @@
   font-weight: $params;
 }
 
-
-
-
 //----------border-radius---------
 @mixin border-radius($degres) {
   border-radius: $degres;
 }
-
-
-
 
 //----------box-shadow-------------
 @mixin box-shadow($params) {
   box-shadow: $params;
 }
 
-
-
-
 //----------text-deco------
 @mixin text-deco($params) {
   text-decoration: $params;
 }
 
-
-
-
-
-
-
-
 @mixin radial-gradient-transparent($X-Y, $color, $X-Y, $color) {
- background-color: radial-gradient(ellipse at $X-Y, $color, transparent),
+  background-color: radial-gradient(ellipse at $X-Y, $color, transparent),
     radial-gradient(ellipse at $X-Y, $color, transparent);
 }
 
-@mixin color ($color) {
-
-color: $color;
-  
+@mixin color($color) {
+  color: $color;
 }
+
+/***********************heart*****************/
+@mixin like {
+  font-size: x-large;
+  position: absolute;
+  left: 82%;
+  margin-top: -2em;
+}
+@mixin empty-heart  {
+  color: $color-primary;
+  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+  /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+}
+@mixin  full-heart {
+  color: $color-primary-hsla;
+  margin-top: -1.2em;
+  z-index: -1;
+  position: absolute;
+  /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+  animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+}
+

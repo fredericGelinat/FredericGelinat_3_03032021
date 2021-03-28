@@ -55,6 +55,7 @@ $i: 1s;
 @for $i from 1 to 3{
 
 }*/
+/***********************heart*****************/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
 /*--------general--------*/
@@ -177,7 +178,7 @@ form {
   90% {
     color: #ff79da;
     /*@include radial-gradient-transparent(bottom,$color-secondary, $color-primary 10%, top,$color-primary, $color-secondary 90%);*/
-    text-shadow: #5754c1; }
+    text-shadow: #154d9b; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc;
@@ -201,7 +202,7 @@ form {
     animation-delay: 0.99s; }
   #loading-page .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #494710;
+    text-shadow: 0 0 7px #d28333;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   #loading-page .lettre-2 {
     color: #ff79da;
@@ -266,7 +267,7 @@ form {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #572e14;
+    background-color: #08382a;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   #loading-page .dot-dots .dots span {
@@ -276,7 +277,7 @@ form {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #572e14;
+    background-color: #08382a;
     border-radius: 50%;
     z-index: -10; }
   #loading-page .dot-dots .dots {
@@ -471,7 +472,7 @@ header h1 {
           display: flex;
           align-items: center; }
           .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
-            color: #80441e; }
+            color: #0e654b; }
 
 /*-----------------------main html----------------------------------------------*/
 .main-index {
@@ -498,6 +499,7 @@ header h1 {
           color: #008766; }
       .main-index .cartes-restaurants .carte-resto .img img {
         width: 100%;
+        height: 12em;
         object-fit: cover;
         border-radius: 1em 1em 0 0; }
       .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a {
@@ -530,7 +532,7 @@ header h1 {
             z-index: 100;
             position: absolute; }
           .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .like:hover .empty-heart {
-            color: #572e14;
+            color: #08382a;
             z-index: 101;
             position: relative; }
 @keyframes fully {
@@ -544,11 +546,11 @@ header h1 {
     color: #99e2d0; }
   100% {
     color: #ff79da; } }
-/*------------------------------------Palette du goût "section MAIN"----------------------
+/*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/
-/*------------------------------------Palette du goût "section MAIN"----------------------
+/*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/
-/*------------------------------------Palette du goût "section MAIN"----------------------
+/*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/
 body {
   margin: 0;
@@ -561,7 +563,8 @@ body {
     margin: 0; }
     body .restaurant-img img {
       width: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      height: 15em; }
   body main {
     background-color: whitesmoke; }
     body main .la-palette-du-gout {
@@ -599,7 +602,7 @@ body {
             z-index: 100;
             position: absolute; }
           body main .la-palette-du-gout .restaurant-name-like .like:hover .empty-heart {
-            color: #572e14;
+            color: #08382a;
             z-index: 101;
             position: relative; }
 @keyframes fully {
