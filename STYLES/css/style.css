@@ -57,7 +57,7 @@ body {
     animation-delay: 0.99s; }
   #loading-page .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #933934;
+    text-shadow: 0 0 7px #205b10;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   #loading-page .lettre-2 {
     color: #ff79da;
@@ -107,7 +107,7 @@ body {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #28319a;
+    background-color: #3625a7;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   #loading-page .dot-dots .dots span {
@@ -117,7 +117,7 @@ body {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #28319a;
+    background-color: #3625a7;
     border-radius: 50%;
     z-index: -10; }
   #loading-page .dot-dots .dots {
@@ -134,17 +134,18 @@ body {
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
-    height: 7vh;
+    height: 9vw;
     align-items: center;
     box-shadow: 0px -2px 1.9px 1.2px #9f9d9d; }
     .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .icone-input .icone {
       color: #0f0f0f;
-      padding-left: 2em; }
-    .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .icone-input .input-site-search {
+      padding-left: 2em;
+      font-size: 4vw; }
+    .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .icone-input .input .input-site-search {
       background-color: #eaeaea;
       border: none;
       font-weight: bold;
-      font-size: medium;
+      font-size: 4vw;
       margin-left: 15%; }
   .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .paragraphes {
     display: flex;
@@ -159,14 +160,37 @@ body {
       margin: 0;
       font-size: 5vw; }
 
-/*----------------bouton rose INDEX + PAGES-----------------*/
+/*----------------bouton rose INDEX -----------------*/
+.submit-bouton-index {
+  display: flex;
+  justify-content: center; }
+  .submit-bouton-index .bouton-rose {
+    margin-top: 2em;
+    box-shadow: 7px 7px 10px #d2cccc;
+    border-radius: 12em; }
+    .submit-bouton-index .bouton-rose .texte-bouton-rose {
+      border: none;
+      background: linear-gradient(#ff79da, #9256dc);
+      font-family: roboto;
+      letter-spacing: 1px;
+      color: white;
+      cursor: pointer;
+      border-radius: 3em;
+      padding: 2em 2em;
+      font-size: 3.5vw; }
+      .submit-bouton-index .bouton-rose .texte-bouton-rose .clic {
+        color: white;
+        font-size: 5vw;
+        letter-spacing: 2px; }
+
+/*-----------------bouton rose pages-----------------*/
 .submit-bouton {
   display: flex;
   justify-content: center; }
   .submit-bouton .bouton-rose {
     margin-top: 2em;
     box-shadow: 7px 7px 10px #d2cccc;
-    border-radius: 3em; }
+    border-radius: 12em; }
     .submit-bouton .bouton-rose .texte-bouton-rose {
       border: none;
       background: linear-gradient(#ff79da, #9256dc);
@@ -175,70 +199,97 @@ body {
       color: white;
       cursor: pointer;
       border-radius: 3em;
-      height: 3em;
-      padding: 0 2em;
+      padding: 2em 4em;
       font-size: 3.5vw; }
+      .submit-bouton .bouton-rose .texte-bouton-rose .clic {
+        color: white;
+        font-size: 5vw;
+        letter-spacing: 2px; }
 
 /*--------------------------------*/
-/*--------------------------heart page index------------*/
-.like-index {
-  font-size: x-large;
+/*--------------------------coeur clignotant index------------*/
+.coeur-clignotant {
   position: absolute;
-  left: 82%;
-  margin-top: -2em; }
-  .like-index .empty-heart {
+  right: 7vw;
+  margin-top: -7vh;
+  font-size: 7vw; }
+  .coeur-clignotant .empty-full .empty .empty-heart {
     color: #9256dc;
     animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
     /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
-  .like-index .full-heart {
+  .coeur-clignotant .empty-full .full .full-heart {
     color: rgba(146, 86, 220, 0.5);
-    margin-top: -1.2em;
+    margin-top: -1.1em;
     z-index: -1;
     position: absolute;
     /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
     animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
-  .like-index:hover .full-heart {
-    font-weight: bold;
-    z-index: 100;
-    position: absolute; }
-  .like-index:hover .empty-heart {
-    color: #28319a;
+  .coeur-clignotant:hover .empty {
+    color: #3625a7;
     z-index: 101;
     position: relative; }
+  .coeur-clignotant:hover .full {
+    font-weight: bold;
+    z-index: 101;
+    position: absolute; }
+
+/*-------------------------coeur clignotant pages-----------------*/
+.coeur-clignotant-pages {
+  font-size: 7vw; }
+  .coeur-clignotant-pages .empty-full .empty .empty-heart {
+    color: #9256dc;
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
+  .coeur-clignotant-pages .empty-full .empty :hover {
+    color: #3625a7;
+    z-index: 101;
+    position: relative; }
+  .coeur-clignotant-pages .empty-full .full .full-heart {
+    color: rgba(146, 86, 220, 0.5);
+    margin-top: -1.1em;
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
+  .coeur-clignotant-pages .empty-full .full :hover {
+    font-weight: bold;
+    z-index: 100;
+    position: absolute;
+    opacity: 1; }
 
 /*------------------like pages menus---------------*/
 .like {
   font-size: x-large; }
   .like .empty-heart {
     color: #9256dc;
-    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
-    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
   .like .full-heart {
     color: rgba(146, 86, 220, 0.5);
     margin-top: -1.2em;
     z-index: -1;
     position: absolute;
-    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
     animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
   .like:hover .full-heart {
     font-weight: bold;
     z-index: 100;
     position: absolute; }
   .like:hover .empty-heart {
-    color: #28319a;
+    color: #3625a7;
     z-index: 101;
     position: relative; }
 
 .sticker-new .sticker {
   background-color: #99e2d0;
   position: absolute;
-  left: 62%;
+  right: 6vw;
   margin-top: 4%;
   padding: 0.9em;
   border-radius: 8px; }
   .sticker-new .sticker .new {
     color: #008766;
-    margin: 0; }
+    margin: 0;
+    font-size: 5vw; }
 
 /*----------------------@keyframe loading page----------------*/
 @keyframes load-1 {
@@ -255,7 +306,7 @@ body {
     text-shadow: 0 0 7px #ff79da; }
   90% {
     color: #ff79da;
-    text-shadow: #977973; }
+    text-shadow: #925097; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc; } }
@@ -307,7 +358,7 @@ body {
     display: none;
     color: #9256dc;
     text-shadow: 0 0 7px #ff79da; } }
-/*----------------------@keyframe Coeur-heart----------------*/
+/*----------------------@keyframe Coeur-heart empty----------------*/
 @keyframes fully {
   0% {
     color: #99e2d0; }
@@ -406,7 +457,7 @@ body {
 
 header h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: xx-large; }
+  font-size: 8.5vw; }
 
 /*------------------------------------Palette du goût----------------------
 --------------------------------------------------------------------------*/
@@ -415,7 +466,7 @@ header h1 {
   justify-content: space-evenly;
   align-items: last baseline; }
   .header-pages-resto .fleche-logo .fleche {
-    font-size: x-large;
+    font-size: 7vw;
     font-weight: bold; }
     .header-pages-resto .fleche-logo .fleche .align {
       text-decoration: none;
@@ -430,11 +481,12 @@ header h1 {
   background-color: rgba(0, 0, 0, 0.9); }
   .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo {
     color: white;
-    margin: 4%;
+    margin: 6% 4%;
     font-family: "Shrikhand", sans-serif; }
     .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo p {
-      font-size: x-large;
-      font-weight: bold; }
+      font-size: 7vw;
+      font-weight: bold;
+      margin: 0; }
   .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre {
     margin-top: -1em; }
     .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn,
@@ -444,24 +496,24 @@ header h1 {
       cursor: pointer; }
       .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois,
       .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois {
-        display: flex;
-        justify-content: center; }
+        display: flex; }
         .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois .icone,
         .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois .icone {
           margin: 0 0 0 1em; }
-        .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois .span-i,
-        .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois .span-i {
-          margin-left: -1.6em; }
+          .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .icone-hTrois .icone .fa-utensils,
+          .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .icone-hTrois .icone .fa-utensils {
+            font-size: 5vw; }
       .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .hTrois,
       .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .hTrois {
         margin: 0 0 0 1em; }
       .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .txtUn .hTrois h3,
       .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .color .hTrois h3 {
-        margin: 0; }
+        margin: 0;
+        font-size: 5vw; }
     .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .mail {
       text-decoration: none;
       font-family: "Roboto", sans-serif;
-      font-size: large;
+      font-size: 5vw;
       font-weight: bold; }
 
 .navigation-index {
@@ -472,7 +524,8 @@ header h1 {
   .navigation-index .titreFonctionnement {
     font-family: "Roboto", sans-serif; }
     .navigation-index .titreFonctionnement h2 {
-      font-size: 7vw; }
+      font-size: 7vw;
+      margin-top: 2em; }
   .navigation-index .liste-fonctionnement {
     padding: 0;
     counter-reset: liste;
@@ -495,16 +548,16 @@ header h1 {
       .navigation-index .liste-fonctionnement .items-fonctionnement:hover {
         background-color: #f5edff;
         color: #9256dc;
-        border-radius: 10em; }
+        border-radius: 1.5em; }
         .navigation-index .liste-fonctionnement .items-fonctionnement:hover :hover .awesome {
           color: #9256dc; }
       .navigation-index .liste-fonctionnement .items-fonctionnement:before {
         content: counter(liste);
         padding: 1% 3% 1%;
         background-color: #bb95e9;
-        border-radius: 50%;
+        border-radius: 1em;
         font-weight: bold;
-        font-size: 2.8vh;
+        font-size: 1.8vh;
         color: white;
         position: absolute;
         left: -3%;
@@ -517,7 +570,7 @@ header h1 {
           display: flex;
           align-items: center; }
           .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
-            color: #333ec2; }
+            color: #442ed1; }
 
 /*------------------------------------------------------INDEX------------------------------*/
 /*------------------------------------------------------INDEX------------------------------*/
@@ -530,15 +583,16 @@ header h1 {
     font-family: "Roboto", sans-serif; }
     .main-index .cartes-restaurants .titres-cartes-restaurant h2 {
       margin: 0;
-      padding: 11% 0 0 2%; }
+      padding: 11% 0 0 2%;
+      font-size: 7vw; }
     .main-index .cartes-restaurants .carte-resto {
       background-color: white;
       margin: 4%;
       padding-bottom: 4%;
       border-radius: 1em; }
       .main-index .cartes-restaurants .carte-resto .img img {
-        width: 100%;
-        height: 12em;
+        width: 92vw;
+        height: 32vh;
         object-fit: cover;
         border-radius: 1em 1em 0 0; }
       .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a {
@@ -547,9 +601,11 @@ header h1 {
         .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p {
           margin: 1% 4%; }
           .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
-            margin: 0; }
+            margin: 0;
+            font-size: 5vw; }
           .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
-            margin: 0; }
+            margin: 0;
+            font-size: 4.5vw; }
 
 /*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/
@@ -561,61 +617,63 @@ header h1 {
 .restaurant-img {
   margin: 0; }
   .restaurant-img img {
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
-    height: 15em; }
+    height: 41vh; }
 
 main {
   background-color: whitesmoke; }
-  main .la-palette-du-gout {
+  main .section-restoUnDeuxTroisQuatre {
     background-color: whitesmoke;
     border-radius: 2em 2em 0 0;
     position: relative;
     top: -3em;
     z-index: 1;
-    /*--------------------------restaurant-NOM-------------------------*/
+    /*--------------------------restaurant-NOM + COEUR-------------------------*/
     /*--------------------------Titre menu + UNDERLINE-----------------------------*/
     /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/ }
-    main .la-palette-du-gout .restaurant-name-like {
+    main .section-restoUnDeuxTroisQuatre .restaurant-name-like {
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
-      padding-top: 1em; }
-      main .la-palette-du-gout .restaurant-name-like .restaurant-name h2 {
+      padding: 1em;
+      justify-content: space-around; }
+      main .section-restoUnDeuxTroisQuatre .restaurant-name-like .restaurant-name h2 {
         font-family: "Shrikhand", sans-serif;
-        font-weight: 500; }
-    main .la-palette-du-gout .titre-underline {
+        font-weight: 500;
+        font-size: 7vw; }
+    main .section-restoUnDeuxTroisQuatre .titre-underline {
       text-transform: uppercase;
       margin-left: 6%;
       font-family: "Roboto", sans-serif;
       display: flex;
       flex-direction: column; }
-      main .la-palette-du-gout .titre-underline .titre h2 {
+      main .section-restoUnDeuxTroisQuatre .titre-underline .titre h2 {
         font-weight: lighter;
-        margin: 0; }
-      main .la-palette-du-gout .titre-underline .underline {
+        margin: 0;
+        font-size: 8vw; }
+      main .section-restoUnDeuxTroisQuatre .titre-underline .underline {
         border-top: 1px solid #99e2d0;
-        width: 17%;
+        width: 20vw;
         display: inline-block; }
-    main .la-palette-du-gout .liste-dishes {
+    main .section-restoUnDeuxTroisQuatre .liste-dishes {
       background-color: white;
       margin: 5%;
       border-radius: 1em;
-      transition-duration: 5s;
+      transition-duration: 0s;
       animation-name: apparition-menus;
       animation-duration: 2s;
       animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69); }
-      main .la-palette-du-gout .liste-dishes .dishes {
+      main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes {
         padding: 0; }
-        main .la-palette-du-gout .liste-dishes .dishes .dishes-un {
+        main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un {
           list-style-type: none;
           animation-name: apparition-plats;
           animation-duration: 2s;
           animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73); }
-          main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte {
+          main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte {
             display: flex;
             justify-content: space-between; }
-            main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation {
+            main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation {
               font-family: "roboto";
               margin: 0;
               overflow: hidden;
@@ -623,20 +681,23 @@ main {
               display: flex;
               flex-direction: column;
               padding: 1em; }
-              main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .span-ellipsis {
+              main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .span-ellipsis {
                 overflow: hidden;
                 text-overflow: ellipsis;
-                white-space: nowrap; }
-              main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .weight {
-                font-weight: bold; }
-            main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte {
+                white-space: nowrap;
+                font-size: 4vw; }
+              main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .presentation .weight {
+                font-weight: bold;
+                font-size: 5vw; }
+            main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte {
               display: flex; }
-              main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix {
+              main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix {
                 display: flex;
                 align-items: flex-end; }
-                main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
-                  padding: 1em; }
-              main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
+                main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
+                  padding: 1em;
+                  font-size: 5vw; }
+              main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
                 color: white;
                 display: flex;
                 justify-content: center;
@@ -645,20 +706,19 @@ main {
                 border-radius: 0 15px 15px 0;
                 overflow: hidden;
                 transition: width 400ms ease-in; }
-                main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
+                main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
                   display: flex;
                   flex-direction: column;
                   align-items: center;
                   justify-content: center;
                   /*padding-left: 62.5px;*/
-                  font-size: xx-large; }
-                  main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
+                  font-size: 11vw; }
+                  main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
                     animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
                     animation-iteration-count: infinite;
                     animation-fill-mode: forwards; }
-            main .la-palette-du-gout .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
+            main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
               color: white;
-              height: 100%;
-              width: 5em; }
+              width: 27vw; }
 
 /*# sourceMappingURL=style.css.map */

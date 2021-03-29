@@ -6,12 +6,13 @@
 
   .logo {
     color: $color-white;
-    margin: 4%;
+    margin: 6% 4%;
     font-family: "Shrikhand", sans-serif;
 
     p {
-      font-size: x-large;
+      font-size: 7vw;
       font-weight: bold;
+      margin: 0;
     }
   }
   .txtUn-textDeux-txtTrois-txtQuatre {
@@ -24,14 +25,15 @@
 
       .icone-hTrois {
         display: flex;
-        justify-content: center;
 
         .icone {
           margin: 0 0 0 1em;
+          .fa-utensils {
+            
+            font-size: 5vw;
+          }
         }
-        .span-i {
-          margin-left: -1.6em;
-        }
+        
       }
 
       .hTrois {
@@ -40,12 +42,13 @@
 
       .hTrois h3 {
         margin: 0;
+        font-size: 5vw;
       }
     }
     .mail {
       text-decoration: none;
       font-family: "Roboto", sans-serif;
-      font-size: large;
+      font-size: 5vw;
       font-weight: bold;
     }
   }

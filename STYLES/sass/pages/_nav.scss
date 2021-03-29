@@ -8,6 +8,7 @@
 
       & h2{
         font-size: 7vw;
+        margin-top: 2em;
       }
     }
   
@@ -34,7 +35,7 @@
         &:hover {
           background-color: #f5edff;
           color: $color-primary;
-          border-radius: 10em;
+          border-radius: 1.5em;
           & :hover .awesome {
             color: $color-primary;
           }
@@ -44,9 +45,9 @@
           content: counter(liste);
           padding: 1% 3% 1%;
           background-color: lighten($color-primary, 15);
-          border-radius: 50%;
+          border-radius: 1em;
           font-weight: bold;
-          font-size: 2.8vh;
+          font-size: 1.8vh;
           color: white;
           position: absolute;
           left: -3%;

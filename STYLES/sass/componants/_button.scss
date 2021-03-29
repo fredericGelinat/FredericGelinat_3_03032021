@@ -1,26 +1,64 @@
-/*----------------bouton rose INDEX + PAGES-----------------*/
+/*----------------bouton rose INDEX -----------------*/
 
+.submit-bouton-index {
+  display: flex;
+  justify-content: center;
 
-  .submit-bouton {
-    display: flex;
-    justify-content: center;
-
-    .bouton-rose {
-      margin-top: 2em;
-      box-shadow: $box-shadow-grey-around;
+  .bouton-rose {
+    margin-top: 2em;
+    box-shadow: $box-shadow-grey-around;
+    border-radius: 12em;
+    .texte-bouton-rose {
+      border: none;
+      background: linear-gradient($color-secondary, $color-primary);
+      font-family: roboto;
+      letter-spacing: 1px;
+      color: $color-white;
+      cursor: pointer;
       border-radius: 3em;
-      .texte-bouton-rose {
-        border: none;
-        background: linear-gradient($color-secondary, $color-primary);
-        font-family: roboto;
-        letter-spacing: 1px;
-        color: $color-white;
-        cursor: pointer;
-        border-radius: 3em;
-        height: 3em;
-        padding: 0 2em;
-        font-size: 3.5vw;
+      
+      padding: 2em 2em;
+      font-size: 3.5vw;
+
+      .clic {
+        color: white;
+        font-size: 5vw;
+        letter-spacing: 2px;
       }
     }
   }
+}
+
+
+
+/*-----------------bouton rose pages-----------------*/
+
+.submit-bouton {
+  display: flex;
+  justify-content: center;
+
+  .bouton-rose {
+    margin-top: 2em;
+    box-shadow: $box-shadow-grey-around;
+    border-radius: 12em;
+    .texte-bouton-rose {
+      border: none;
+      background: linear-gradient($color-secondary, $color-primary);
+      font-family: roboto;
+      letter-spacing: 1px;
+      color: $color-white;
+      cursor: pointer;
+      border-radius: 3em;
+      
+      padding: 2em 4em;
+      font-size: 3.5vw;
+
+      .clic {
+        color: white;
+        font-size: 5vw;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
 /*--------------------------------*/
