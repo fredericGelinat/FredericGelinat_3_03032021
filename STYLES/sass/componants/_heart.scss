@@ -1,32 +1,55 @@
 /*--------------------------coeur clignotant index------------*/
 .coeur-clignotant {
-  position: absolute;
-  right: 7vw;
+  position: relative;
+  left: 82vw;
   margin-top: -7vh;
   font-size: 7vw;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    
+   left: 40vw;
+    font-size: 5vw;
+    width: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    left: 82vw;
+    margin-top: -9vw;
+    
+  }
   .empty-full {
     .empty {
       .empty-heart {
-        color: $color-primary;
+        /*color: $color-primary;*/
+        background: linear-gradient(0, $color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
         /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
       }
-      
     }
 
     .full {
       .full-heart {
-        color: $color-primary-hsla;
+        /*color: $color-primary-hsla;*/
+        background: linear-gradient(0, $color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         margin-top: -1.1em;
         z-index: -1;
         position: absolute;
         /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-        animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 01) 1.1s infinite;
+        /*animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 01) 1.1s infinite;*/
       }
     }
   }
   &:hover .empty {
-    color: $color-random-color-primary;
+    /*color: $color-random-color-primary;*/
+    background: linear-gradient(0, $color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: none;
     z-index: 101;
     position: relative;
   }
@@ -37,16 +60,12 @@
   }
 }
 
-
-
 /*-------------------------coeur clignotant pages-----------------*/
 .coeur-clignotant-pages {
- 
   font-size: 7vw;
   .empty-full {
     .empty {
       .empty-heart {
-        
         color: $color-primary;
         animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
         /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
@@ -59,9 +78,7 @@
     }
 
     .full {
-      
       .full-heart {
-        
         color: $color-primary-hsla;
         margin-top: -1.1em;
         z-index: 1;
@@ -69,7 +86,6 @@
         position: absolute;
         /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
         animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 01) 1.1s infinite;
-        
       }
       & :hover {
         font-weight: bold;
@@ -79,9 +95,6 @@
       }
     }
   }
- 
- 
- 
 }
 /*------------------like pages menus---------------*/
 .like {

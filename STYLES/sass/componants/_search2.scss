@@ -40,11 +40,19 @@
       .paragrapheUn {
         font-weight: bold;
         font-size: 7.5vw;
+        @media screen and (min-width:768px){
+          font-size: 5vw;
+        }
+ 
       }
 
       .paragrapheDeux p {
         margin: 0;
         font-size: 5vw;
+        @media screen and (min-width: 768px) {
+          font-size: 3.5vw;
+          
+        }
       }
     }
   }

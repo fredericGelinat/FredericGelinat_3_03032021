@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*-----------------------justify content center-----------------------*/
+/*-------------------@media-------------------------------------------*/
 /*--------general--------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
@@ -57,7 +58,7 @@ body {
     animation-delay: 0.99s; }
   #loading-page .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #205b10;
+    text-shadow: 0 0 7px #4e181c;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   #loading-page .lettre-2 {
     color: #ff79da;
@@ -107,7 +108,7 @@ body {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #3625a7;
+    background-color: #1a35a7;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   #loading-page .dot-dots .dots span {
@@ -117,7 +118,7 @@ body {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #3625a7;
+    background-color: #1a35a7;
     border-radius: 50%;
     z-index: -10; }
   #loading-page .dot-dots .dots {
@@ -156,9 +157,15 @@ body {
     .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .paragraphes .paragrapheUn {
       font-weight: bold;
       font-size: 7.5vw; }
+      @media screen and (min-width: 768px) {
+        .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .paragraphes .paragrapheUn {
+          font-size: 5vw; } }
     .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .paragraphes .paragrapheDeux p {
       margin: 0;
       font-size: 5vw; }
+      @media screen and (min-width: 768px) {
+        .accueil-formulaires-recherche .icone-input-paragraphes-boutonRose .paragraphes .paragrapheDeux p {
+          font-size: 3.5vw; } }
 
 /*----------------bouton rose INDEX -----------------*/
 .submit-bouton-index {
@@ -178,10 +185,16 @@ body {
       border-radius: 3em;
       padding: 2em 2em;
       font-size: 3.5vw; }
+      @media screen and (min-width: 768px) {
+        .submit-bouton-index .bouton-rose .texte-bouton-rose {
+          font-size: 2.5vw; } }
       .submit-bouton-index .bouton-rose .texte-bouton-rose .clic {
         color: white;
         font-size: 5vw;
         letter-spacing: 2px; }
+        @media screen and (min-width: 768px) {
+          .submit-bouton-index .bouton-rose .texte-bouton-rose .clic {
+            font-size: 3vw; } }
 
 /*-----------------bouton rose pages-----------------*/
 .submit-bouton {
@@ -206,26 +219,67 @@ body {
         font-size: 5vw;
         letter-spacing: 2px; }
 
-/*--------------------------------*/
+/*-----------------coche verte pages---------------*/
+.coche-verte {
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #99e2d0;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  overflow: hidden;
+  transition: width 400ms ease-in; }
+  .coche-verte .icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding-left: 62.5px;*/
+    font-size: 11vw; }
+    .coche-verte .icone .fas.fa-check-circle {
+      animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards; }
+
 /*--------------------------coeur clignotant index------------*/
 .coeur-clignotant {
-  position: absolute;
-  right: 7vw;
+  position: relative;
+  left: 82vw;
   margin-top: -7vh;
   font-size: 7vw; }
+  @media screen and (min-width: 768px) {
+    .coeur-clignotant {
+      position: relative;
+      left: 40vw;
+      font-size: 5vw;
+      width: 0; } }
+  @media screen and (min-width: 1440px) {
+    .coeur-clignotant {
+      left: 82vw;
+      margin-top: -9vw; } }
   .coeur-clignotant .empty-full .empty .empty-heart {
-    color: #9256dc;
+    /*color: $color-primary;*/
+    background: linear-gradient(0, #ff79da, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
     /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
   .coeur-clignotant .empty-full .full .full-heart {
-    color: rgba(146, 86, 220, 0.5);
+    /*color: $color-primary-hsla;*/
+    background: linear-gradient(0, #ff79da, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-top: -1.1em;
     z-index: -1;
     position: absolute;
     /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
-    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite; }
+    /*animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 01) 1.1s infinite;*/ }
   .coeur-clignotant:hover .empty {
-    color: #3625a7;
+    /*color: $color-random-color-primary;*/
+    background: linear-gradient(0, #ff79da, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: none;
     z-index: 101;
     position: relative; }
   .coeur-clignotant:hover .full {
@@ -241,7 +295,7 @@ body {
     animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
     /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
   .coeur-clignotant-pages .empty-full .empty :hover {
-    color: #3625a7;
+    color: #1a35a7;
     z-index: 101;
     position: relative; }
   .coeur-clignotant-pages .empty-full .full .full-heart {
@@ -275,21 +329,63 @@ body {
     z-index: 100;
     position: absolute; }
   .like:hover .empty-heart {
-    color: #3625a7;
+    color: #1a35a7;
     z-index: 101;
     position: relative; }
 
-.sticker-new .sticker {
-  background-color: #99e2d0;
-  position: absolute;
-  right: 6vw;
-  margin-top: 4%;
-  padding: 0.9em;
-  border-radius: 8px; }
-  .sticker-new .sticker .new {
-    color: #008766;
-    margin: 0;
-    font-size: 5vw; }
+.lien-stickerNew-img .lien .txt-deco-none {
+  text-decoration: none; }
+  .lien-stickerNew-img .lien .txt-deco-none .sticker-new {
+    position: relative;
+    top: 3vw;
+    display: flex;
+    justify-content: flex-end;
+    right: 5vw; }
+    @media screen and (min-width: 768px) {
+      .lien-stickerNew-img .lien .txt-deco-none .sticker-new {
+        position: relative;
+        top: -7vw;
+        display: flex;
+        justify-content: flex-end;
+        right: 1vw; } }
+    @media screen and (min-width: 1440px) {
+      .lien-stickerNew-img .lien .txt-deco-none .sticker-new {
+        top: -1vw; } }
+    .lien-stickerNew-img .lien .txt-deco-none .sticker-new .sticker {
+      background-color: #99e2d0;
+      /* position: absolute;*/
+      width: 30vw;
+      z-index: 1;
+      border-radius: 8px; }
+      @media screen and (min-width: 768px) {
+        .lien-stickerNew-img .lien .txt-deco-none .sticker-new .sticker {
+          background-color: #99e2d0;
+          width: 13vw;
+          z-index: 1;
+          border-radius: 8px; } }
+      .lien-stickerNew-img .lien .txt-deco-none .sticker-new .sticker .new {
+        display: flex;
+        justify-content: center;
+        color: #008766; }
+  .lien-stickerNew-img .lien .txt-deco-none .img img {
+    height: 21vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0; }
+    @media screen and (min-width: 768px) {
+      .lien-stickerNew-img .lien .txt-deco-none .img img {
+        width: 100%;
+        height: 21vh;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0; } }
+
+.position-relative .img-resto-relatif img {
+  position: relative;
+  top: -9vh;
+  width: 100%;
+  height: 21vh;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0; }
 
 /*----------------------@keyframe loading page----------------*/
 @keyframes load-1 {
@@ -306,7 +402,7 @@ body {
     text-shadow: 0 0 7px #ff79da; }
   90% {
     color: #ff79da;
-    text-shadow: #925097; }
+    text-shadow: #5eba13; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc; } }
@@ -361,15 +457,30 @@ body {
 /*----------------------@keyframe Coeur-heart empty----------------*/
 @keyframes fully {
   0% {
-    color: #99e2d0; }
+    /*color: $color-third;*/
+    background: linear-gradient(0, #ff79da, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   25% {
-    color: #ff79da; }
+    /*color: $color-secondary;*/
+    background: linear-gradient(0, #9256dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   50% {
-    color: #9256dc; }
+    /*color: $color-primary;*/
+    background: linear-gradient(0, #99e2d0, #e299ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   75% {
-    color: #99e2d0; }
+    /*color: $color-third;*/
+    background: linear-gradient(0, #9256dc, rgba(146, 86, 220, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   100% {
-    color: #ff79da; } }
+    /*color: $color-secondary;*/
+    background: linear-gradient(0, #5eba13, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; } }
 /*------------------------@keyframe apparition menu décalé pages---------------*/
 @keyframes apparition-menus {
   0% {
@@ -526,11 +637,25 @@ header h1 {
     .navigation-index .titreFonctionnement h2 {
       font-size: 7vw;
       margin-top: 2em; }
+      @media screen and (min-width: 768px) {
+        .navigation-index .titreFonctionnement h2 {
+          display: flex;
+          justify-content: center; } }
   .navigation-index .liste-fonctionnement {
     padding: 0;
     counter-reset: liste;
     display: flex;
     flex-direction: column; }
+    @media screen and (min-width: 768px) {
+      .navigation-index .liste-fonctionnement {
+        padding: 0;
+        counter-reset: liste;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media screen and (min-width: 768px) {
+      .navigation-index .liste-fonctionnement #itemTrois {
+        margin: 0 auto; } }
     .navigation-index .liste-fonctionnement .items-fonctionnement {
       background-color: white;
       padding: 4%;
@@ -545,6 +670,10 @@ header h1 {
       transform: scale(1);
       font-size: 5vw;
       transition: transform 450ms, background-color 300ms; }
+      @media screen and (min-width: 768px) {
+        .navigation-index .liste-fonctionnement .items-fonctionnement {
+          font-size: 2vw;
+          width: 31vw; } }
       .navigation-index .liste-fonctionnement .items-fonctionnement:hover {
         background-color: #f5edff;
         color: #9256dc;
@@ -557,7 +686,7 @@ header h1 {
         background-color: #bb95e9;
         border-radius: 1em;
         font-weight: bold;
-        font-size: 1.8vh;
+        font-size: 2.8vh;
         color: white;
         position: absolute;
         left: -3%;
@@ -570,7 +699,9 @@ header h1 {
           display: flex;
           align-items: center; }
           .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
-            color: #442ed1; }
+            color: #2143d3; }
+        .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .bouton-choix-restaurant p {
+          font-weight: bold; }
 
 /*------------------------------------------------------INDEX------------------------------*/
 /*------------------------------------------------------INDEX------------------------------*/
@@ -585,27 +716,80 @@ header h1 {
       margin: 0;
       padding: 11% 0 0 2%;
       font-size: 7vw; }
-    .main-index .cartes-restaurants .carte-resto {
-      background-color: white;
-      margin: 4%;
-      padding-bottom: 4%;
-      border-radius: 1em; }
-      .main-index .cartes-restaurants .carte-resto .img img {
-        width: 92vw;
-        height: 32vh;
-        object-fit: cover;
-        border-radius: 1em 1em 0 0; }
-      .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a {
-        text-decoration: none;
-        color: black; }
-        .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p {
-          margin: 1% 4%; }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
-            margin: 0;
-            font-size: 5vw; }
-          .main-index .cartes-restaurants .carte-resto .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
-            margin: 0;
-            font-size: 4.5vw; }
+      @media screen and (min-width: 768px) {
+        .main-index .cartes-restaurants .titres-cartes-restaurant h2 {
+          display: flex;
+          justify-content: center;
+          padding: 7vh; } }
+    @media screen and (min-width: 1440px) {
+      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal {
+        display: unset; } }
+    .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto {
+      display: flex;
+      flex-direction: column; }
+      @media screen and (min-width: 768px) {
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto {
+          display: unset; } }
+      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .resto-relatif {
+        background-color: white;
+        margin: 4%;
+        padding-bottom: 1%;
+        border-radius: 1em; }
+      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .premier-resto {
+        margin-top: 4vh;
+        margin-bottom: 2vh; }
+        @media screen and (min-width: 768px) {
+          .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .premier-resto {
+            margin-bottom: 8vh; } }
+    .main-index .cartes-restaurants .deux-derniers-resto {
+      display: flex;
+      flex-direction: column; }
+      @media screen and (min-width: 768px) {
+        .main-index .cartes-restaurants .deux-derniers-resto {
+          display: unset; } }
+      .main-index .cartes-restaurants .deux-derniers-resto .carte-resto {
+        background-color: white;
+        margin: 4%;
+        padding-bottom: 1%;
+        border-radius: 1em; }
+        @media screen and (min-width: 768px) {
+          .main-index .cartes-restaurants .deux-derniers-resto .carte-resto {
+            background-color: white;
+            margin: 4%;
+            border-radius: 1em; } }
+        .main-index .cartes-restaurants .deux-derniers-resto .carte-resto .lien-img .lien .img img {
+          width: 100vw; }
+      @media screen and (min-width: 768px) {
+        .main-index .cartes-restaurants .deux-derniers-resto #troisieme-resto {
+          margin-top: -1vh; } }
+      .main-index .cartes-restaurants .deux-derniers-resto #quatrieme-resto {
+        margin-top: 1vh; }
+        @media screen and (min-width: 768px) {
+          .main-index .cartes-restaurants .deux-derniers-resto #quatrieme-resto {
+            margin-top: 3vh; } }
+    .main-index .cartes-restaurants .description-like .lien-description-like .lien a {
+      text-decoration: none;
+      color: black; }
+      .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p {
+        margin: 3vh 2vw; }
+        .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
+          margin: 0;
+          font-size: 5vw; }
+          @media screen and (min-width: 768px) {
+            .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
+              font-size: 3vw;
+              margin-top: -1vh; } }
+        .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
+          margin: 0;
+          font-size: 4.5vw; }
+          @media screen and (min-width: 768px) {
+            .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
+              font-size: 2.5vw; } }
+      @media screen and (min-width: 768px) {
+        .main-index .cartes-restaurants .description-like .lien-description-like .lien a .hTrois-p-relatif {
+          margin: 3vh 2vw; } }
+    .main-index .cartes-restaurants .relatif-description-like {
+      margin-top: -10vh; }
 
 /*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/
@@ -697,26 +881,6 @@ main {
                 main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .prix span {
                   padding: 1em;
                   font-size: 5vw; }
-              main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte {
-                color: white;
-                display: flex;
-                justify-content: center;
-                background-color: #99e2d0;
-                width: 0;
-                border-radius: 0 15px 15px 0;
-                overflow: hidden;
-                transition: width 400ms ease-in; }
-                main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  /*padding-left: 62.5px;*/
-                  font-size: 11vw; }
-                  main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte .prix-coche-verte .coche-verte .icone .fas.fa-check-circle {
-                    animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
-                    animation-iteration-count: infinite;
-                    animation-fill-mode: forwards; }
             main .section-restoUnDeuxTroisQuatre .liste-dishes .dishes .dishes-un .presentation-prix-coche-verte:hover .coche-verte {
               color: white;
               width: 27vw; }

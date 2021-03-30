@@ -9,6 +9,10 @@
       & h2{
         font-size: 7vw;
         margin-top: 2em;
+        @media screen and (min-width: 768px){
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   
@@ -17,7 +21,21 @@
       counter-reset: liste;
       display: flex;
       flex-direction: column;
-  
+      @media screen and (min-width: 768px){
+         
+            padding: 0;
+            counter-reset: liste;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        
+    }
+      #itemTrois{
+        @media screen and (min-width :768px) {
+          margin: 0 auto;
+        }
+      }
       .items-fonctionnement {
         background-color: $color-white;
         @include padding-margin(4%, 4%);
@@ -31,6 +49,13 @@
         transform: scale(1);
         font-size: 5vw;
         transition: transform 450ms, background-color 300ms;
+        @media screen and (min-width: 768px){
+         
+         font-size: 2vw;
+         width: 31vw;
+          
+      
+  }
   
         &:hover {
           background-color: #f5edff;
@@ -47,7 +72,7 @@
           background-color: lighten($color-primary, 15);
           border-radius: 1em;
           font-weight: bold;
-          font-size: 1.8vh;
+          font-size: 2.8vh;
           color: white;
           position: absolute;
           left: -3%;
@@ -64,6 +89,9 @@
             &:hover {
               color: lighten($color-random-color-primary, 10);
             }
+          }
+          .bouton-choix-restaurant p{
+            font-weight: bold;
           }
         }
       }

@@ -1,17 +1,67 @@
-.sticker-new {
-    
-    .sticker {
-        background-color: $color-third;
-        position: absolute;
-        right: 6vw;
-        margin-top: 4%;
-        padding: 0.9em;
-        border-radius: 8px;
+.lien-stickerNew-img {
+    .lien {
+        .txt-deco-none {
+            text-decoration: none;
 
-        .new {
-            color: #008766;
-            margin: 0;
-            font-size: 5vw;
+            .sticker-new {
+                position: relative;
+                top: 3vw;
+                display: flex;
+                justify-content: flex-end;
+                @media screen and (min-width: 768px) {
+                    position: relative;
+                    top: -7vw;
+                    display: flex;
+                    justify-content: flex-end;
+                    right: 1vw;
+                }
+                @media screen and (min-width:1440px) {
+                    top: -1vw;
+                    
+                }
+                right: 5vw;
+                .sticker {
+                    background-color: $color-third;
+                    /* position: absolute;*/
+                    width: 30vw;
+                    z-index: 1;
+                    border-radius: 8px;
+                    @media screen and (min-width: 768px) {
+                        background-color: #99e2d0;
+                        width: 13vw;
+                        z-index: 1;
+                        border-radius: 8px;
+                    }
+
+                    .new {
+                        display: flex;
+                        justify-content: center;
+                        color: #008766;
+                    }
+                }
+            }
+            .img img {
+                height: 21vh;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 1em 1em 0 0;
+                @media screen and (min-width: 768px) {
+                    width: 100%;
+                    height: 21vh;
+                    object-fit: cover;
+                    border-radius: 1em 1em 0 0;
+                }
+            }
         }
+    }
+}
+.position-relative .img-resto-relatif {
+    img {
+        position: relative;
+        top: -9vh;
+        width: 100%;
+        height: 21vh;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0;
     }
 }

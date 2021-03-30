@@ -111,22 +111,37 @@
 
 @keyframes fully {
     0% {
-      color: $color-third;
+      /*color: $color-third;*/
+      background: linear-gradient(0, $color-secondary, $color-primary);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
     }
 
     25% {
-      color: $color-secondary;
+      /*color: $color-secondary;*/
+      background: linear-gradient(0, $color-primary, $color-secondary);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
     }
 
     50% {
-      color: $color-primary;
+      /*color: $color-primary;*/
+      background: linear-gradient(0, $color-third, $color-third-complementary-color);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
     }
 
     75% {
-      color: $color-third;
+      /*color: $color-third;*/
+      background: linear-gradient(0, $color-primary, $color-primary-hsla);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
     }
     100% {
-      color: $color-secondary;
+      /*color: $color-secondary;*/
+      background: linear-gradient(0, $color-random-color-third, $color-primary);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
     }
   }
 
