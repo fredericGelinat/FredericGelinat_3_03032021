@@ -37,7 +37,8 @@
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 31vh;
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 375px) {
+            height: 25vh;
           }
         }
         #second-resto {
@@ -45,7 +46,9 @@
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 31vh;
-          @media screen and (min-width: 768px) {
+           @media screen and (min-width: 375px) {
+            height: 25vh;
+            margin-top: 3vh;
           }
         }
         .relatif-description-like {
@@ -59,7 +62,7 @@
                 color: $color-black;
 
                 .decription-hTrois-p {
-                  margin: 1vh 2vw;
+                  margin: 0 2vw;
                   .hTrois {
                     & h3 {
                       margin-top: -3vh;
@@ -100,7 +103,8 @@
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 32vh;
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 375px) {
+            height: 28vh;
           }
         }
         #quatrieme-resto {
@@ -108,7 +112,8 @@
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 32vh;
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 375px) {
+            height: 28vh;
           }
         }
         .description-like {
@@ -120,7 +125,7 @@
                 color: $color-black;
 
                 .decription-hTrois-p {
-                  margin: 1vh 2vw;
+                  margin: 0 2vw;
                   .hTrois {
                     & h3 {
                       margin-top: -3vh;

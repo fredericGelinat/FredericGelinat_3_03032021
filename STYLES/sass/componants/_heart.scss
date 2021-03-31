@@ -5,12 +5,8 @@
   margin-top: -9vh;
   font-size: 7vw;
 
-  @media screen and (min-width: 768px) {
-    position: relative;
-    
-   left: 40vw;
-    font-size: 5vw;
-    width: 0;
+  @media screen and (min-width: 375px) {
+    margin-top: -7vh;
   }
   @media screen and (min-width: 1440px) {
     left: 82vw;
@@ -65,7 +61,7 @@
 #coeur-deux-derniers-resto{
   position: relative;
   left: 82vw;
-  margin-top: -9vh;
+  margin-top: -7vh;
   font-size: 7vw;
 
   @media screen and (min-width: 768px) {

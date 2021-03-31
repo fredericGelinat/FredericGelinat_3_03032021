@@ -77,6 +77,11 @@
           position: absolute;
           left: -3%;
           top: 36%;
+          @media screen and (min-width: 375px) {
+            font-size: 1.8vh;
+            border-radius: 50%;
+            
+          }
         }
         .awesome-boutonChoixRestaurant-btn_bg {
           display: flex;
