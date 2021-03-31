@@ -11,7 +11,7 @@
 
     .titres-cartes-restaurant h2 {
       margin: 0;
-      padding: 11% 0 0 2%;
+      padding: 11% 0 6% 4%;
       font-size: 7vw;
       @media screen and (min-width: 768px) {
         display: flex;
@@ -20,125 +20,195 @@
       }
     }
     .cartes-restaurants-sanstitreprincipal {
-        @media screen and (min-width: 768px) {
-       
-        
-        
+      @media screen and (min-width: 768px) {
       }
-      @media screen and (min-width:1440px) {
+      @media screen and (min-width: 1440px) {
         display: unset;
-        
       }
       .deux-premiers-resto {
         display: flex;
         flex-direction: column;
-        @media screen and (min-width:768px){
+        @media screen and (min-width: 768px) {
           display: unset;
         }
-        .resto-relatif {
+
+        #premier-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
-          margin: 4%;
-          padding-bottom: 1%;
-          border-radius: 1em;
-        }
-        .premier-resto{
-          margin-top: 4vh;
-          margin-bottom: 2vh;
-          @media screen and (min-width:768px) {
-            margin-bottom: 8vh;
-            
+          height: 31vh;
+          @media screen and (min-width: 768px) {
           }
-            
+        }
+        #second-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: $color-white;
+          height: 31vh;
+          @media screen and (min-width: 768px) {
+          }
+        }
+        .relatif-description-like {
+         
+            margin-top: -8vh;
+         
+          .lien-description-like {
+            .lien {
+              a {
+                text-decoration: none;
+                color: $color-black;
+
+                .decription-hTrois-p {
+                  margin: 1vh 2vw;
+                  .hTrois {
+                    & h3 {
+                      margin-top: -3vh;
+                      font-size: 5vw;
+                      @media screen and (min-width: 768px) {
+                        font-size: 3vw;
+                        margin-top: -1vh;
+                      }
+                    }
+                  }
+                  .p p {
+                    margin-top: -3vh;
+                    font-size: 4.5vw;
+                    @media screen and (min-width: 768px) {
+                      font-size: 2.5vw;
+                    }
+                  }
+                }
+                .hTrois-p-relatif {
+                  @media screen and (min-width: 768px) {
+                    margin: 3vh 2vw;
+                  }
+                }
+              }
+            }
           }
         }
       }
-
       .deux-derniers-resto {
         display: flex;
         flex-direction: column;
-        @media screen and (min-width:768px) {
+        @media screen and (min-width: 768px) {
           display: unset;
-          
         }
-        .carte-resto {
-          background-color: $color-white;
-          margin: 4%;
-          padding-bottom: 1%;
-          border-radius: 1em;
-          @media screen and (min-width: 768px) {
-            background-color: white;
-            margin: 4%;
-            border-radius: 1em;
-            
-          }
-            .lien-img {
-              .lien {
-                .img {
-                  img {
-                    width: 100vw;
-                  }
-                }
-              }
-            }
-          }
-          #troisieme-resto{
-            @media screen and (min-width:768px) {
-              margin-top: -1vh;
-              
-            }
-            
-          }
-          #quatrieme-resto{
-            @media screen and (min-width:768px) {
-              margin-top: 3vh;
-              
-            }
-            margin-top: 1vh;
-          }
-        }
-          .description-like {
-            .lien-description-like {
-              .lien {
-                a {
-                  text-decoration: none;
-                  color: $color-black;
 
-                  .decription-hTrois-p {
-                    margin: 3vh 2vw;
-                    .hTrois {
-                      & h3 {
-                        margin: 0;
-                        font-size: 5vw;
-                        @media screen and (min-width: 768px) {
-                          font-size: 3vw;
-                          margin-top: -1vh;
-                        }
-                      }
-                    }
-                    .p p {
-                      margin: 0;
-                      font-size: 4.5vw;
+        #troisieme-resto {
+          margin: 0 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: $color-white;
+          height: 32vh;
+          @media screen and (min-width: 768px) {
+          }
+        }
+        #quatrieme-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: $color-white;
+          height: 32vh;
+          @media screen and (min-width: 768px) {
+          }
+        }
+        .description-like {
+          margin-top: 4vh;
+          .lien-description-like {
+            .lien {
+              a {
+                text-decoration: none;
+                color: $color-black;
+
+                .decription-hTrois-p {
+                  margin: 1vh 2vw;
+                  .hTrois {
+                    & h3 {
+                      margin-top: -3vh;
+                      font-size: 5vw;
                       @media screen and (min-width: 768px) {
-                        font-size: 2.5vw;
+                        font-size: 3vw;
+                        margin-top: -1vh;
                       }
                     }
                   }
-                  .hTrois-p-relatif {
+                  .p p {
+                    margin-top: -3vh;
+                    font-size: 4.5vw;
                     @media screen and (min-width: 768px) {
-                      margin: 3vh 2vw;
+                      font-size: 2.5vw;
+                    }
+                  }
+                }
+                
+              }
+            }
+          }
+        }
+      }
+      /*.deux-derniers-resto {
+        display: flex;
+        flex-direction: column;
+        margin-top: -1vh;
+        @media screen and (min-width: 768px) {
+          display: unset;
+        }
+
+        #troisieme-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: $color-white;
+          height: 34vh;
+          @media screen and (min-width: 768px) {
+            margin-top: -1vh;
+          }
+        }
+        #quatrieme-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: $color-white;
+          height: 34vh;
+          @media screen and (min-width: 768px) {
+            margin-top: 3vh;
+          }
+          margin-top: 1vh;
+        }
+
+        .description-like {
+          .lien-description-like {
+            .lien {
+              a {
+                text-decoration: none;
+                color: $color-black;
+
+                .decription-hTrois-p {
+                  margin: 5vh 2vw;
+                  .hTrois {
+                    & h3 {
+                      margin-top: -3vh;
+                      font-size: 5vw;
+                      @media screen and (min-width: 768px) {
+                        font-size: 3vw;
+                        margin-top: -1vh;
+                      }
+                    }
+                  }
+                  .p p {
+                    margin-top: -3vh;
+                    font-size: 4.5vw;
+                    @media screen and (min-width: 768px) {
+                      font-size: 2.5vw;
                     }
                   }
                 }
               }
             }
           }
-          .relatif-description-like {
-            margin-top: -10vh;
-          }
-        
+        }
+      }*/
       
     }
   }
+}
 
 /*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/

@@ -58,7 +58,7 @@ body {
     animation-delay: 0.99s; }
   #loading-page .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #4e181c;
+    text-shadow: 0 0 7px #2570a0;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   #loading-page .lettre-2 {
     color: #ff79da;
@@ -108,7 +108,7 @@ body {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #1a35a7;
+    background-color: #50240c;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   #loading-page .dot-dots .dots span {
@@ -118,7 +118,7 @@ body {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #1a35a7;
+    background-color: #50240c;
     border-radius: 50%;
     z-index: -10; }
   #loading-page .dot-dots .dots {
@@ -245,7 +245,7 @@ body {
 .coeur-clignotant {
   position: relative;
   left: 82vw;
-  margin-top: -7vh;
+  margin-top: -9vh;
   font-size: 7vw; }
   @media screen and (min-width: 768px) {
     .coeur-clignotant {
@@ -287,6 +287,51 @@ body {
     z-index: 101;
     position: absolute; }
 
+#coeur-deux-derniers-resto {
+  position: relative;
+  left: 82vw;
+  margin-top: -9vh;
+  font-size: 7vw; }
+  @media screen and (min-width: 768px) {
+    #coeur-deux-derniers-resto {
+      position: relative;
+      left: 40vw;
+      font-size: 5vw;
+      width: 0; } }
+  @media screen and (min-width: 1440px) {
+    #coeur-deux-derniers-resto {
+      left: 82vw;
+      margin-top: -9vw; } }
+  #coeur-deux-derniers-resto .empty-full .empty .empty-heart {
+    /*color: $color-primary;*/
+    background: linear-gradient(0, #ff79da, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
+  #coeur-deux-derniers-resto .empty-full .full .full-heart {
+    /*color: $color-primary-hsla;*/
+    background: linear-gradient(0, #ff79da, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -1.1em;
+    z-index: -1;
+    position: absolute;
+    /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/
+    /*animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 01) 1.1s infinite;*/ }
+  #coeur-deux-derniers-resto:hover .empty {
+    /*color: $color-random-color-primary;*/
+    background: linear-gradient(0, #ff79da, #9256dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: none;
+    z-index: 101;
+    position: relative; }
+  #coeur-deux-derniers-resto:hover .full {
+    font-weight: bold;
+    z-index: 101;
+    position: absolute; }
+
 /*-------------------------coeur clignotant pages-----------------*/
 .coeur-clignotant-pages {
   font-size: 7vw; }
@@ -295,7 +340,7 @@ body {
     animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
     /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
   .coeur-clignotant-pages .empty-full .empty :hover {
-    color: #1a35a7;
+    color: #50240c;
     z-index: 101;
     position: relative; }
   .coeur-clignotant-pages .empty-full .full .full-heart {
@@ -329,7 +374,7 @@ body {
     z-index: 100;
     position: absolute; }
   .like:hover .empty-heart {
-    color: #1a35a7;
+    color: #50240c;
     z-index: 101;
     position: relative; }
 
@@ -337,10 +382,10 @@ body {
   text-decoration: none; }
   .lien-stickerNew-img .lien .txt-deco-none .sticker-new {
     position: relative;
-    top: 3vw;
+    top: 0;
+    right: 3vw;
     display: flex;
-    justify-content: flex-end;
-    right: 5vw; }
+    justify-content: flex-end; }
     @media screen and (min-width: 768px) {
       .lien-stickerNew-img .lien .txt-deco-none .sticker-new {
         position: relative;
@@ -354,7 +399,7 @@ body {
     .lien-stickerNew-img .lien .txt-deco-none .sticker-new .sticker {
       background-color: #99e2d0;
       /* position: absolute;*/
-      width: 30vw;
+      width: 20vw;
       z-index: 1;
       border-radius: 8px; }
       @media screen and (min-width: 768px) {
@@ -366,7 +411,8 @@ body {
       .lien-stickerNew-img .lien .txt-deco-none .sticker-new .sticker .new {
         display: flex;
         justify-content: center;
-        color: #008766; }
+        color: #008766;
+        font-size: 4vw; }
   .lien-stickerNew-img .lien .txt-deco-none .img img {
     height: 21vh;
     width: 100%;
@@ -402,7 +448,7 @@ body {
     text-shadow: 0 0 7px #ff79da; }
   90% {
     color: #ff79da;
-    text-shadow: #5eba13; }
+    text-shadow: #2fb373; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc; } }
@@ -478,7 +524,7 @@ body {
     -webkit-text-fill-color: transparent; }
   100% {
     /*color: $color-secondary;*/
-    background: linear-gradient(0, #5eba13, #9256dc);
+    background: linear-gradient(0, #2fb373, #9256dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; } }
 /*------------------------@keyframe apparition menu décalé pages---------------*/
@@ -699,7 +745,7 @@ header h1 {
           display: flex;
           align-items: center; }
           .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
-            color: #2143d3; }
+            color: #7c3813; }
         .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .bouton-choix-restaurant p {
           font-weight: bold; }
 
@@ -714,82 +760,152 @@ header h1 {
     font-family: "Roboto", sans-serif; }
     .main-index .cartes-restaurants .titres-cartes-restaurant h2 {
       margin: 0;
-      padding: 11% 0 0 2%;
+      padding: 11% 0 6% 4%;
       font-size: 7vw; }
       @media screen and (min-width: 768px) {
         .main-index .cartes-restaurants .titres-cartes-restaurant h2 {
           display: flex;
           justify-content: center;
           padding: 7vh; } }
-    @media screen and (min-width: 1440px) {
-      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal {
-        display: unset; } }
-    .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto {
-      display: flex;
-      flex-direction: column; }
-      @media screen and (min-width: 768px) {
-        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto {
-          display: unset; } }
-      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .resto-relatif {
-        background-color: white;
-        margin: 4%;
-        padding-bottom: 1%;
-        border-radius: 1em; }
-      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .premier-resto {
-        margin-top: 4vh;
-        margin-bottom: 2vh; }
+    .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal {
+      /*.deux-derniers-resto {
+        display: flex;
+        flex-direction: column;
+        margin-top: -1vh;
         @media screen and (min-width: 768px) {
-          .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .premier-resto {
-            margin-bottom: 8vh; } }
-    .main-index .cartes-restaurants .deux-derniers-resto {
-      display: flex;
-      flex-direction: column; }
-      @media screen and (min-width: 768px) {
-        .main-index .cartes-restaurants .deux-derniers-resto {
-          display: unset; } }
-      .main-index .cartes-restaurants .deux-derniers-resto .carte-resto {
-        background-color: white;
-        margin: 4%;
-        padding-bottom: 1%;
-        border-radius: 1em; }
-        @media screen and (min-width: 768px) {
-          .main-index .cartes-restaurants .deux-derniers-resto .carte-resto {
-            background-color: white;
-            margin: 4%;
-            border-radius: 1em; } }
-        .main-index .cartes-restaurants .deux-derniers-resto .carte-resto .lien-img .lien .img img {
-          width: 100vw; }
-      @media screen and (min-width: 768px) {
-        .main-index .cartes-restaurants .deux-derniers-resto #troisieme-resto {
-          margin-top: -1vh; } }
-      .main-index .cartes-restaurants .deux-derniers-resto #quatrieme-resto {
-        margin-top: 1vh; }
-        @media screen and (min-width: 768px) {
-          .main-index .cartes-restaurants .deux-derniers-resto #quatrieme-resto {
-            margin-top: 3vh; } }
-    .main-index .cartes-restaurants .description-like .lien-description-like .lien a {
-      text-decoration: none;
-      color: black; }
-      .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p {
-        margin: 3vh 2vw; }
-        .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
-          margin: 0;
-          font-size: 5vw; }
+          display: unset;
+        }
+
+        #troisieme-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: $color-white;
+          height: 34vh;
           @media screen and (min-width: 768px) {
-            .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
-              font-size: 3vw;
-              margin-top: -1vh; } }
-        .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
-          margin: 0;
-          font-size: 4.5vw; }
+            margin-top: -1vh;
+          }
+        }
+        #quatrieme-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: $color-white;
+          height: 34vh;
           @media screen and (min-width: 768px) {
-            .main-index .cartes-restaurants .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
-              font-size: 2.5vw; } }
-      @media screen and (min-width: 768px) {
-        .main-index .cartes-restaurants .description-like .lien-description-like .lien a .hTrois-p-relatif {
-          margin: 3vh 2vw; } }
-    .main-index .cartes-restaurants .relatif-description-like {
-      margin-top: -10vh; }
+            margin-top: 3vh;
+          }
+          margin-top: 1vh;
+        }
+
+        .description-like {
+          .lien-description-like {
+            .lien {
+              a {
+                text-decoration: none;
+                color: $color-black;
+
+                .decription-hTrois-p {
+                  margin: 5vh 2vw;
+                  .hTrois {
+                    & h3 {
+                      margin-top: -3vh;
+                      font-size: 5vw;
+                      @media screen and (min-width: 768px) {
+                        font-size: 3vw;
+                        margin-top: -1vh;
+                      }
+                    }
+                  }
+                  .p p {
+                    margin-top: -3vh;
+                    font-size: 4.5vw;
+                    @media screen and (min-width: 768px) {
+                      font-size: 2.5vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }*/ }
+      @media screen and (min-width: 1440px) {
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal {
+          display: unset; } }
+      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto {
+        display: flex;
+        flex-direction: column; }
+        @media screen and (min-width: 768px) {
+          .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto {
+            display: unset; } }
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto #premier-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: white;
+          height: 31vh; }
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto #second-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: white;
+          height: 31vh; }
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like {
+          margin-top: -8vh; }
+          .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like .lien-description-like .lien a {
+            text-decoration: none;
+            color: black; }
+            .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like .lien-description-like .lien a .decription-hTrois-p {
+              margin: 1vh 2vw; }
+              .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
+                margin-top: -3vh;
+                font-size: 5vw; }
+                @media screen and (min-width: 768px) {
+                  .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
+                    font-size: 3vw;
+                    margin-top: -1vh; } }
+              .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like .lien-description-like .lien a .decription-hTrois-p .p p {
+                margin-top: -3vh;
+                font-size: 4.5vw; }
+                @media screen and (min-width: 768px) {
+                  .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like .lien-description-like .lien a .decription-hTrois-p .p p {
+                    font-size: 2.5vw; } }
+            @media screen and (min-width: 768px) {
+              .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto .relatif-description-like .lien-description-like .lien a .hTrois-p-relatif {
+                margin: 3vh 2vw; } }
+      .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto {
+        display: flex;
+        flex-direction: column; }
+        @media screen and (min-width: 768px) {
+          .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto {
+            display: unset; } }
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto #troisieme-resto {
+          margin: 0 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: white;
+          height: 32vh; }
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto #quatrieme-resto {
+          margin: 4vw;
+          border-radius: 1em 1em 1em 1em;
+          background-color: white;
+          height: 32vh; }
+        .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto .description-like {
+          margin-top: 4vh; }
+          .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto .description-like .lien-description-like .lien a {
+            text-decoration: none;
+            color: black; }
+            .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto .description-like .lien-description-like .lien a .decription-hTrois-p {
+              margin: 1vh 2vw; }
+              .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
+                margin-top: -3vh;
+                font-size: 5vw; }
+                @media screen and (min-width: 768px) {
+                  .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto .description-like .lien-description-like .lien a .decription-hTrois-p .hTrois h3 {
+                    font-size: 3vw;
+                    margin-top: -1vh; } }
+              .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
+                margin-top: -3vh;
+                font-size: 4.5vw; }
+                @media screen and (min-width: 768px) {
+                  .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto .description-like .lien-description-like .lien a .decription-hTrois-p .p p {
+                    font-size: 2.5vw; } }
 
 /*------------------------------------Pages restaurants----------------------
 --------------------------------------------------------------------------*/

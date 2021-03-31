@@ -5,7 +5,8 @@
 
             .sticker-new {
                 position: relative;
-                top: 3vw;
+                top: 0;
+                right: 3vw;
                 display: flex;
                 justify-content: flex-end;
                 @media screen and (min-width: 768px) {
@@ -19,11 +20,11 @@
                     top: -1vw;
                     
                 }
-                right: 5vw;
+                
                 .sticker {
                     background-color: $color-third;
                     /* position: absolute;*/
-                    width: 30vw;
+                    width: 20vw;
                     z-index: 1;
                     border-radius: 8px;
                     @media screen and (min-width: 768px) {
@@ -37,6 +38,7 @@
                         display: flex;
                         justify-content: center;
                         color: #008766;
+                        font-size: 4vw;
                     }
                 }
             }
