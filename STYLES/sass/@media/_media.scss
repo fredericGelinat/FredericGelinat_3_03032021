@@ -1,0 +1,81 @@
+//-----------navigation-index- accueil----------//
+
+@media (min-width: 375px) {
+    .navigation-index {
+        .liste-fonctionnement {
+            .items-fonctionnement {
+                &:before {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    //---------------Main index accueil---------//
+    .main-index {
+        .cartes-restaurants {
+            .cartes-restaurants-sanstitreprincipal {
+                .deux-premiers-resto {
+                    #premier-resto {
+                        height: 29vh;
+                    }
+                    #second-resto {
+                        height: 29vh;
+                        margin-top: 3vh;
+                    }
+                }
+                .deux-derniers-resto {
+                    #troisieme-resto {
+                        height: 31vh;
+                    }
+                    #quatrieme-resto {
+                        height: 31vh;
+                    }
+                }
+            }
+        }
+    }
+    //--------------------coeur clignotant--------------//
+
+    .coeur-clignotant {
+        margin-top: -7vh;
+    }
+}
+//---------------@media min-height:812px----------------------//
+
+@media (min-height: 812px) {
+    .navigation-index {
+        .liste-fonctionnement {
+            .items-fonctionnement {
+                &:before {
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+    .main-index {
+        .cartes-restaurants {
+            .cartes-restaurants-sanstitreprincipal {
+                .deux-premiers-resto {
+                    #premier-resto {
+                        height: 26vh;
+                        margin: 3vh 4vw;
+                    }
+                    #second-resto {
+                        height: 26vh;
+                        margin-top: 3vh;
+                    }
+                }
+                .deux-derniers-resto {
+                    #troisieme-resto {
+                        height: 29vh;
+                    }
+                    #quatrieme-resto {
+                        height: 29vh;
+                    }
+                }
+            }
+        }
+    }
+    
+}

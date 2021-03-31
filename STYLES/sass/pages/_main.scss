@@ -37,19 +37,14 @@
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 31vh;
-          @media screen and (min-width: 375px) {
-            height: 25vh;
-          }
+          
         }
         #second-resto {
           margin: 4vw;
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 31vh;
-           @media screen and (min-width: 375px) {
-            height: 25vh;
-            margin-top: 3vh;
-          }
+          
         }
         .relatif-description-like {
          
@@ -103,18 +98,14 @@
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 32vh;
-          @media screen and (min-width: 375px) {
-            height: 28vh;
-          }
+          
         }
         #quatrieme-resto {
           margin: 4vw;
           border-radius: 1em 1em 1em 1em;
           background-color: $color-white;
           height: 32vh;
-          @media screen and (min-width: 375px) {
-            height: 28vh;
-          }
+         
         }
         .description-like {
           margin-top: 4vh;
