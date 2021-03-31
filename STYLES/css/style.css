@@ -89,7 +89,7 @@ body {
     animation-delay: 0.99s; }
   #loading-page .lettre-1 {
     color: #9256dc;
-    text-shadow: 0 0 7px #570596;
+    text-shadow: 0 0 7px #0b193d;
     animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite reverse; }
   #loading-page .lettre-2 {
     color: #ff79da;
@@ -139,7 +139,7 @@ body {
     left: 15px;
     filter: blur(3px);
     border-radius: 50%;
-    background-color: #6f50ba;
+    background-color: #1f2060;
     animation: point 5s cubic-bezier(0.67, 0.12, 0.5, 1.3) infinite;
     z-index: -10; }
   #loading-page .dot-dots .dots span {
@@ -149,7 +149,7 @@ body {
     height: 16px;
     margin-left: 16px;
     filter: blur(3px);
-    background-color: #6f50ba;
+    background-color: #1f2060;
     border-radius: 50%;
     z-index: -10; }
   #loading-page .dot-dots .dots {
@@ -368,7 +368,7 @@ body {
     animation: fully 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s infinite;
     /*transition: fully 3s cubic-bezier(0.165, 0.84, 0.44, 1) .30s infinite  ;*/ }
   .coeur-clignotant-pages .empty-full .empty :hover {
-    color: #6f50ba;
+    color: #1f2060;
     z-index: 101;
     position: relative; }
   .coeur-clignotant-pages .empty-full .full .full-heart {
@@ -402,7 +402,7 @@ body {
     z-index: 100;
     position: absolute; }
   .like:hover .empty-heart {
-    color: #6f50ba;
+    color: #1f2060;
     z-index: 101;
     position: relative; }
 
@@ -476,7 +476,7 @@ body {
     text-shadow: 0 0 7px #ff79da; }
   90% {
     color: #ff79da;
-    text-shadow: #6c31a5; }
+    text-shadow: #3c8b23; }
   100% {
     color: #9256dc;
     text-shadow: 0 0 7px #9256dc; } }
@@ -552,7 +552,7 @@ body {
     -webkit-text-fill-color: transparent; }
   100% {
     /*color: $color-secondary;*/
-    background: linear-gradient(0, #6c31a5, #9256dc);
+    background: linear-gradient(0, #3c8b23, #9256dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; } }
 /*------------------------@keyframe apparition menu décalé pages---------------*/
@@ -659,49 +659,49 @@ header h1 {
   .header-pages-resto .fleche-logo .logo {
     margin-right: 2em; }
 
-.footer-logo-txtUn-textDeux-txtTrois-txtQuatre {
+.footer-logo-txtUn-txtDeux-txtTrois-txtQuatre {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.9); }
-  .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo {
+  .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .logo {
     color: white;
     margin: 6% 4%;
     font-family: "Shrikhand", sans-serif; }
-    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .logo p {
+    .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .logo p {
       font-size: 7vw;
       font-weight: bold;
       margin: 0; }
-  .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtUn {
+  .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtUn {
     display: flex;
     align-items: baseline;
     color: white; }
-    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtUn .icone-txtUn {
+    .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtUn .icone-txtUn {
       margin-left: 4vw; }
-      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtUn .icone-txtUn .fa-utensils {
+      .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtUn .icone-txtUn .fa-utensils {
         font-size: 4vw; }
-    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtUn .hTrois-txtUn h3 {
+    .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtUn .hTrois-txtUn h3 {
       margin: 0 7vw;
       font-family: "Roboto", sans-serif;
       font-size: 3vh; }
-  .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux {
+  .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux {
     display: flex;
     align-items: baseline;
     color: white;
     font-family: "Roboto", sans-serif; }
-    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux .icone-txtDeux {
+    .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux .icone-txtDeux {
       margin-left: 4vw; }
-      .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux .icone-txtDeux .fa-hands-helping {
+      .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux .icone-txtDeux .fa-hands-helping {
         font-size: 4vw; }
-    .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux .hTrois-txtDeux h3 {
+    .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .icone-hTrois-txtDeux .hTrois-txtDeux h3 {
       margin: 0 5vw;
       font-size: 3vh; }
-  .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre #txtTrois .hTrois-txtTrois h3 {
+  .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre #txtTrois .hTrois-txtTrois h3 {
     color: white;
     margin: 0 4vw;
     font-family: "roboto", sans-serif;
     font-size: 3vh; }
-  .footer-logo-txtUn-textDeux-txtTrois-txtQuatre .txtUn-textDeux-txtTrois-txtQuatre .mail-txtQuatre {
+  .footer-logo-txtUn-txtDeux-txtTrois-txtQuatre .txtUn-txtDeux-txtTrois-txtQuatre .mail-txtQuatre {
     color: white;
     font-size: 3vh;
     text-decoration: none;
@@ -719,25 +719,11 @@ header h1 {
     .navigation-index .titreFonctionnement h2 {
       font-size: 7vw;
       margin-top: 2em; }
-      @media screen and (min-width: 768px) {
-        .navigation-index .titreFonctionnement h2 {
-          display: flex;
-          justify-content: center; } }
   .navigation-index .liste-fonctionnement {
     padding: 0;
     counter-reset: liste;
     display: flex;
     flex-direction: column; }
-    @media screen and (min-width: 768px) {
-      .navigation-index .liste-fonctionnement {
-        padding: 0;
-        counter-reset: liste;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; } }
-    @media screen and (min-width: 768px) {
-      .navigation-index .liste-fonctionnement #itemTrois {
-        margin: 0 auto; } }
     .navigation-index .liste-fonctionnement .items-fonctionnement {
       background-color: white;
       padding: 4%;
@@ -752,10 +738,6 @@ header h1 {
       transform: scale(1);
       font-size: 5vw;
       transition: transform 450ms, background-color 300ms; }
-      @media screen and (min-width: 768px) {
-        .navigation-index .liste-fonctionnement .items-fonctionnement {
-          font-size: 2vw;
-          width: 31vw; } }
       .navigation-index .liste-fonctionnement .items-fonctionnement:hover {
         background-color: #f5edff;
         color: #9256dc;
@@ -781,7 +763,7 @@ header h1 {
           display: flex;
           align-items: center; }
           .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .awesome:hover {
-            color: #8d75c8; }
+            color: #2b2d87; }
         .navigation-index .liste-fonctionnement .items-fonctionnement .awesome-boutonChoixRestaurant-btn_bg .bouton-choix-restaurant p {
           font-weight: bold; }
 
@@ -1038,9 +1020,11 @@ main {
               width: 27vw; }
 
 @media (min-width: 375px) {
+  /*-----------navigation-index- accueil----------*/
   .navigation-index .liste-fonctionnement .items-fonctionnement:before {
     border-radius: 50%; }
 
+  /*---------------Main index accueil---------*/
   .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto #premier-resto {
     height: 29vh; }
   .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto #second-resto {
@@ -1051,12 +1035,16 @@ main {
   .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-derniers-resto #quatrieme-resto {
     height: 31vh; }
 
+  /*--------------------coeur-clignotant-accueil--------------*/
   .coeur-clignotant {
     margin-top: -7vh; } }
+/*---------------@media-min-height:812px----------------------*/
+/*-----------navigation-index- accueil----------*/
 @media (min-height: 812px) {
   .navigation-index .liste-fonctionnement .items-fonctionnement:before {
     font-size: 2vh; }
 
+  /*---------------Main index accueil---------*/
   .main-index .cartes-restaurants .cartes-restaurants-sanstitreprincipal .deux-premiers-resto #premier-resto {
     height: 26vh;
     margin: 3vh 4vw; }
