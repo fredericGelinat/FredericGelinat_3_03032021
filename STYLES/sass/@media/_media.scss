@@ -482,6 +482,219 @@
             }
         }
     }
+}
+/*---------------------------min-width:1280 min-height: 720--------------*/
+@media (min-width: 1280px) and (min-height: 720px) {
+    /*---------------navigation index accueil-------*/
+
+    .navigation-index {
+        .liste-fonctionnement {
+            .items-fonctionnement {
+                &:before {
+                    font-size: 4vh;
+                }
+            }
+        }
+    }
+    /*----------------main index accueil-------------------*/
+    .main-index {
+        .cartes-restaurants {
+            .titres-cartes-restaurant {
+                display: flex;
+                justify-content: center;
+            }
+            .cartes-restaurants-sanstitreprincipal {
+                display: flex;
+                justify-content: center;
+
+                .deux-premiers-resto {
+                    #premier-resto {
+                        height: 32vh;
+                        width: 41vw;
+
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .sticker-new {
+                                        height: 6vh;
+                                        top: -3vh;
+                                        .sticker {
+                                            position: relative;
+                                            top: 1vh;
+                                            width: 11vw;
+                                            .new {
+                                                position: relative;
+                                                top: 1vh;
+                                                font-size: 2vw;
+                                                margin: 0;
+                                                display: flex;
+
+                                                justify-content: center;
+                                            }
+                                        }
+                                    }
+                                    .img-resto-relatif {
+                                        img {
+                                            height: 25vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                    }
+                                    .coeur-clignotant {
+                                        margin-top: -11vh;
+                                        left: 35vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #second-resto {
+                        height: 32vh;
+                        width: 41vw;
+
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .sticker-new {
+                                        height: 6vh;
+                                        top: -3vh;
+                                        .sticker {
+                                            position: relative;
+                                            top: 1vh;
+                                            width: 11vw;
+                                            .new {
+                                                position: relative;
+                                                top: 1vh;
+                                                font-size: 2vw;
+                                                margin: 0;
+                                                display: flex;
+
+                                                justify-content: center;
+                                            }
+                                        }
+                                    }
+                                    .img-resto-relatif {
+                                        img {
+                                            height: 25vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                    }
+                                    .coeur-clignotant {
+                                        margin-top: -11vh;
+                                        left: 35vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .deux-derniers-resto {
+                    #troisieme-resto {
+                        height: 35vh;
+                        width: 41vw;
+                        margin-top: 2vh;
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .img {
+                                        img {
+                                            height: 25vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                        .hTrois {
+                                            h3 {
+                                                margin-top: -3vh;
+                                                font-size: 2vw;
+                                            }
+                                        }
+                                        .p {
+                                            p {
+                                                font-size: 1.5vw;
+                                            }
+                                        }
+                                    }
+                                    #coeur-deux-derniers-resto {
+                                        position: relative;
+                                        left: 35vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                        margin-top: -11vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #quatrieme-resto {
+                        height: 35vh;
+                        width: 41vw;
+                        margin-top: 5vh;
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .img {
+                                        img {
+                                            height: 25vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                        .hTrois {
+                                            h3 {
+                                                margin-top: -3vh;
+                                                font-size: 2vw;
+                                            }
+                                        }
+                                        .p {
+                                            p {
+                                                font-size: 1.5vw;
+                                            }
+                                        }
+                                    }
+                                    #coeur-deux-derniers-resto {
+                                        position: relative;
+                                        left: 35vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                        margin-top: -11vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     /*-------------------footer------------------*/
 
@@ -537,9 +750,232 @@
         }
     }
 }
+
+/*----------------------------min width:1280 min-height: 950-------------*/
+@media (min-width: 1280px) and (min-height: 950px) {
+    /*---------------navigation index accueil-------*/
+
+    .navigation-index {
+        .liste-fonctionnement {
+            .items-fonctionnement {
+                &:before {
+                    font-size: 3vh;
+                }
+            }
+        }
+    }
+    /*----------------main index accueil-------------------*/
+    .main-index {
+        .cartes-restaurants {
+            .titres-cartes-restaurant {
+                display: flex;
+                justify-content: center;
+            }
+            .cartes-restaurants-sanstitreprincipal {
+                display: flex;
+                justify-content: center;
+
+                .deux-premiers-resto {
+                    #premier-resto {
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .sticker-new {
+                                        height: 5vh;
+                                        top: -3vh;
+                                        .sticker {
+                                            position: relative;
+                                            top: 1vh;
+                                            width: 11vw;
+                                            .new {
+                                                position: relative;
+                                                top: 1vh;
+                                                font-size: 2vw;
+                                                margin: 0;
+                                                display: flex;
+
+                                                justify-content: center;
+                                            }
+                                        }
+                                    }
+                                    .img-resto-relatif {
+                                        img {
+                                            height: 29vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                    }
+                                    .coeur-clignotant {
+                                        margin-top: -8vh;
+                                        left: 36vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #second-resto {
+                        height: 32vh;
+                        margin-top: 3vh;
+                        width: 41vw;
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .sticker-new {
+                                        height: 5vh;
+                                        top: -3vh;
+                                        .sticker {
+                                            position: relative;
+                                            top: 1vh;
+                                            width: 11vw;
+                                            .new {
+                                                position: relative;
+                                                top: 1vh;
+                                                font-size: 2vw;
+                                                margin: 0;
+                                                display: flex;
+
+                                                justify-content: center;
+                                            }
+                                        }
+                                    }
+                                    .img-resto-relatif {
+                                        img {
+                                            height: 29vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                        .hTrois {
+                                            h3 {
+                                                margin-top: -3vh;
+                                                font-size: 2vw;
+                                            }
+                                        }
+                                        .p {
+                                            p {
+                                                font-size: 1.5vw;
+                                            }
+                                        }
+                                    }
+                                    .coeur-clignotant {
+                                        margin-top: -8vh;
+                                        left: 36vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .deux-derniers-resto {
+                    #troisieme-resto {
+                        height: 36vh;
+                        width: 41vw;
+                        margin-top: 1vh;
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .img {
+                                        img {
+                                            height: 29vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                        .hTrois {
+                                            h3 {
+                                                margin-top: -3vh;
+                                                font-size: 2vw;
+                                            }
+                                        }
+                                        .p {
+                                            p {
+                                                font-size: 1.5vw;
+                                            }
+                                        }
+                                    }
+                                    #coeur-deux-derniers-resto {
+                                        position: relative;
+                                        left: 36vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                        margin-top: -8vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #quatrieme-resto {
+                        height: 36vh;
+                        width: 41vw;
+                        margin-top: 4vh;
+                        .lien-stickerNew-img {
+                            .lien {
+                                .txt-deco-none {
+                                    .img {
+                                        img {
+                                            height: 29vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-like {
+                            .lien-description-like {
+                                .lien {
+                                    .decription-hTrois-p {
+                                        .hTrois {
+                                            h3 {
+                                                margin-top: -3vh;
+                                                font-size: 2vw;
+                                            }
+                                        }
+                                        .p {
+                                            p {
+                                                font-size: 1.5vw;
+                                            }
+                                        }
+                                    }
+                                    #coeur-deux-derniers-resto {
+                                        position: relative;
+                                        left: 36vw;
+                                        font-size: 4vw;
+                                        width: 0;
+                                        margin-top: -8vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*----------------------------min-width 1440px resto accuel main index----*/
 @media screen and (min-width: 1440px) {
-/*---------------------navigation accueil---------------*/
+    /*---------------------navigation accueil---------------*/
     .navigation-index {
         .liste-fonctionnement {
             .items-fonctionnement {
@@ -550,7 +986,7 @@
         }
     }
 
-/*----------------------main-accueil-index-----------*/
+    /*----------------------main-accueil-index-----------*/
     .main-index {
         .cartes-restaurants {
             .titres-cartes-restaurant {
@@ -608,7 +1044,7 @@
                                     }
                                     .coeur-clignotant {
                                         margin-top: -9vh;
-                                        left: 28vw;
+                                        left: 35vw;
                                         font-size: 4vw;
                                         width: 0;
                                     }
@@ -665,7 +1101,7 @@
                                     }
                                     .coeur-clignotant {
                                         margin-top: -9vh;
-                                        left: 28vw;
+                                        left: 35vw;
                                         font-size: 4vw;
                                         width: 0;
                                     }
@@ -711,7 +1147,7 @@
 
                                     #coeur-deux-derniers-resto {
                                         margin-top: -9vh;
-                                        left: 28vw;
+                                        left: 35vw;
                                         font-size: 4vw;
                                         width: 0;
                                         position: relative;
@@ -755,7 +1191,7 @@
 
                                     #coeur-deux-derniers-resto {
                                         margin-top: -9vh;
-                                        left: 28vw;
+                                        left: 35vw;
                                         font-size: 4vw;
                                         width: 0;
                                         position: relative;
@@ -765,60 +1201,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-}
-
-/*-------------------footer------------------*/
-
-.footer-logo-txtUn-txtDeux-txtTrois-txtQuatre {
-    .logo {
-        p {
-            font-size: 5vw;
-            font-weight: bold;
-            margin: 0;
-        }
-    }
-    .txtUn-txtDeux-txtTrois-txtQuatre {
-        display: flex;
-        #txtUn {
-            .icone-hTrois-txtUn {
-                .icone-txtUn {
-                    .fas.fa-utensils {
-                        font-size: 2vw;
-                    }
-                }
-                .hTrois-txtUn {
-                    h3 {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-
-        .icone-hTrois-txtDeux {
-            .icone-txtDeux {
-                .fa-hands-helping {
-                    font-size: 2vw;
-                }
-            }
-            .hTrois-txtDeux {
-                h3 {
-                    margin: 0;
-                }
-            }
-        }
-
-        #txtTrois {
-            .hTrois-txtTrois {
-                h3 {
-                }
-            }
-        }
-        #txtQuatre {
-            .mail-txtQuatre {
-                margin: 0;
             }
         }
     }
