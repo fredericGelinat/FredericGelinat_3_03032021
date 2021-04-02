@@ -13,24 +13,14 @@
       margin: 0;
       padding: 11% 0 6% 4%;
       font-size: 7vw;
-      @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        padding: 7vh;
-      }
+      
     }
     .cartes-restaurants-sanstitreprincipal {
-      @media screen and (min-width: 768px) {
-      }
-      @media screen and (min-width: 1440px) {
-        display: unset;
-      }
+      
       .deux-premiers-resto {
         display: flex;
         flex-direction: column;
-        @media screen and (min-width: 768px) {
-          display: unset;
-        }
+        
 
         #premier-resto {
           margin: 4vw;
@@ -62,25 +52,16 @@
                     & h3 {
                       margin-top: -3vh;
                       font-size: 5vw;
-                      @media screen and (min-width: 768px) {
-                        font-size: 3vw;
-                        margin-top: -1vh;
-                      }
+                      
                     }
                   }
                   .p p {
                     margin-top: -3vh;
                     font-size: 4.5vw;
-                    @media screen and (min-width: 768px) {
-                      font-size: 2.5vw;
-                    }
+                    
                   }
                 }
-                .hTrois-p-relatif {
-                  @media screen and (min-width: 768px) {
-                    margin: 3vh 2vw;
-                  }
-                }
+                
               }
             }
           }
@@ -89,9 +70,7 @@
       .deux-derniers-resto {
         display: flex;
         flex-direction: column;
-        @media screen and (min-width: 768px) {
-          display: unset;
-        }
+        
 
         #troisieme-resto {
           margin: 0 4vw;
@@ -121,18 +100,13 @@
                     & h3 {
                       margin-top: -3vh;
                       font-size: 5vw;
-                      @media screen and (min-width: 768px) {
-                        font-size: 3vw;
-                        margin-top: -1vh;
-                      }
+                      
                     }
                   }
                   .p p {
                     margin-top: -3vh;
                     font-size: 4.5vw;
-                    @media screen and (min-width: 768px) {
-                      font-size: 2.5vw;
-                    }
+                    
                   }
                 }
                 
