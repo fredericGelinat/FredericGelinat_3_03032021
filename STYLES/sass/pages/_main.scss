@@ -10,7 +10,7 @@
     font-family: "Roboto", sans-serif;
 
     .titre {
-      @media (min-width: 1280px) and (min-height: 720px){
+      @media (min-width: 1280px) and (min-height: 720px) {
         display: flex;
         justify-content: center;
       }
@@ -29,7 +29,7 @@
         display: flex;
         flex-wrap: wrap;
       }
-      @media (min-width: 1920px) and (min-height: 1080px){
+      @media (min-width: 1920px) and (min-height: 1080px) {
         justify-content: center;
       }
       .img-resto {
@@ -43,10 +43,10 @@
         @media (min-width: 414px) and (min-height: 896px) {
           height: 32vh;
         }
-        @media (min-width: 1024px) and (min-height: 1366px){
+        @media (min-width: 1024px) and (min-height: 1366px) {
           height: 34vh;
         }
-        @media (min-width: 1280px) and (min-height: 720px){
+        @media (min-width: 1280px) and (min-height: 720px) {
           height: 45vh;
         }
         @media (min-width: 1280px) and (min-height: 800px) {
@@ -68,7 +68,7 @@
             @media (min-width: 384px) and (min-height: 640px) {
               padding: 0;
             }
-            @media (min-width: 1280px) and (min-height: 720px){
+            @media (min-width: 1280px) and (min-height: 720px) {
               height: 31vh;
             }
             @media (min-width: 1280px) and (min-height: 800px) {
@@ -90,13 +90,12 @@
             h3 {
               margin: 0 0 -2vh 1vw;
               @media (min-width: 768px) and (min-height: 1024px) {
-                
                 font-size: 5vw;
               }
               @media (min-width: 800px) and (min-height: 1280px) {
                 font-size: 5vw;
               }
-              @media (min-width: 1280px) and (min-height: 720px){
+              @media (min-width: 1280px) and (min-height: 720px) {
                 font-size: 3vw;
               }
               @media (min-width: 1280px) and (min-height: 800px) {
@@ -114,7 +113,7 @@
               @media (min-width: 800px) and (min-height: 1280px) {
                 font-size: 3.5vw;
               }
-              @media (min-width: 1280px) and (min-height: 720px){
+              @media (min-width: 1280px) and (min-height: 720px) {
                 font-size: 2vw;
               }
               @media (min-width: 1280px) and (min-height: 800px) {
@@ -173,112 +172,176 @@ main {
         font-size: 7vw;
       }
     }
-
-    /*--------------------------Titre menu + UNDERLINE-----------------------------*/
-    .titre-underline {
-      text-transform: uppercase;
-      margin-left: 6%;
-      font-family: "Roboto", sans-serif;
-      display: flex;
-      flex-direction: column;
-
-      .titre h2 {
-        font-weight: lighter;
-        margin: 0;
-        font-size: 8vw;
-      }
-
-      .underline {
-        border-top: 1px solid $color-third;
-        width: 20vw;
-        display: inline-block;
-      }
-    }
-
-    /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/
-
-    ul {
-      padding: 0;
-      
-      margin: 5%;
-      border-radius: 1em;
-      transition-duration: 0s;
-      -webkit-animation-name: apparition-menus;
-      animation-name: apparition-menus;
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
-      animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
-
-      
+    .menu-conteneur {
+      @media (min-width: 1920px) and (min-height: 1080px) {
+        display:flex;
+        justify-content: center;
         
+      }
+      .entree, .plats, .desserts {
 
-        .dishes-un, .dishes-deux, .dishes-trois, .dishes-quatre, .dishes-cinq, .dishes-six, .dishes-sept, .dishes-huit, .dishes-neuf {
-          border-radius: 1em;
-          background-color: $color-white;
-          margin-top: 4vh;
+        @media (min-width: 1920px) and (min-height: 1080px) {
+          width: 30%;
+          
+        }
+        /*--------------------------Titre menu + UNDERLINE-----------------------------*/
+        .titre-underline {
+          text-transform: uppercase;
+          margin-left: 6%;
+          font-family: "Roboto", sans-serif;
+          display: flex;
+          flex-direction: column;
+
+          .titre h2 {
+            font-weight: lighter;
+            margin: 0;
+            font-size: 8vw;
+            
+              @media (min-width: 1920px) and (min-height: 1080px) {
+                font-size: 4vw;
+                
+              }
+
+            
+          }
+
+          .underline {
+            border-top: 1px solid $color-third;
+            width: 20vw;
+            display: inline-block;
+            
+              @media (min-width: 1920px) and (min-height: 1080px) {
+                width: 10vw;
+                
+              }
+
+           
+          }
+        }
+        ul {
           padding: 0;
-          list-style-type: none;
-          -webkit-animation-name: apparition-plats;
-          animation-name: apparition-plats;
+    
+          margin: 5%;
+          border-radius: 1em;
+          transition-duration: 0s;
+          -webkit-animation-name: apparition-menus;
+          animation-name: apparition-menus;
           -webkit-animation-duration: 2s;
           animation-duration: 2s;
-          -webkit-animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
-          animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
-
-          .ellipsis-prix-coche-verte {
-            display: flex;
-            justify-content: space-between;
-            
+          -webkit-animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
+          animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
+    
+          .dishes-un,
+          .dishes-deux,
+          .dishes-trois,
+          .dishes-quatre,
+          .dishes-cinq,
+          .dishes-six,
+          .dishes-sept,
+          .dishes-huit,
+          .dishes-neuf {
+            border-radius: 1em;
+            background-color: $color-white;
+            margin-top: 4vh;
+            padding: 0;
+            list-style-type: none;
+            -webkit-animation-name: apparition-plats;
+            animation-name: apparition-plats;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
+            animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
+            @media (min-width: 1920px) and (min-height: 1080px) {
+              height: 10vh;
+              
+            }
+            .ellipsis-prix-coche-verte {
+              display: flex;
+              justify-content: space-between;
+    
               font-family: "roboto";
               margin: 0;
               overflow: hidden;
               text-overflow: ellipsis;
               display: flex;
-              
-              
-                .span-ellipsis{
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  padding: 3vh;
-                  display: flex;
-                  flex-direction: column;
-                
-              & .ellipsis {
+    
+              .span-ellipsis {
                 overflow: hidden;
                 text-overflow: ellipsis;
-                white-space: nowrap;
-                font-size: 4vw;
-              
-              
-                font-weight: bold;
-                font-size: 5vw;
-              }
-              .weight{
-                font-weight: lighter;
-              }
-            }
-            .prix-coche-verte {
-              display: flex;
-              .prix {
+                padding: 3vh;
                 display: flex;
-                align-items: flex-end;
-
-                span {
-                  padding: 1em;
+                flex-direction: column;
+    
+                & .ellipsis {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  font-size: 4vw;
+    
+                  font-weight: bold;
                   font-size: 5vw;
+                  @media (min-width: 1920px) and (min-height: 1080px) {
+                    font-size: 1vw;
+                    
+                  }
+                }
+                .weight {
+                  font-weight: lighter;
                 }
               }
-            }
-
-            &:hover .coche-verte {
-              color: $color-white;
-
-              width: 27vw;
+              .prix-coche-verte {
+                display: flex;
+                
+                .prix {
+                  display: flex;
+                  align-items: flex-end;
+                  @media (min-width: 1920px) and (min-height: 1080px) {
+                    align-items: center;
+                    
+                  }
+    
+                  span {
+                    padding: 1em;
+                    font-size: 5vw;
+                    @media (min-width: 1920px) and (min-height: 1080px) {
+                      font-size: 2vw;
+                      
+                    }
+                  }
+                }
+                .coche-verte{
+                  @media (min-width: 1920px) and (min-height: 1080px) {
+                    height: 10vh;
+                    
+                  }
+                  
+                  .icone{
+                    @media (min-width: 1920px) and (min-height: 1080px) {
+                      font-size: 3vw;
+                      
+                    }
+  
+                  }
+                }
+              }
+    
+              &:hover .coche-verte {
+                color: $color-white;
+    
+                width: 27vw;
+                @media (min-width: 1920px) and (min-height: 1080px) {
+                  width: 10vw;
+                  
+                }
+                
+              }
             }
           }
         }
-      
+      }
     }
+
+
+    
   }
 }
