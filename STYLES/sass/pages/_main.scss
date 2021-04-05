@@ -9,173 +9,124 @@
   .cartes-restaurants {
     font-family: "Roboto", sans-serif;
 
-    .titres-cartes-restaurant h2 {
-      margin: 0;
-      padding: 11% 0 6% 4%;
-      font-size: 7vw;
-      
+    .titre {
+      @media (min-width: 1280px) and (min-height: 720px){
+        display: flex;
+        justify-content: center;
+      }
+      @media (min-width: 1440px) and (min-height: 900px) {
+        display: flex;
+        justify-content: center;
+      }
+      h2 {
+        margin: 0;
+        padding: 16% 0 3% 4%;
+        font-size: 7vw;
+      }
     }
-    .cartes-restaurants-sanstitreprincipal {
-      
-      .deux-premiers-resto {
+    .cartes {
+      @media (min-width: 1440px) and (min-height: 900px) {
         display: flex;
-        flex-direction: column;
-        
-
-        #premier-resto {
-          margin: 4vw;
-          border-radius: 1em 1em 1em 1em;
-          background-color: $color-white;
-          height: 31vh;
-          
+        flex-wrap: wrap;
+      }
+      @media (min-width: 1920px) and (min-height: 1080px){
+        justify-content: center;
+      }
+      .img-resto {
+        margin: 4vw;
+        background-color: $color-white;
+        border-radius: 1em;
+        height: 35vh;
+        @media (min-width: 375px) and (min-height: 812px) {
+          height: 32vh;
         }
-        #second-resto {
-          margin: 4vw;
-          border-radius: 1em 1em 1em 1em;
-          background-color: $color-white;
-          height: 31vh;
-          
+        @media (min-width: 414px) and (min-height: 896px) {
+          height: 32vh;
         }
-        .relatif-description-like {
-         
-            margin-top: -8vh;
-         
-          .lien-description-like {
-            .lien {
-              a {
-                text-decoration: none;
-                color: $color-black;
+        @media (min-width: 1024px) and (min-height: 1366px){
+          height: 34vh;
+        }
+        @media (min-width: 1280px) and (min-height: 720px){
+          height: 45vh;
+        }
+        @media (min-width: 1280px) and (min-height: 800px) {
+          height: 45vh;
+        }
+        @media (min-width: 1440px) and (min-height: 900px) {
+          height: 45vh;
+        }
+        .lien {
+          text-decoration: none;
+          color: $color-black;
+          .img {
+            width: 100%;
+            border-radius: 1em 1em 0 0;
+            height: 25vh;
+            -o-object-fit: cover;
+            object-fit: cover;
 
-                .decription-hTrois-p {
-                  margin: 0 2vw;
-                  .hTrois {
-                    & h3 {
-                      margin-top: -3vh;
-                      font-size: 5vw;
-                      
-                    }
-                  }
-                  .p p {
-                    margin-top: -3vh;
-                    font-size: 4.5vw;
-                    
-                  }
-                }
+            @media (min-width: 384px) and (min-height: 640px) {
+              padding: 0;
+            }
+            @media (min-width: 1280px) and (min-height: 720px){
+              height: 31vh;
+            }
+            @media (min-width: 1280px) and (min-height: 800px) {
+              height: 35vh;
+              padding: 0;
+            }
+
+            @media (min-width: 1440px) and (min-height: 900px) {
+              width: 67vh;
+              border-radius: 1em 1em 0 0;
+              height: 32vh;
+              object-fit: cover;
+              object-fit: cover;
+            }
+          }
+        }
+        .description-et-coeur {
+          .nom-restaurant {
+            h3 {
+              margin: 0 0 -2vh 1vw;
+              @media (min-width: 768px) and (min-height: 1024px) {
                 
+                font-size: 5vw;
+              }
+              @media (min-width: 800px) and (min-height: 1280px) {
+                font-size: 5vw;
+              }
+              @media (min-width: 1280px) and (min-height: 720px){
+                font-size: 3vw;
+              }
+              @media (min-width: 1280px) and (min-height: 800px) {
+                margin: 0 0 -2vh 1vw;
+                font-size: 2vw;
+              }
+              @media (min-width: 1440px) and (min-height: 900px) {
+                font-size: 3vw;
+              }
+            }
+          }
+          .lieu {
+            p {
+              padding: 0vh 0 1vh 1vw;
+              @media (min-width: 800px) and (min-height: 1280px) {
+                font-size: 3.5vw;
+              }
+              @media (min-width: 1280px) and (min-height: 720px){
+                font-size: 2vw;
+              }
+              @media (min-width: 1280px) and (min-height: 800px) {
+                font-size: 2vw;
+              }
+              @media (min-width: 1440px) and (min-height: 900px) {
+                font-size: 2vw;
               }
             }
           }
         }
       }
-      .deux-derniers-resto {
-        display: flex;
-        flex-direction: column;
-        
-
-        #troisieme-resto {
-          margin: 0 4vw;
-          border-radius: 1em 1em 1em 1em;
-          background-color: $color-white;
-          height: 32vh;
-          
-        }
-        #quatrieme-resto {
-          margin: 4vw;
-          border-radius: 1em 1em 1em 1em;
-          background-color: $color-white;
-          height: 32vh;
-         
-        }
-        .description-like {
-          margin-top: 4vh;
-          .lien-description-like {
-            .lien {
-              a {
-                text-decoration: none;
-                color: $color-black;
-
-                .decription-hTrois-p {
-                  margin: 0 2vw;
-                  .hTrois {
-                    & h3 {
-                      margin-top: -3vh;
-                      font-size: 5vw;
-                      
-                    }
-                  }
-                  .p p {
-                    margin-top: -3vh;
-                    font-size: 4.5vw;
-                    
-                  }
-                }
-                
-              }
-            }
-          }
-        }
-      }
-      /*.deux-derniers-resto {
-        display: flex;
-        flex-direction: column;
-        margin-top: -1vh;
-        @media screen and (min-width: 768px) {
-          display: unset;
-        }
-
-        #troisieme-resto {
-          margin: 4vw;
-          border-radius: 1em 1em 1em 1em;
-          background-color: $color-white;
-          height: 34vh;
-          @media screen and (min-width: 768px) {
-            margin-top: -1vh;
-          }
-        }
-        #quatrieme-resto {
-          margin: 4vw;
-          border-radius: 1em 1em 1em 1em;
-          background-color: $color-white;
-          height: 34vh;
-          @media screen and (min-width: 768px) {
-            margin-top: 3vh;
-          }
-          margin-top: 1vh;
-        }
-
-        .description-like {
-          .lien-description-like {
-            .lien {
-              a {
-                text-decoration: none;
-                color: $color-black;
-
-                .decription-hTrois-p {
-                  margin: 5vh 2vw;
-                  .hTrois {
-                    & h3 {
-                      margin-top: -3vh;
-                      font-size: 5vw;
-                      @media screen and (min-width: 768px) {
-                        font-size: 3vw;
-                        margin-top: -1vh;
-                      }
-                    }
-                  }
-                  .p p {
-                    margin-top: -3vh;
-                    font-size: 4.5vw;
-                    @media screen and (min-width: 768px) {
-                      font-size: 2.5vw;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }*/
-      
     }
   }
 }
@@ -193,6 +144,7 @@
 
   img {
     width: 100vw;
+    -o-object-fit: cover;
     object-fit: cover;
     height: 41vh;
   }
@@ -200,8 +152,8 @@
 
 main {
   background-color: $color-background;
-
-  .section-restoUnDeuxTroisQuatre {
+  padding-bottom: 4vh;
+  .section-restaurants {
     background-color: $color-background;
     border-radius: 2em 2em 0 0;
     position: relative;
@@ -209,13 +161,13 @@ main {
     z-index: 1;
 
     /*--------------------------restaurant-NOM + COEUR-------------------------*/
-    .restaurant-name-like {
+    .restaurantName-et-coeurPages {
       display: flex;
       align-items: center;
       padding: 1em;
       justify-content: space-around;
 
-      .restaurant-name h2 {
+      .restaurantName h2 {
         font-family: "Shrikhand", sans-serif;
         font-weight: 500;
         font-size: 7vw;
@@ -245,45 +197,65 @@ main {
 
     /*----------------------------------UL/LI/DISHES + PRIX ET COCHE VERTE---------------------------------*/
 
-    .liste-dishes {
-      background-color: $color-white;
+    ul {
+      padding: 0;
+      
       margin: 5%;
       border-radius: 1em;
       transition-duration: 0s;
+      -webkit-animation-name: apparition-menus;
       animation-name: apparition-menus;
+      -webkit-animation-duration: 2s;
       animation-duration: 2s;
+      -webkit-animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
       animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
 
-      .dishes {
-        padding: 0;
+      
+        
 
-        .dishes-un {
+        .dishes-un, .dishes-deux, .dishes-trois, .dishes-quatre, .dishes-cinq, .dishes-six, .dishes-sept, .dishes-huit, .dishes-neuf {
+          border-radius: 1em;
+          background-color: $color-white;
+          margin-top: 4vh;
+          padding: 0;
           list-style-type: none;
+          -webkit-animation-name: apparition-plats;
           animation-name: apparition-plats;
+          -webkit-animation-duration: 2s;
           animation-duration: 2s;
+          -webkit-animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
           animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
 
-          .presentation-prix-coche-verte {
+          .ellipsis-prix-coche-verte {
             display: flex;
             justify-content: space-between;
-            .presentation {
+            
               font-family: "roboto";
               margin: 0;
               overflow: hidden;
               text-overflow: ellipsis;
               display: flex;
-              flex-direction: column;
-              padding: 1em;
-
-              & .span-ellipsis {
+              
+              
+                .span-ellipsis{
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  padding: 3vh;
+                  display: flex;
+                  flex-direction: column;
+                
+              & .ellipsis {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 font-size: 4vw;
-              }
-              .weight {
+              
+              
                 font-weight: bold;
                 font-size: 5vw;
+              }
+              .weight{
+                font-weight: lighter;
               }
             }
             .prix-coche-verte {
@@ -306,7 +278,7 @@ main {
             }
           }
         }
-      }
+      
     }
   }
 }

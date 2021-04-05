@@ -1,4 +1,86 @@
-.footer-logo-txtUn-txtDeux-txtTrois-txtQuatre {
+footer {
+  background-color: $color-black;
+  color: $color-white;
+  height: 30vh;
+  @media (min-width: 360px) and (min-height: 740px) {
+    font-size: 6vw;
+  }
+  @media (min-width: 411px) and (min-height: 731px) {
+    font-size: 5vw;
+  }
+  @media (min-width: 600px) and (min-height: 960px) {
+    font-size: 5vw;
+    height: 33vh;
+  }
+  @media (min-width: 768px) and (min-height: 1024px) {
+    height: 37vh;
+  }
+  @media (min-width: 800px) and (min-height: 1280px) {
+    font-size: 5vw;
+    height: 32vh;
+  }
+  @media (min-width: 1024px) and (min-height: 1366px) {
+    height: 38vh;
+  }
+  @media (min-width: 1280px) and (min-height: 720px) {
+    height: 73vh;
+    font-size: 4vw;
+  }
+  @media (min-width: 1280px) and (min-height: 800px) {
+    height: 67vh;
+  }
+  @media (min-width: 1440px) and (min-height: 900px) {
+    height: 66vh;
+    font-size: 3vw;
+  }
+  @media (min-width: 1920px) and (min-height: 1080px){
+    height: 73vh;
+  }
+  .logo {
+    font-family: "Shrikhand", sans-serif;
+    padding: 5vh 0 0 2vh;
+    @media (min-width: 1280px) and (min-height: 720px) {
+      padding: 5vh 0 0 8vh;
+    }
+    @media (min-width: 1280px) and (min-height: 800px) {
+      padding: 5vh 0 0 7vh;
+    }
+    @media (min-width: 1440px) and (min-height: 900px) {
+      margin: 0 0 0 3vw;
+    }
+    @media (min-width: 1920px) and (min-height: 1080px){
+      margin: 0;
+    }
+    p {
+      font-size: 6vw;
+      margin: 0;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 5vw;
+    font-family: "Roboto", sans-serif;
+    @media (min-width: 1280px) and (min-height: 800px) {
+      font-size: 4vw;
+    }
+    li {
+      list-style-type: none;
+
+      i {
+      }
+      a {
+        text-decoration: none;
+        color: $color-white;
+      }
+
+      #contact li {
+      }
+    }
+  }
+}
+/*.footer-logo-txtUn-txtDeux-txtTrois-txtQuatre {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -73,4 +155,4 @@
       font-weight: bold;
     }
   }
-}
+}*/
