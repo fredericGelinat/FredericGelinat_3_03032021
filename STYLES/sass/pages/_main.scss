@@ -54,6 +54,7 @@
         }
         @media (min-width: 1440px) and (min-height: 900px) {
           height: 45vh;
+          width: 41vw;
         }
         .lien {
           text-decoration: none;
@@ -77,11 +78,33 @@
             }
 
             @media (min-width: 1440px) and (min-height: 900px) {
-              width: 67vh;
               border-radius: 1em 1em 0 0;
               height: 32vh;
+              -o-object-fit: cover;
               object-fit: cover;
               object-fit: cover;
+            }
+          }
+          .etiquette-nouveau {
+            background-color: $color-third;
+            float: right;
+            margin: -23vh 3vw 0 0;
+            position: relative;
+            border-radius: 4px;
+            font-size: 7vw;
+            padding: 1vh;
+            @media (min-width: 1440px) and (min-height: 900px) {
+              margin: -29vh 3vw 0 0;
+            }
+            @media (min-width: 1280px) and (min-height: 800px) {
+              margin: -31vh 3vw 0 0;
+            }
+            .nouveau{
+              color: #447f44;
+              font-size: 5vw;
+              @media (min-width: 1440px) and (min-height: 900px) {
+                font-size: 2vw;
+              }
             }
           }
         }
@@ -173,16 +196,22 @@ main {
       }
     }
     .menu-conteneur {
-      @media (min-width: 1920px) and (min-height: 1080px) {
-        display:flex;
+      @media (min-width: 1280px) and (min-height: 720px) {
+        display: flex;
         justify-content: center;
-        
       }
-      .entree, .plats, .desserts {
-
+      @media (min-width: 1920px) and (min-height: 1080px) {
+        display: flex;
+        justify-content: center;
+      }
+      .entree,
+      .plats,
+      .desserts {
+        @media (min-width: 1280px) and (min-height: 720px) {
+          width: 33%;
+        }
         @media (min-width: 1920px) and (min-height: 1080px) {
           width: 30%;
-          
         }
         /*--------------------------Titre menu + UNDERLINE-----------------------------*/
         .titre-underline {
@@ -196,31 +225,29 @@ main {
             font-weight: lighter;
             margin: 0;
             font-size: 8vw;
-            
-              @media (min-width: 1920px) and (min-height: 1080px) {
-                font-size: 4vw;
-                
-              }
-
-            
+            @media (min-width: 1280px) and (min-height: 720px) {
+              font-size: 4vw;
+            }
+            @media (min-width: 1920px) and (min-height: 1080px) {
+              font-size: 4vw;
+            }
           }
 
           .underline {
             border-top: 1px solid $color-third;
             width: 20vw;
             display: inline-block;
-            
-              @media (min-width: 1920px) and (min-height: 1080px) {
-                width: 10vw;
-                
-              }
-
-           
+            @media (min-width: 1280px) and (min-height: 720px) {
+              width: 10vw;
+            }
+            @media (min-width: 1920px) and (min-height: 1080px) {
+              width: 10vw;
+            }
           }
         }
         ul {
           padding: 0;
-    
+
           margin: 5%;
           border-radius: 1em;
           transition-duration: 0s;
@@ -230,7 +257,7 @@ main {
           animation-duration: 2s;
           -webkit-animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
           animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
-    
+
           .dishes-un,
           .dishes-deux,
           .dishes-trois,
@@ -240,6 +267,7 @@ main {
           .dishes-sept,
           .dishes-huit,
           .dishes-neuf {
+            cursor: pointer;
             border-radius: 1em;
             background-color: $color-white;
             margin-top: 4vh;
@@ -251,38 +279,42 @@ main {
             animation-duration: 2s;
             -webkit-animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
             animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
+            @media (min-width: 1280px) and (min-height: 720px) {
+              height: 10vh;
+            }
             @media (min-width: 1920px) and (min-height: 1080px) {
               height: 10vh;
-              
             }
             .ellipsis-prix-coche-verte {
               display: flex;
               justify-content: space-between;
-    
+
               font-family: "roboto";
               margin: 0;
               overflow: hidden;
               text-overflow: ellipsis;
               display: flex;
-    
+
               .span-ellipsis {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 padding: 3vh;
                 display: flex;
                 flex-direction: column;
-    
+
                 & .ellipsis {
                   overflow: hidden;
                   text-overflow: ellipsis;
                   white-space: nowrap;
                   font-size: 4vw;
-    
+
                   font-weight: bold;
                   font-size: 5vw;
+                  @media (min-width: 1280px) and (min-height: 720px) {
+                    font-size: 1vw;
+                  }
                   @media (min-width: 1920px) and (min-height: 1080px) {
                     font-size: 1vw;
-                    
                   }
                 }
                 .weight {
@@ -291,57 +323,62 @@ main {
               }
               .prix-coche-verte {
                 display: flex;
-                
+
                 .prix {
                   display: flex;
                   align-items: flex-end;
+                  @media (min-width: 1280px) and (min-height: 720px) {
+                    align-items: center;
+                  }
                   @media (min-width: 1920px) and (min-height: 1080px) {
                     align-items: center;
-                    
                   }
-    
+
                   span {
                     padding: 1em;
                     font-size: 5vw;
+                    @media (min-width: 1280px) and (min-height: 720px) {
+                      font-size: 2vw;
+                    }
                     @media (min-width: 1920px) and (min-height: 1080px) {
                       font-size: 2vw;
-                      
                     }
                   }
                 }
-                .coche-verte{
+                .coche-verte {
+                  @media (min-width: 1280px) and (min-height: 720px) {
+                    height: 10vh;
+                  }
                   @media (min-width: 1920px) and (min-height: 1080px) {
                     height: 10vh;
-                    
                   }
-                  
-                  .icone{
+
+                  .icone {
+                    @media (min-width: 1280px) and (min-height: 720px) {
+                      font-size: 3vw;
+                    }
                     @media (min-width: 1920px) and (min-height: 1080px) {
                       font-size: 3vw;
-                      
                     }
-  
                   }
                 }
               }
-    
+
               &:hover .coche-verte {
                 color: $color-white;
-    
+
                 width: 27vw;
+                @media (min-width: 1280px) and (min-height: 720px) {
+                  width: 10vw;
+                }
                 @media (min-width: 1920px) and (min-height: 1080px) {
                   width: 10vw;
-                  
                 }
-                
               }
             }
           }
         }
       }
     }
-
-
-    
   }
 }

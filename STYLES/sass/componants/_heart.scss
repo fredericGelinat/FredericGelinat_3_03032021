@@ -4,6 +4,7 @@
   margin: -11vh 6vw;
   float: right;
   font-size: 8vw;
+  cursor: pointer;
   @media (min-width: 360px) and (min-height: 740px) {
     margin: -7vh 6vw;
     float: right;
@@ -93,6 +94,7 @@
 /*-------------------------coeur clignotant pages-----------------*/
 .coeurPages {
   font-size: 7vw;
+  cursor: pointer;
   
     .empty {
       .empty-heart {
