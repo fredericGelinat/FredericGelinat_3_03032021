@@ -30,6 +30,8 @@
         flex-wrap: wrap;
       }
       @media (min-width: 1920px) and (min-height: 1080px) {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
       }
       .img-resto {
