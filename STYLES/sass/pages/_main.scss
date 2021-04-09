@@ -88,7 +88,9 @@
             height: 25vh;
             -o-object-fit: cover;
             object-fit: cover;
-
+            @media (min-width: 320px) and (min-height: 533px) {
+              height: 23vh;              
+            }
             @media (min-width: 384px) and (min-height: 640px) {
               padding: 0;
             }
