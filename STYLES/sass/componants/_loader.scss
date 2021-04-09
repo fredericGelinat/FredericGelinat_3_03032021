@@ -125,8 +125,8 @@ animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
   transform: translate(-50px, -50px);
   width: 142px;
   height: 48px;
-  background-color: radial-gradient(circle at bottom, $color-secondary 10%, $color-secondary 100%);
-  /* 20=2000%*/
+  /*background-color: radial-gradient(circle at bottom, $color-secondary 10%, $color-secondary 100%);*/
+  
   filter: contrast(1000);
   z-index: 1;
   animation: load-2 3s 3s forwards;
