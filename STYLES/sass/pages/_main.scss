@@ -101,7 +101,7 @@
             @media (min-width: 1280px) and (min-height: 800px) {
               margin: -31vh 3vw 0 0;
             }
-            .nouveau{
+            .nouveau {
               color: #447f44;
               font-size: 5vw;
               @media (min-width: 1440px) and (min-height: 900px) {
@@ -236,8 +236,9 @@ main {
           }
 
           .underline {
-            border-top: 1px solid $color-third;
             width: 20vw;
+            height: 1vw;
+            background: #99e2d0;
             display: inline-block;
             @media (min-width: 1280px) and (min-height: 720px) {
               width: 10vw;
