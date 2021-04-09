@@ -1,29 +1,31 @@
 /*--------------------------coeur clignotant index------------*/
 
 .coeur {
-  margin: -11vh 6vw;
+  margin: -21% 6%;
   float: right;
-  font-size: 8vw;
+  font-size: 3em;
   cursor: pointer;
+
   @media (min-width: 360px) and (min-height: 740px) {
-    margin: -7vh 6vw;
+    margin: -7% 6%;
     float: right;
-    font-size: 10vw;
+    font-size: 2em;
   }
   @media (min-width: 375px) and (min-height: 667px) {
-    margin: -8vh 6vw;
+    margin: -4% 1em;
+    font-size: 4em;
   }
   @media (min-width: 375px) and (min-height: 812px) {
-    margin: -8vh 6vw;
+    margin: -8% 6em;
   }
   @media (min-width: 411px) and (min-height: 731px) {
-    margin: -7vh 6vw;
+    margin: -7% 6em;
   }
   @media (min-width: 414px) and (min-height: 736px) {
-    margin: -8vh 6vw;
+    margin: -8% 6em;
   }
   @media (min-width: 414px) and (min-height: 896px) {
-    margin: -7vh 6vw;
+    margin: -7vh 6em;
   }
   @media (min-width: 768px) and (min-height: 1024px) {
     margin: -9vh 6vw;
@@ -44,22 +46,26 @@
     margin: -12vh 6vw;
   }
   @media (min-width: 1280px) and (min-height: 720px) {
-    margin: -18vh 6vw;
+    margin: -11% 1em;
   }
   @media (min-width: 1280px) and (min-height: 800px) {
-    margin: -13vh 6vw;
-    font-size: 5vw;
+    margin: -9% 1em;
+    font-size: 4em;
   }
   @media (min-width: 1280px) and (min-height: 950px) {
     margin: -10vh 6vw;
   }
   @media (min-width: 1440px) and (min-height: 900px) {
-    margin: -13vh 2vw;
-    font-size: 5vw;
+    margin: -21% 0.5em;
+    font-size: 5em;
   }
-  @media (min-width: 1920px) and (min-height: 986px) {
-    margin: -10vh 2vw;
-    font-size: 5vw;  
+  @media (min-width: 1920px) and (min-height: 666px) {
+    margin: -4% 6%;
+    font-size: 3em;
+  }
+  @media (min-width: 1920px) and (min-height: 961px) {
+    margin: -11% 0.5em;
+    font-size: 5em;
   }
 
   .empty {
