@@ -11,6 +11,11 @@ footer {
   @media (min-width: 480px) and (min-height: 620px) {
     height: 31vh;
   }
+  @media (min-width: 540px) and (min-height: 720px) {
+    height: 35vh;
+    font-size: 5vw;
+    
+  }
   @media (min-width: 576px) and (min-height: 768px) {
     height: 37vh;
   }
