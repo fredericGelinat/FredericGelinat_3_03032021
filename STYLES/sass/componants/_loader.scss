@@ -1,0 +1,173 @@
+#loading-page {
+  background: radial-gradient(circle at center, $color-third 10%, $color-primary 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  color: $color-third;
+  width: 100%;
+
+  z-index: 1000000;
+  animation: load-1 4s 1s cubic-bezier(1,.02,0,1.28) forwards;
+  & span{
+    font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+
+.loader-letters{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lettre{
+  
+  font-size: 35px;
+  letter-spacing: 10px;
+  margin-bottom: 150px;
+  animation: flash 1.9s cubic-bezier(.52,.14,1,1.28) infinite;
+  
+}
+
+
+
+
+.lettre:nth-child(1){
+  animation-delay: 0.30s;
+ 
+}
+.lettre:nth-child(2){
+  animation-delay: 0.40s;
+  
+}
+.lettre:nth-child(3){
+  animation-delay: 0.50s;
+  
+}
+.lettre:nth-child(4){
+  animation-delay: .6s;
+  
+}
+.lettre:nth-child(5){
+  animation-delay: .7s;
+  
+}
+.lettre:nth-child(6){
+  animation-delay: .8s;
+  
+}
+.lettre:nth-child(7){
+  animation-delay: 0.9s;
+  
+}
+.lettre:nth-child(8){
+  animation-delay: 0.99s;
+  
+}
+
+
+.lettre-1{
+  color: $color-primary;
+  text-shadow: 0 0 7px $color-random-third-complementary-color;
+  animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}
+.lettre-2{
+  color: $color-secondary;
+  text-shadow: 0 0 7px $color-secondary;
+  animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}
+.lettre-3{
+  color: $color-third;
+  text-shadow: 0 0 7px $color-primary;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}
+.lettre-4{
+  color: $color-primary;
+  text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}
+.lettre-5{
+  color: $color-secondary;
+  text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}.lettre-6{
+  color: $color-third;
+  text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}.lettre-7{
+  color: $color-primary;
+  text-shadow: 0 0 7px $color-third;
+animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}.lettre-8{
+  color: $color-secondary;
+  text-shadow: 0 0 7px $color-third;
+  animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
+}
+
+.dot-dots{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  width: 142px;
+  height: 48px;
+  background-color: radial-gradient(circle at bottom, $color-secondary 10%, $color-secondary 100%);
+  /* 20=2000%*/
+  filter: contrast(1000);
+  z-index: 1;
+  animation: load-2 3s 3s forwards;
+  
+}
+
+
+.dot-dots .dot
+{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(3px);
+  border-radius: 50%;
+  background-color: $color-random-color-primary;
+  animation: point 5s cubic-bezier(.67,.12,.5,1.3) infinite;
+  z-index: -10;
+
+}
+
+.dot-dots .dots span{
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(3px);
+  background-color:$color-random-color-primary;
+  border-radius: 50%;
+  z-index: -10;
+}
+.dot-dots .dots{
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: points 4s cubic-bezier(.67,.12,.5,1.3) infinite;
+}
+
+
+
+
+
+}

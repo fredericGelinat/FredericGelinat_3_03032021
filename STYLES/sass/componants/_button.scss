@@ -1,0 +1,107 @@
+/*----------------bouton rose INDEX -----------------*/
+
+.submit-bouton-index {
+  display: flex;
+  justify-content: center;
+
+  .bouton-rose {
+    margin-top: 2em;
+    box-shadow: $box-shadow-grey-around;
+    border-radius: 12em;
+    .texte-bouton-rose {
+      border: none;
+      background: linear-gradient($color-secondary, $color-primary);
+      font-family: roboto;
+      letter-spacing: 1px;
+      color: $color-white;
+      cursor: pointer;
+      border-radius: 3em;
+      
+      padding: 2em 2em;
+      font-size: 3.5vw;
+      @media screen and (min-width:768px){
+        font-size: 2.5vw;
+      }
+      .clic {
+        color: white;
+        font-size: 5vw;
+        letter-spacing: 2px;
+        @media screen and (min-width:768px) {
+          font-size: 3vw;
+          
+        }
+      }
+    }
+  }
+}
+
+
+
+/*-----------------bouton rose pages-----------------*/
+
+.submit-bouton {
+  display: flex;
+  justify-content: center;
+
+  .bouton-rose {
+    margin-top: 2em;
+    box-shadow: $box-shadow-grey-around;
+    border-radius: 12em;
+    .texte-bouton-rose {
+      border: none;
+      background: linear-gradient($color-secondary, $color-primary);
+      font-family: roboto;
+      letter-spacing: 1px;
+      color: $color-white;
+      cursor: pointer;
+      border-radius: 3em;
+      
+      padding: 2em 4em;
+      font-size: 3.5vw;
+      @media (min-width: 1280px) and (min-height:720px) {
+        border-radius: 4em;
+        font-size: 1.5vw;
+      }
+        @media (min-width: 1920px) and (min-height: 1080px) {
+          border-radius: 4em;
+          font-size: 1.5vw;
+        }
+
+     
+      .clic {
+        color: white;
+        font-size: 5vw;
+        letter-spacing: 2px;
+        @media (min-width: 1280px) and (min-height:720px) {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+/*-----------------coche verte pages---------------*/
+.coche-verte {
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  background-color: $color-third;
+  width: 0;
+  @include border-radius(0 15px 15px 0);
+  overflow: hidden;
+  transition: width 400ms ease-in;
+  
+  .icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding-left: 62.5px;*/
+    font-size: 11vw;
+
+    .fas.fa-check-circle {
+      animation: circle 0.9s cubic-bezier(0.52, 0.14, 0, 1.28);
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+    }
+  }
+}

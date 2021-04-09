@@ -1,0 +1,411 @@
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
+/*------------------------------------------------------INDEX------------------------------*/
+
+/*-----------------------main html----------------------------------------------*/
+.main-index {
+  background-color: #f4f4f4;
+  padding-bottom: 12%;
+  .cartes-restaurants {
+    font-family: "Roboto", sans-serif;
+
+    .titre {
+      @media (min-width: 1280px) and (min-height: 720px) {
+        display: flex;
+        justify-content: center;
+      }
+      @media (min-width: 1440px) and (min-height: 900px) {
+        display: flex;
+        justify-content: center;
+      }
+      h2 {
+        margin: 0;
+        padding: 16% 0 3% 4%;
+        font-size: 7vw;
+      }
+    }
+    .cartes {
+      @media (min-width: 1440px) and (min-height: 900px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media (min-width: 1920px) and (min-height: 1080px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media (min-width: 1920px) and (min-height: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .img-resto {
+        margin: 4vw;
+        background-color: $color-white;
+        border-radius: 1em;
+        height: 35vh;
+        @media (min-width: 375px) and (min-height: 812px) {
+          height: 32vh;
+        }
+        @media (min-width: 414px) and (min-height: 896px) {
+          height: 32vh;
+        }
+        @media (min-width: 1024px) and (min-height: 768px){
+          height: 40vh;
+        }
+        @media (min-width: 1024px) and (min-height: 1366px) {
+          height: 34vh;
+        }
+        @media (min-width: 1280px) and (min-height: 720px) {
+          height: 45vh;
+        }
+        @media (min-width: 1280px) and (min-height: 800px) {
+          height: 48vh;
+        }
+        @media (min-width: 1440px) and (min-height: 900px) {
+          height: 50vh;
+          width: 41vw;
+        }
+        
+        @media (min-width: 1920px) and (min-height: 1080px) {
+          height: 45vh;
+          width: 41vw;
+        }
+        @media (min-width: 1920px) and (min-height: 1200px) {
+          height: 49vh;
+          width: 41vw;
+        }
+        .lien {
+          text-decoration: none;
+          color: $color-black;
+          .img {
+            width: 100%;
+            border-radius: 1em 1em 0 0;
+            height: 25vh;
+            -o-object-fit: cover;
+            object-fit: cover;
+
+            @media (min-width: 384px) and (min-height: 640px) {
+              padding: 0;
+            }
+            @media (min-width: 1280px) and (min-height: 720px) {
+              height: 31vh;
+            }
+            @media (min-width: 1280px) and (min-height: 800px) {
+              height: 35vh;
+              padding: 0;
+            }
+
+            @media (min-width: 1440px) and (min-height: 900px) {
+              border-radius: 1em 1em 0 0;
+              height: 32vh;
+              -o-object-fit: cover;
+              object-fit: cover;
+              object-fit: cover;
+            }
+          }
+          .etiquette-nouveau {
+            background-color: $color-third;
+            float: right;
+            margin: -23vh 3vw 0 0;
+            position: relative;
+            border-radius: 4px;
+            font-size: 7vw;
+            padding: 1vh;
+            @media (min-width: 1440px) and (min-height: 900px) {
+              margin: -29vh 3vw 0 0;
+            }
+            @media (min-width: 1280px) and (min-height: 800px) {
+              margin: -31vh 3vw 0 0;
+            }
+            .nouveau {
+              color: #447f44;
+              font-size: 5vw;
+              @media (min-width: 1440px) and (min-height: 900px) {
+                font-size: 2vw;
+              }
+            }
+          }
+        }
+        .description-et-coeur {
+          .nom-restaurant {
+            h3 {
+              margin: 0 0 -2vh 1vw;
+              @media (min-width: 768px) and (min-height: 1024px) {
+                font-size: 5vw;
+              }
+              @media (min-width: 800px) and (min-height: 1280px) {
+                font-size: 5vw;
+              }
+              @media (min-width: 1280px) and (min-height: 720px) {
+                font-size: 3vw;
+              }
+              @media (min-width: 1280px) and (min-height: 800px) {
+                margin: 0 0 -2vh 1vw;
+                font-size: 2vw;
+              }
+              @media (min-width: 1440px) and (min-height: 900px) {
+                font-size: 3vw;
+              }
+            }
+          }
+          .lieu {
+            p {
+              padding: 0vh 0 1vh 1vw;
+              @media (min-width: 800px) and (min-height: 1280px) {
+                font-size: 3.5vw;
+              }
+              @media (min-width: 1280px) and (min-height: 720px) {
+                font-size: 2vw;
+              }
+              @media (min-width: 1280px) and (min-height: 800px) {
+                font-size: 2vw;
+              }
+              @media (min-width: 1440px) and (min-height: 900px) {
+                font-size: 2vw;
+              }
+              @media (min-width: 1920px) and (min-height: 900px){
+                margin:  1em auto;
+              }
+              @media (min-width: 1920px) and (min-height: 961px) {
+                margin:  1em auto; 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------------Pages restaurants----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Pages restaurants----------------------
+--------------------------------------------------------------------------*/
+/*------------------------------------Pages restaurants----------------------
+--------------------------------------------------------------------------*/
+
+/*-------------------------restaurant-IMG----------------------------------*/
+.restaurant-img {
+  margin: 0;
+
+  img {
+    width: 100vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 41vh;
+  }
+}
+
+main {
+  background-color: $color-background;
+  padding-bottom: 4vh;
+  .section-restaurants {
+    background-color: $color-background;
+    border-radius: 2em 2em 0 0;
+    position: relative;
+    top: -3em;
+    z-index: 1;
+
+    /*--------------------------restaurant-NOM + COEUR-------------------------*/
+    .restaurantName-et-coeurPages {
+      display: flex;
+      align-items: center;
+      padding: 1em;
+      justify-content: space-around;
+
+      .restaurantName h2 {
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 500;
+        font-size: 7vw;
+      }
+    }
+    .menu-conteneur {
+      @media (min-width: 1280px) and (min-height: 720px) {
+        display: flex;
+        justify-content: center;
+      }
+      @media (min-width: 1920px) and (min-height: 1080px) {
+        display: flex;
+        justify-content: center;
+      }
+      .entree,
+      .plats,
+      .desserts {
+        @media (min-width: 1280px) and (min-height: 720px) {
+          width: 33%;
+        }
+        @media (min-width: 1920px) and (min-height: 1080px) {
+          width: 30%;
+        }
+        /*--------------------------Titre menu + UNDERLINE-----------------------------*/
+        .titre-underline {
+          text-transform: uppercase;
+          margin-left: 6%;
+          font-family: "Roboto", sans-serif;
+          display: flex;
+          flex-direction: column;
+
+          .titre h2 {
+            font-weight: lighter;
+            margin: 0;
+            font-size: 8vw;
+            @media (min-width: 1280px) and (min-height: 720px) {
+              font-size: 4vw;
+            }
+            @media (min-width: 1920px) and (min-height: 1080px) {
+              font-size: 4vw;
+            }
+          }
+
+          .underline {
+            width: 20vw;
+            height: 0.5vh;
+            background: #99e2d0;
+            display: inline-block;
+            @media (min-width: 1280px) and (min-height: 720px) {
+              width: 10vw;
+            }
+            @media (min-width: 1920px) and (min-height: 1080px) {
+              width: 10vw;
+            }
+          }
+        }
+        ul {
+          padding: 0;
+
+          margin: 5%;
+          border-radius: 1em;
+          transition-duration: 0s;
+          -webkit-animation-name: apparition-menus;
+          animation-name: apparition-menus;
+          -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+          -webkit-animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
+          animation-timing-function: cubic-bezier(0.73, 0.11, 0.46, 0.69);
+
+          .dishes-un,
+          .dishes-deux,
+          .dishes-trois,
+          .dishes-quatre,
+          .dishes-cinq,
+          .dishes-six,
+          .dishes-sept,
+          .dishes-huit,
+          .dishes-neuf {
+            cursor: pointer;
+            border-radius: 1em;
+            background-color: $color-white;
+            margin-top: 4vh;
+            padding: 0;
+            list-style-type: none;
+            -webkit-animation-name: apparition-plats;
+            animation-name: apparition-plats;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
+            animation-timing-function: cubic-bezier(0.69, 0.46, 0.11, 0.73);
+            @media (min-width: 1280px) and (min-height: 720px) {
+              height: 10vh;
+            }
+            @media (min-width: 1920px) and (min-height: 1080px) {
+              height: 10vh;
+            }
+            .ellipsis-prix-coche-verte {
+              display: flex;
+              justify-content: space-between;
+
+              font-family: "roboto";
+              margin: 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: flex;
+
+              .span-ellipsis {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 3vh;
+                display: flex;
+                flex-direction: column;
+
+                & .ellipsis {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  font-size: 4vw;
+
+                  font-weight: bold;
+                  font-size: 5vw;
+                  @media (min-width: 1280px) and (min-height: 720px) {
+                    font-size: 1vw;
+                  }
+                  @media (min-width: 1920px) and (min-height: 1080px) {
+                    font-size: 1vw;
+                  }
+                }
+                .weight {
+                  font-weight: lighter;
+                }
+              }
+              .prix-coche-verte {
+                display: flex;
+
+                .prix {
+                  display: flex;
+                  align-items: flex-end;
+                  @media (min-width: 1280px) and (min-height: 720px) {
+                    align-items: center;
+                  }
+                  @media (min-width: 1920px) and (min-height: 1080px) {
+                    align-items: center;
+                  }
+
+                  span {
+                    padding: 1em;
+                    font-size: 5vw;
+                    @media (min-width: 1280px) and (min-height: 720px) {
+                      font-size: 2vw;
+                    }
+                    @media (min-width: 1920px) and (min-height: 1080px) {
+                      font-size: 2vw;
+                    }
+                  }
+                }
+                .coche-verte {
+                  @media (min-width: 1280px) and (min-height: 720px) {
+                    height: 10vh;
+                  }
+                  @media (min-width: 1920px) and (min-height: 1080px) {
+                    height: 10vh;
+                  }
+
+                  .icone {
+                    @media (min-width: 1280px) and (min-height: 720px) {
+                      font-size: 3vw;
+                    }
+                    @media (min-width: 1920px) and (min-height: 1080px) {
+                      font-size: 3vw;
+                    }
+                  }
+                }
+              }
+
+              &:hover .coche-verte {
+                color: $color-white;
+
+                width: 27vw;
+                @media (min-width: 1280px) and (min-height: 720px) {
+                  width: 10vw;
+                }
+                @media (min-width: 1920px) and (min-height: 1080px) {
+                  width: 10vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+//----------font-family-----------------------
+@mixin googleFonts($font) {
+    @import url("https://fonts.googleapis.com/css2?family=#{$font}");
+  }
+  @include googleFonts(Roboto); //--textes---
+  @include googleFonts(Shrikhand); //------logo et titres---
+
+

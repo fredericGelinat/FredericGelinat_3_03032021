@@ -1,0 +1,182 @@
+footer {
+  background-color: $color-black;
+  color: $color-white;
+  height: 30vh;
+  @media (min-width: 360px) and (min-height: 740px) {
+    font-size: 6vw;
+  }
+  @media (min-width: 411px) and (min-height: 731px) {
+    font-size: 5vw;
+  }
+  @media (min-width: 480px) and (min-height: 620px) {
+    height: 31vh;
+  }
+  @media (min-width: 576px) and (min-height: 768px) {
+    height: 37vh;
+  }
+  @media (min-width: 600px) and (min-height: 960px) {
+    font-size: 5vw;
+    height: 33vh;
+  }
+  @media (min-width: 768px) and (min-height: 1024px) {
+    height: 37vh;
+  }
+  @media (min-width: 800px) and (min-height: 720px) {
+    height: 39vh;
+  }
+  @media (min-width: 800px) and (min-height: 1280px) {
+    font-size: 5vw;
+    height: 32vh;
+  }
+  @media (min-width: 854px) and (min-height: 720px) {
+    height: 57vh;
+    font-size: 5vw;
+  }
+  @media (min-width: 1000px) and (min-height: 720px) {
+   
+    font-size: 5vw;
+  }
+@media (min-width: 1024px) and (min-height: 768px) {
+  height: 63vh;
+  
+}
+  @media (min-width: 1024px) and (min-height: 1366px) {
+    height: 45vh;
+  }
+  @media (min-width: 1280px) and (min-height: 720px) {
+    height: 73vh;
+    font-size: 4vw;
+  }
+  @media (min-width: 1280px) and (min-height: 800px) {
+    height: 70vh;
+  }
+  @media (min-width: 1440px) and (min-height: 900px) {
+    height: 82vh;
+    font-size: 3vw;
+  }
+  @media (min-width: 1920px) and (min-height: 961px) {
+    height: 88vh; 
+  }
+  @media (min-width: 1920px) and (min-height: 1080px) {
+    height: 89vh;
+  }
+  .logo {
+    font-family: "Shrikhand", sans-serif;
+    padding: 5vh 0 0 2vh;
+    @media (min-width: 1280px) and (min-height: 720px) {
+      padding: 5vh 0 0 8vh;
+    }
+    @media (min-width: 1280px) and (min-height: 800px) {
+      padding: 5vh 0 0 7vh;
+    }
+    @media (min-width: 1440px) and (min-height: 900px) {
+      margin: 0 0 0 3vw;
+    }
+    @media (min-width: 1920px) and (min-height: 1080px) {
+      margin: 0;
+    }
+    p {
+      font-size: 6vw;
+      margin: 0;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 5vw;
+    font-family: "Roboto", sans-serif;
+    @media (min-width: 1280px) and (min-height: 800px) {
+      font-size: 4vw;
+    }
+    li {
+      list-style-type: none;
+
+      i {
+      }
+      a {
+        text-decoration: none;
+        color: $color-white;
+      }
+
+      #contact li {
+      }
+    }
+  }
+}
+/*.footer-logo-txtUn-txtDeux-txtTrois-txtQuatre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: hsla(0, 0%, 0%, 0.9);
+
+  .logo {
+    color: $color-white;
+    margin: 6% 4%;
+    font-family: "Shrikhand", sans-serif;
+
+    p {
+      font-size: 7vw;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+  .txtUn-txtDeux-txtTrois-txtQuatre {
+    .icone-hTrois-txtUn {
+      display: flex;
+      align-items: baseline;
+      color: $color-white;
+
+      .icone-txtUn {
+        margin-left: 4vw;
+        .fa-utensils{
+          font-size: 4vw;
+        }
+      }
+      .hTrois-txtUn h3 {
+        margin: 0 7vw;
+        font-family: "Roboto", sans-serif;
+        font-size: 3vh;
+      }
+    }
+    .icone-hTrois-txtDeux {
+      display: flex;
+      align-items: baseline;
+      color: $color-white;
+      font-family: "Roboto", sans-serif;
+
+      .icone-txtDeux {
+        margin-left: 4vw;
+        .fa-hands-helping{
+          font-size: 4vw;
+        }
+      }
+      .hTrois-txtDeux {
+        h3 {
+          margin: 0 5vw;
+          font-size: 3vh;
+        }
+      }
+    }
+    #txtTrois{
+
+      .hTrois-txtTrois{
+
+        h3{
+          color: $color-white;
+          margin: 0 4vw;
+          font-family: "roboto", sans-serif;
+          font-size: 3vh;
+        }
+      }
+    }
+    .mail-txtQuatre{
+      color: $color-white;
+      font-size: 3vh;
+      text-decoration: none;
+      font-family: "roboto", sans-serif;
+      margin-left: 4vw;
+      font-weight: bold;
+    }
+  }
+}*/

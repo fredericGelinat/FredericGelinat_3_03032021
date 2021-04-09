@@ -1,0 +1,60 @@
+.accueil-formulaires-recherche {
+  background-color: $color-background;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  .icone-input-paragraphes-boutonRose {
+    .icone-input {
+      display: flex;
+      justify-content: center;
+      background-color: $color-search;
+      height: 9vw;
+      align-items: center;
+      box-shadow: 0px -2px 1.9px 1.2px #9f9d9d;
+      
+      .icone {
+        color: rgb(15, 15, 15);
+        padding-left: 2em;
+        font-size: 4vw;
+      }
+      .input{
+
+        
+        .input-site-search {
+          background-color: $color-search;
+          border: none;
+          font-weight: bold;
+          font-size: 4vw;
+          margin-left: 15%;
+        }
+      }
+      
+    }
+    .paragraphes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+
+      .paragrapheUn {
+        font-weight: bold;
+        font-size: 7.5vw;
+        @media screen and (min-width:768px){
+          font-size: 5vw;
+        }
+ 
+      }
+
+      .paragrapheDeux p {
+        margin: 0;
+        font-size: 5vw;
+        @media screen and (min-width: 768px) {
+          font-size: 3.5vw;
+          
+        }
+      }
+    }
+  }
+
+}
