@@ -3,29 +3,33 @@
 .coeur {
   margin: -21% 6%;
   float: right;
-  font-size: 3em;
+  font-size: 2em;
   cursor: pointer;
 
   @media (min-width: 360px) and (min-height: 740px) {
-    margin: -7% 6%;
+    margin: -15% 6%;
     float: right;
     font-size: 2em;
   }
   @media (min-width: 375px) and (min-height: 667px) {
-    margin: -4% 1em;
-    font-size: 4em;
+    margin: -16% 1em;
+    font-size: 2em;
   }
   @media (min-width: 375px) and (min-height: 812px) {
-    margin: -8% 6em;
+    margin: -14% 1em;
   }
   @media (min-width: 411px) and (min-height: 731px) {
-    margin: -7% 6em;
+    margin: -11% 1em;
+  }
+  @media (min-width: 411px) and (min-height: 823px){
+
+    margin: -14% 1em;
   }
   @media (min-width: 414px) and (min-height: 736px) {
-    margin: -8% 6em;
+    margin: -11% 1em;
   }
   @media (min-width: 414px) and (min-height: 896px) {
-    margin: -7vh 6em;
+    margin: -7vh 1em;
   }
   @media (min-width: 768px) and (min-height: 1024px) {
     margin: -9vh 6vw;
