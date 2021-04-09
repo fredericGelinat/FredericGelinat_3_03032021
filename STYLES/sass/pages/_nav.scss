@@ -112,6 +112,7 @@
         background-color: #f5edff;
         color: $color-primary;
         border-radius: 1.5em;
+        box-shadow: 7px 7px 10px #b5b2b2;
         @media (min-width: 1280px) and (min-height: 800px){
           border-radius: 4em;
         }
