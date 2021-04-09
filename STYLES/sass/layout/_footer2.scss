@@ -8,6 +8,12 @@ footer {
   @media (min-width: 411px) and (min-height: 731px) {
     font-size: 5vw;
   }
+  @media (min-width: 480px) and (min-height: 620px) {
+    height: 31vh;
+  }
+  @media (min-width: 576px) and (min-height: 768px) {
+    height: 37vh;
+  }
   @media (min-width: 600px) and (min-height: 960px) {
     font-size: 5vw;
     height: 33vh;
@@ -15,10 +21,25 @@ footer {
   @media (min-width: 768px) and (min-height: 1024px) {
     height: 37vh;
   }
+  @media (min-width: 800px) and (min-height: 720px) {
+    height: 39vh;
+  }
   @media (min-width: 800px) and (min-height: 1280px) {
     font-size: 5vw;
     height: 32vh;
   }
+  @media (min-width: 854px) and (min-height: 720px) {
+    height: 57vh;
+    font-size: 5vw;
+  }
+  @media (min-width: 1000px) and (min-height: 720px) {
+   
+    font-size: 5vw;
+  }
+@media (min-width: 1024px) and (min-height: 768px) {
+  height: 63vh;
+  
+}
   @media (min-width: 1024px) and (min-height: 1366px) {
     height: 38vh;
   }
@@ -33,7 +54,7 @@ footer {
     height: 66vh;
     font-size: 3vw;
   }
-  @media (min-width: 1920px) and (min-height: 1080px){
+  @media (min-width: 1920px) and (min-height: 1080px) {
     height: 73vh;
   }
   .logo {
@@ -48,7 +69,7 @@ footer {
     @media (min-width: 1440px) and (min-height: 900px) {
       margin: 0 0 0 3vw;
     }
-    @media (min-width: 1920px) and (min-height: 1080px){
+    @media (min-width: 1920px) and (min-height: 1080px) {
       margin: 0;
     }
     p {
