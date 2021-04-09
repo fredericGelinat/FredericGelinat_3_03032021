@@ -54,6 +54,9 @@ footer {
     height: 66vh;
     font-size: 3vw;
   }
+  @media (min-width: 1920px) and (min-height: 986px) {
+    height: 88vh; 
+  }
   @media (min-width: 1920px) and (min-height: 1080px) {
     height: 73vh;
   }

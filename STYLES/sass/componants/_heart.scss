@@ -57,7 +57,10 @@
     margin: -13vh 2vw;
     font-size: 5vw;
   }
-  
+  @media (min-width: 1920px) and (min-height: 986px) {
+    margin: -10vh 2vw;
+    font-size: 5vw;  
+  }
 
   .empty {
     .far.fa-heart.empty-heart {
