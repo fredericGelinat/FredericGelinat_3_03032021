@@ -59,6 +59,10 @@
           height: 45vh;
           width: 41vw;
         }
+        @media (min-width: 1920px) and (min-height: 1080px) {
+          height: 48vh;
+          width: 41vw;
+        }
         .lien {
           text-decoration: none;
           color: $color-black;
