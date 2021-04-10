@@ -104,7 +104,7 @@
   }
 
   &:hover .empty {
-    /*color: $color-random-color-primary;*/
+   
     background: linear-gradient(0, $color-secondary, $color-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
