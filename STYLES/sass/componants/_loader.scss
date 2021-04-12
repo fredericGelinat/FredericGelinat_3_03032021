@@ -1,14 +1,14 @@
 #loading-page {
   background: radial-gradient(circle at center, $color-third 10%, $color-primary 100%);
   height: 100vh;
-  overflow: hidden;
+  /*overflow: hidden;*/
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  color: $color-third;
+  /*color: $color-third;*/
   width: 100%;
   z-index: 1000000;
   animation: load-1 4s 1s cubic-bezier(1,.02,0,1.28) forwards;
@@ -121,8 +121,6 @@ animation: lettres 1s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite reverse;
   transform: translate(-50px, -50px);
   width: 142px;
   height: 48px;
-  /*background-color: radial-gradient(circle at bottom, $color-secondary 10%, $color-secondary 100%);*/
-  
   filter: contrast(1000);
   z-index: 1;
   animation: load-2 3s 3s forwards;
