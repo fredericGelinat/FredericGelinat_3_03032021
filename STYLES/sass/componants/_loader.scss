@@ -11,7 +11,7 @@
   color: $color-third;
   width: 100%;
   z-index: 1000000;
-  animation: load-1 40s 1s cubic-bezier(1,.02,0,1.28) forwards;
+  animation: load-1 4s 1s cubic-bezier(1,.02,0,1.28) forwards;
   & span{
     font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 2em;
